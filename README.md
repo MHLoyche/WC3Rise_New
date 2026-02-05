@@ -1,4 +1,8 @@
-Project Folder Structure:
+**Details**
+
+This is a website for a game called Rise made as a custom game mode for Warcraft 3. It is created by a friend of mine.
+
+**Project Folder Structure:**
 
 public/
 
