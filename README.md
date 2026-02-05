@@ -33,10 +33,3 @@ Root files
 index.html → HTML entry point used by Vite
 
 main.jsx → React application entry
-
-App.jsx → Root application component
-<<<<<<< HEAD
-=======
-
->>>>>>> e214f65605147bcb274ed246c83365a8625b5960
-eslint.config.js → Linting configuration
