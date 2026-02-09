@@ -14,7 +14,7 @@ export default function ItemCard({ item, onClick, isSelected }) {
     if (rarity.includes('Rare')) return 'rare';
     if (rarity.includes('Epic')) return 'epic';
     if (rarity.includes('Legendary')) return 'legendary';
-    return 'common';
+    return '';
   };
 
   // Convert item name to match image filename (lowercase)

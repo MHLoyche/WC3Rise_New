@@ -6,7 +6,7 @@ export default function FilterSidebar({ onFilterChange, isVisible, onClose }) {
   const [selectedTiers, setSelectedTiers] = useState([]);
   const [selectedStats, setSelectedStats] = useState([]);
 
-  const rarities = ['Uncommon', 'Common', 'Rare', 'Epic', 'Legendary'];
+  const rarities = ['Uncommon', 'Rare', 'Epic', 'Legendary'];
   const tiers = ['Tier 1', 'Tier 2', 'Tier 3', 'Tier 4', 'Tier 5'];
   const stats = [
     'Agility',

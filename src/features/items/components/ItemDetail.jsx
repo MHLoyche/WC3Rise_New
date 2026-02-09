@@ -84,7 +84,7 @@ export default function ItemDetail({ item, allItems, onItemClick, onClose }) {
     if (rarity.includes('Rare')) return 'rare';
     if (rarity.includes('Epic')) return 'epic';
     if (rarity.includes('Legendary')) return 'legendary';
-    return 'common';
+    return '';
   };
 
   const rarityClass = item ? getRarityClass(item.rarity) : '';
