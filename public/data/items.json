@@ -5,8 +5,7 @@
         "stats": [
             "Mana Regeneration: +0.5",
             "Agility: +2"
-        ],
-        "combination": ""
+        ]
     },
     {
         "name": "Glyph of Nature",
@@ -14,7 +13,9 @@
         "stats": [
             "All Attributes: +1"
         ],
-        "combination": "Can be combined with a <b>Runestone Pendant</b> to create <b>Nature's Runestone</b>"
+        "combination": "Can be combined with a <b>Runestone Pendant</b> to create <b>Nature's Runestone</b>",
+        "upgrades": "Nature's Runestone",
+        "pairswith": "Runestone Pendant"
     },
     {
         "name": "Pickaxe",
@@ -32,7 +33,9 @@
             "Health: +100",
             "Armor: +1"
         ],
-        "combination": "Can be combined with <b>Holy Essence</b> to create <b>Shield of Light</b>"
+        "combination": "Can be combined with <b>Holy Essence</b> to create <b>Shield of Light</b>",
+        "upgrades": "Shield of Light",
+        "pairswith": "Holy Essence"
     },
     {
         "name": "Ring of Brilliance",
@@ -41,7 +44,9 @@
             "Mana: +100",
             "Intelligence: +2"
         ],
-        "combination": "Can be combined with <b>Enchanter's Robe</b> to create <b>Robe of the Arcane</b>"
+        "combination": "Can be combined with <b>Enchanter's Robe</b> to create <b>Robe of the Arcane</b>",
+        "upgrades": "Robe of the Arcane",
+        "pairswith": "Enchanter's Robe"
     },
     {
         "name": "Ritual Dagger",
@@ -50,7 +55,9 @@
             "Mana Regeneration: +0.5",
             "Intelligence: +2"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Dark Idol</b> to create <b>Otherwordly Trinket</b>",
+        "upgrades": "Otherwordly Trinket",
+        "pairswith": "Dark Idol"
     },
     {
         "name": "Swift Blade",
@@ -59,7 +66,9 @@
             "Attack Damage: +3",
             "Attack Speed: +10%"
         ],
-        "combination": "Can be combined with a <b>Battle Hammer</b> to create <b>Armor Splitter</b>"
+        "combination": "Can be combined with a <b>Battle Hammer</b> to create <b>Armor Splitter</b> </br> or with <b>Gloves of Precision</b> to create <b>Blade Gloves</b>",
+        "upgrades": ["Armor Splitter", "Blade Gloves"],
+        "pairswith": ["Battle Hammer", "Gloves of Precision"]
     },
     {
         "name": "Archmage's Rune",
@@ -68,7 +77,9 @@
             "Intelligence: +5",
             "Mana: +700"
         ],
-        "combination": "Can be combined with <b>Sacred Tome</b> to create <b>Equilibrium</b>"
+        "combination": "Can be combined with <b>Sacred Tome</b> to create <b>Equilibrium</b>",
+        "upgrades": "Equilibrium",
+        "pairswith": "Sacred Tome"
     },
     {
         "name": "Assassin Claw",
@@ -78,7 +89,9 @@
             "Mana: +250",
             "Mana Regeneration: +2"
         ],
-        "combination": "Can be combined with <b>Laceration Unguis</b> to create <b>Swampstalker's Grasp</b>"
+        "combination": "Can be combined with <b>Laceration Unguis</b> to create <b>Swampstalker's Grasp</b>",
+        "upgrades": "Swampstalker's Grasp",
+        "pairswith": "Laceration Unguis"
     },
     {
         "name": "Band of Life",
@@ -87,7 +100,9 @@
             "Health: +300",
             "Health Regeneration: +92"
         ],
-        "combination": "Can be combined with <b>Royal Vestment</b> to create <b>Dream Band</b>"
+        "combination": "Can be combined with <b>Royal Vestment</b> to create <b>Dream Band</b>",
+        "upgrades": "Dream Band",
+        "pairswith": "Royal Vestment"
     },
     {
         "name": "Battle Hammer",
@@ -97,7 +112,9 @@
             "Intelligence: +2",
             "Strength: +2"
         ],
-        "combination": "Can be combined with <b>Knight's Medallion</b> to create <b>Juggernaut's Crusher</b>"
+        "combination": "Can be combined with <b>Knight's Medallion</b> to create <b>Juggernaut's Crusher</b> </br> or with a <b>Swift Blade</b> to create <b>Armor Splitter</b>",
+        "upgrades": ["Juggernaut's Crusher", "Armor Splitter"],
+        "pairswith":  ["Knight's Medallion", "Swift Blade"]
     },
     {
         "name": "Big Bamboo Stick",
@@ -132,7 +149,9 @@
         "stats": [
             "Item Activation: Heals for 250 Health (30 second cooldown)"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Dawnrose</b> to create <b>Hero's Bottomless Healing Potion</b> </br> or with <b>Liferoot</b> to create <b>Greater Bottomless Healing Potion</b>",
+        "upgrades": ["Hero's Bottomless Healing Potion", "Greater Bottomless Healing Potion"],
+        "pairswith": ["Dawnrose", "Liferoot"]
     },
     {
         "name": "Bottomless Mana Potion",
@@ -140,7 +159,9 @@
         "stats": [
             "Item Activation: Restores 150 Mana (30 second cooldown)"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Hypnotic Dust</b> to create <b>Greater Bottomless Mana Potion</b> </br> or with <b>Plate Shoulders</b> to create <b>Mana Infused Plate Shoulders</b>",
+        "upgrades": ["Greater Bottomless Mana Potion", "Mana Infused Plate Shoulders"],
+        "pairswith": ["Hypnotic Dust", "Plate Shoulders"]
     },
     {
         "name": "Crimson Amulet",
@@ -150,7 +171,9 @@
             "Health: +50",
             "Mana Regeneration: +1"
         ],
-        "combination": "Can be combined with <b>Staff of Energy</b> to create <b>Staff of Brilliance</b>"
+        "combination": "Can be combined with <b>Staff of Energy</b> to create <b>Staff of Brilliance</b>",
+        "upgrades": "Staff of Brilliance",
+        "pairswith": "Staff of Energy"
     },
     {
         "name": "Crystalized Heart",
@@ -158,7 +181,9 @@
         "stats": [
             "Intelligence: +34"
         ],
-        "combination": "Can be combined with <b>Hallowed Skull</b> to create <b>Sight of Beyond</b>"
+        "combination": "Can be combined with <b>Hallowed Skull</b> to create <b>Sight of Beyond</b>",
+        "upgrades": "Sight of Beyond",
+        "pairswith": "Hallowed Skull"
     },
     {
         "name": "Cursed Bell",
@@ -177,7 +202,9 @@
             "Health Regeneration: +4",
             "Mana Regeneration: +2"
         ],
-        "combination": "Can be combined with <b>Bottomless Healing Potion</b> to create <b>Hero's Bottomless Healing Potion</b>"
+        "combination": "Can be combined with <b>Bottomless Healing Potion</b> to create <b>Hero's Bottomless Healing Potion</b>",
+        "upgrades": "Hero's Bottomless Healing Potion",
+        "pairswith": "Bottomless Healing Potion"
     },
     {
         "name": "Drakehide Shoulderpads",
@@ -187,7 +214,9 @@
             "Armor: +2",
             "Agility: +5"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Armor of Incision</b> to create <b>Shadowstalker's Cloak</b> </br> or with <b>Gloves of Fury</b> to create <b>Bounty Hunter's Garb</b>",
+        "upgrades": ["Shadowstalker's Cloak", "Bounty Hunter's Garb"],
+        "pairswith": ["Armor of Incision", "Gloves of Fury"]
     },
     {
         "name": "Elven Shortbow",
@@ -197,7 +226,9 @@
             "Attack Speed: +10%",
             "Attack Damage: +4"
         ],
-        "combination": "Can be combined with <b>Swiftstep</b> to create <b>Swiftshot</b>"
+        "combination": "Can be combined with <b>Swiftstep</b> to create <b>Swiftshot</b>",
+        "upgrades": "Swiftshot",
+        "pairswith": "Swiftstep"
     },
     {
         "name": "Enchanter's Robe",
@@ -206,7 +237,9 @@
             "Intelligence: +5",
             "Health: +75"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Ring of Brilliance</b> to create <b>Robe of the Arcane</b>",
+        "upgrades": "Robe of the Arcane",
+        "pairswith": "Ring of Brilliance"
     },
     {
         "name": "Gloves of Precision",
@@ -216,7 +249,9 @@
             "Strength: +2",
             "Health: +50"
         ],
-        "combination": "Can be combined with <b>Swift Blade</b> to create <b>Blade Gloves</b>"
+        "combination": "Can be combined with <b>Swift Blade</b> to create <b>Blade Gloves</b>",
+        "upgrades": "Blade Gloves",
+        "pairswith": "Swift Blade"
     },
     {
         "name": "Gold Locket",
@@ -227,7 +262,9 @@
             "Agility: +6",
             "Armor: +2"
         ],
-        "combination": "Can be combined with <b>Watcher's Eye</b> to create <b>Greed</b>"
+        "combination": "Can be combined with <b>Watcher's Eye</b> to create <b>Greed</b>",
+        "upgrades": "Greed",
+        "pairswith": "Watcher's Eye"
     },
     {
         "name": "Greensprout",
@@ -236,7 +273,9 @@
             "Health Regeneration: +4",
             "Mana Regeneration: +8"
         ],
-        "combination": "Can be combined with <b>Hero's Bottomless Mana Potion</b> to create <b>Champion's Bottomless Mana Potion</b>"
+        "combination": "Can be combined with <b>Hero's Bottomless Mana Potion</b> to create <b>Champion's Bottomless Mana Potion</b> </br> or with <b>Moonreaver</b> to create <b>Aneyashhek, Staff of Life</b>",
+        "upgrades": ["Champion's Bottomless Mana Potion", "Aneyashhek, Staff of Life"],
+        "pairswith": ["Hero's Bottomless Mana Potion", "Moonreaver"]
     },
     {
         "name": "Heavy Lance",
@@ -245,7 +284,9 @@
             "Attack Damage: +12",
             "Strength: +8"
         ],
-        "combination": "Can be combined with <b>Zealot's Belt</b> to create <b>Truth Piercer</b>"
+        "combination": "Can be combined with <b>Zealot's Belt</b> to create <b>Truth Piercer</b> </br> or with <b>Armor Splitter</b> to create <b>Obsidian Greataxe</b>",
+        "upgrades": ["Truth Piercer", "Obsidian Greataxe"],
+        "pairswith": ["Zealot's Belt", "Armor Splitter"]
     },
     {
         "name": "Holy Essence",
@@ -253,7 +294,9 @@
         "stats": [
             "All Attributes: +2"
         ],
-        "combination": "Can be combined with <b>Lightsteel Sabre</b> to create <b>Divine Sabre</b>"
+        "combination": "Can be combined with <b>Plate Shield</b> to create <b>Shield of Light</b> </br> or with <b>Lightsteel Sabre</b> to create <b>Divine Sabre</b> </br> or with <b>Shimmering Ring</b> to create <b>Pristine Holy Essence</b>",
+        "upgrades": ["Shield of Light", "Divine Sabre", "Pristine Holy Essence"],
+        "pairswith": ["Plate Shield", "Lightsteel Sabre", "Shimmering Ring"]
     },
     {
         "name": "Horn of War",
@@ -264,7 +307,9 @@
             "Armor: +3",
             "Item Activation - Taunt: Forces the closest 10 enemies to attack this target."
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Veteran's Medallion</b> to create <b>Horn of Bloodshed</b>",
+        "upgrades": "Horn of Bloodshed",
+        "pairswith": "Veteran's Medallion"
     },
     {
         "name": "Hypnotic Dust",
@@ -273,7 +318,9 @@
             "Health Regeneration: +1",
             "Mana Regeneration: +2"
         ],
-        "combination": "Can be combined with <b>Bottomless Mana Potion</b> to create <b>Greater Bottomless Mana Potion</b>"
+        "combination": "Can be combined with <b>Bottomless Mana Potion</b> to create <b>Greater Bottomless Mana Potion</b>",
+        "upgrades": "Greater Bottomless Mana Potion",
+        "pairswith": "Bottomless Mana Potion"
     },
     {
         "name": "Invoker's Mantle",
@@ -282,7 +329,9 @@
             "Intelligence: +6",
             "Mana: +250"
         ],
-        "combination": "Can be combined with <b>Air Lord's Cane</b> to create <b>Essence of Lightning</b>"
+        "combination": "Can be combined with <b>Air Lord's Cane</b> to create <b>Essence of Lightning</b>",
+        "upgrades": "Essence of Lightning",
+        "pairswith": "Air Lord's Cane"
     },
     {
         "name": "Laceration Unguis",
@@ -291,7 +340,9 @@
             "Agility: +26",
             "Mana: +400"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Assassin Claw</b> to create <b>Swampstalker's Grasp</b>",
+        "upgrades": "Swampstalker's Grasp",
+        "pairswith": "Assassin Claw"
     },
     {
         "name": "Legionnaire's Buckler",
@@ -300,7 +351,9 @@
             "Health: +500",
             "Armor: +7"
         ],
-        "combination": "Can be combined with <b>Hungering Bulwark</b> to create <b>Insatiable Nemesis</b>"
+        "combination": "Can be combined with <b>Hungering Bulwark</b> to create <b>Insatiable Nemesis</b>",
+        "upgrades": "Insatiable Nemesis",
+        "pairswith": "Hungering Bulwark"
     },
     {
         "name": "Liferoot",
@@ -309,7 +362,9 @@
             "Health Regeneration: +2",
             "Mana Regeneration: +1"
         ],
-        "combination": "Can be combined with <b>Bottomless Healing Potion</b> to create <b>Greater Bottomless Healing Potion</b>"
+        "combination": "Can be combined with <b>Bottomless Healing Potion</b> to create <b>Greater Bottomless Healing Potion</b>",
+        "upgrades": "Greater Bottomless Healing Potion",
+        "pairswith": "Bottomless Healing Potion"
     },
     {
         "name": "Lion's Aegis",
@@ -317,7 +372,7 @@
         "stats": [
             "Health: +200",
             "Armor: +1",
-            "Item Passive - Block: Passively blocks 4 damage from enemy attacks"	
+            "Item Passive - Block: Passively blocks 4 damage from enemy attacks"
         ],
         "combination": ""
     },
@@ -327,7 +382,9 @@
         "stats": [
             "Attack Damage: +18"
         ],
-        "combination": "Can be combined with <b>Mana Trinket</b> to create <b>Mana Edge</b>"
+        "combination": "Can be combined with <b>Mana Trinket</b> to create <b>Mana Edge</b> </br> or with <b>Runed Arrowhead</b> to create <b>Serrated Arrows</b>",
+        "upgrades": ["Mana Edge", "Serrated Arrows"],
+        "pairswith": ["Mana Trinket", "Runed Arrowhead"]
     },
     {
         "name": "Magic's Shade",
@@ -338,7 +395,9 @@
             "Armor: +2",
             "Item Passive - Spellblock: Take 12% Reduced Damage from Abilities"
         ],
-        "combination": "Can be combined with <b>Spell Ward</b> to create <b>Dragon's Shield</b>"
+        "combination": "Can be combined with <b>Spell Ward</b> to create <b>Dragon's Shield</b>",
+        "upgrades": "Dragon's Shield",
+        "pairswith": "Spell Ward"
     },
     {
         "name": "Mana Trinket",
@@ -347,7 +406,9 @@
             "Mana: +500",
             "Mana Regeneration: +1"
         ],
-        "combination": "Can be combined with <b>Mana-Infused Plate Shoulders</b> to create <b>Zealous</b>"
+        "combination": "Can be combined with <b>Longsword</b> to create <b>Mana Edge</b> </br> or with <b>Mana-Infused Plate Shoulders</b> to create <b>Zealous</b>",
+        "upgrades": ["Mana Edge", "Zealous"],
+        "pairswith": ["Longsword", "Mana-Infused Plate Shoulders"]
     },
     {
         "name": "Marauder's Hammer",
@@ -356,7 +417,9 @@
             "Strength: +6",
             "Agility: +6"
         ],
-        "combination": "Can be combined with <b>Tempest Fist</b> and <b>Essence of Lightning</b> near a Storming Peak to create <b>Stormbringer, Uending Fury</b>"
+        "combination": "Can be combined with <b>Tempest Fist</b> and <b>Essence of Lightning</b> near a Storming Peak to create <b>Stormbringer, Uending Fury</b>",
+        "upgrades": "Stormbringer, Uending Fury",
+        "pairswith": "Essence of Lightning"
     },
     {
         "name": "Omensteel Axe",
@@ -384,7 +447,9 @@
         "stats": [
             "All Attributes: +10"
         ],
-        "combination": "Can be combined with <b>Oblivions Spike</b> to create <b>Gaze of the Abyss</b>"
+        "combination": "Can be combined with <b>Oblivions Spike</b> to create <b>Gaze of the Abyss</b> </br> or with <b>Steelheart Shield</b> to create <b>Enigma</b> </br> or with <b>Mask of Fear</b> to create <b>Doom Visage</b>",
+        "upgrades": ["Gaze of the Abyss", "Enigma", "Doom Visage"],
+        "pairswith": ["Oblivions Spike", "Steelheart Shield", "Mask of Fear"]
     },
     {
         "name": "Plate Shoulders",
@@ -395,7 +460,9 @@
             "Strength: +2",
             "Intelligence: +1"
         ],
-        "combination": "Can be combined with <b>Bottomless Mana Potion</b> to create <b>Mana Infused Plate Shoulders</b>"
+        "combination": "Can be combined with <b>Bottomless Mana Potion</b> to create <b>Mana Infused Plate Shoulders</b>",
+        "upgrades": "Mana Infused Plate Shoulders",
+        "pairswith": "Bottomless Mana Potion"
     },
     {
         "name": "Pure Bloodstone Gem",
@@ -404,7 +471,9 @@
             "Health Regeneration: +8",
             "Mana Regeneration: +4"
         ],
-        "combination": "Can be combined with <b>Hero's Bottomless Healing Potion</b> to create <b>Champion's Bottomless Healing Potion</b>"
+        "combination": "Can be combined with <b>Hero's Bottomless Healing Potion</b> to create <b>Champion's Bottomless Healing Potion</b>",
+        "upgrades": "Champion's Bottomless Healing Potion",
+        "pairswith": "Hero's Bottomless Healing Potion"
     },
     {
         "name": "Rapid Claw",
@@ -414,7 +483,9 @@
             "Attack Damage: +5",
             "Strength: +6"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>War Banner</b> to create <b>Ferocity</b>",
+        "upgrades": "Ferocity",
+        "pairswith": "War Banner"
     },
     {
         "name": "Razor Gloves",
@@ -422,7 +493,9 @@
         "stats": [
             "Attack Speed: +30%"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Snake Gloves</b> to create <b>Viper Gloves</b>",
+        "upgrades": "Viper Gloves",
+        "pairswith": "Snake Gloves"
     },
     {
         "name": "Reaver Gloves",
@@ -431,7 +504,9 @@
             "Strength: +23",
             "Attack Damage: +20"
         ],
-        "combination": "Can be combined with <b>Weight of Thorns</b> to create <b>Flail of the Red Mist</b>"
+        "combination": "Can be combined with <b>Weight of Thorns</b> to create <b>Flail of the Red Mist</b>",
+        "upgrades": "Flail of the Red Mist",
+        "pairswith": "Weight of Thorns"
     },
     {
         "name": "Ring of Power",
@@ -442,7 +517,9 @@
             "Mana Regeneration Rate: 10%",
             "Health: +100"
         ],
-        "combination": "Can be combined with <b>Champions Bottomless Mana Potion</b> to create <b>Mana Core</b>"
+        "combination": "Can be combined with <b>Champions Bottomless Mana Potion</b> to create <b>Mana Core</b>",
+        "upgrades": "Mana Core",
+        "pairswith": "Champions Bottomless Mana Potion"
     },
     {
         "name": "Runed Arrowhead",
@@ -452,7 +529,9 @@
             "Attack Speed: +10%",
             "Attack Damage: +8"
         ],
-        "combination": "Can be combined with <b>Longsword</b> to create <b>Serrated Arrows</b>"
+        "combination": "Can be combined with <b>Longsword</b> to create <b>Serrated Arrows</b>",
+        "upgrades": "Serrated Arrows",
+        "pairswith": "Longsword"
     },
     {
         "name": "Runestone Pendant",
@@ -461,7 +540,9 @@
             "Health: +150",
             "Item Activation - Taunt: Forces the closest 5 enemies to attack this target."
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Glyph of Nature</b> to create <b>Nature's Runestone</b>",
+        "upgrades": "Nature's Runestone",
+        "pairswith": "Glyph of Nature"
     },
     {
         "name": "Shield of Light",
@@ -480,7 +561,9 @@
         "stats": [
             "All Attributes: +3"
         ],
-        "combination": "Can be combined with <b>Holy Essence</b> to create <b>Pristine Holy Essence</b>"
+        "combination": "Can be combined with <b>Holy Essence</b> to create <b>Pristine Holy Essence</b>",
+        "upgrades": "Pristine Holy Essence",
+        "pairswith": "Holy Essence"
     },
     {
         "name": "Skull Helmet",
@@ -498,7 +581,9 @@
         "stats": [
             "Attack Speed: +18%"
         ],
-        "combination": "Can be combined with <b>Razor Gloves</b> to create <b>Viper Gloves</b>"
+        "combination": "Can be combined with <b>Razor Gloves</b> to create <b>Viper Gloves</b>",
+        "upgrades": "Viper Gloves",
+        "pairswith": "Razor Gloves"
     },
     {
         "name": "Spell Ward",
@@ -508,7 +593,9 @@
             "Health: +225",
             "Item Passive - Spellblock: Take 20% Reduced Damage from Abilities"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Magic's Shade</b> to create <b>Dragon's Shield</b>",
+        "upgrades": "Dragon's Shield",
+        "pairswith": "Magic's Shade"
     },
     {
         "name": "Spellbinder's Rod",
@@ -517,7 +604,9 @@
             "Health Regeneration: +2",
             "Mana Regeneration: +4"
         ],
-        "combination": "Can be combined with <b>Greater Bottomless Mana Potion</b> to create <b>Hero's Bottomless Mana Potion</b>"
+        "combination": "Can be combined with <b>Greater Bottomless Mana Potion</b> to create <b>Hero's Bottomless Mana Potion</b>",
+        "upgrades": "Hero's Bottomless Mana Potion",
+        "pairswith": "Greater Bottomless Mana Potion"
     },
     {
         "name": "Steelheart Shield",
@@ -528,7 +617,9 @@
             "Health Regeneration: +5",
             "Item Passive - Block: Passively blocks 32 damage from enemy attacks"
         ],
-        "combination": "Can be combined with <b>Pendant of Balance</b> to create <b>Enigma</b>"
+        "combination": "Can be combined with <b>Pendant of Balance</b> to create <b>Enigma</b>",
+        "upgrades": "Enigma",
+        "pairswith": "Pendant of Balance"
     },
     {
         "name": "Tribal Crown",
@@ -550,7 +641,9 @@
             "Armor: +1",
             "Mana Regeneration: +3"
         ],
-        "combination": "Can be combined with <b>Horn of War</b> to create <b>Horn of Bloodshed</b>"
+        "combination": "Can be combined with <b>Horn of War</b> to create <b>Horn of Bloodshed</b>",
+        "upgrades": "Horn of Bloodshed",
+        "pairswith": "Horn of War"
     },
     {
         "name": "War Banner",
@@ -560,7 +653,9 @@
             "Strength: +4",
             "Health: +50"
         ],
-        "combination": "Can be combined with <b>Rapid Claw</b> to create <b>Ferocity</b>"
+        "combination": "Can be combined with <b>Rapid Claw</b> to create <b>Ferocity</b>",
+        "upgrades": "Ferocity",
+        "pairswith": "Rapid Claw"
     },
     {
         "name": "Watcher's Eye",
@@ -568,7 +663,9 @@
         "stats": [
             "All Attributes: +13"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Gold Locket</b> to create <b>Greed</b>",
+        "upgrades": "Greed",
+        "pairswith": "Gold Locket"
     },
     {
         "name": "Winged Visage",
@@ -588,7 +685,9 @@
             "Intelligence: +5",
             "Strength: +5"
         ],
-        "combination": "Can be combined with <b>Amplification Orb</b> to create <b>Cane of the Beastlord</b>"
+        "combination": "Can be combined with <b>Heavy Lance</b> to create <b>Truth Piercer</b> </br> or with <b>Amplification Orb</b> to create <b>Cane of the Beastlord</b>",
+        "upgrades": ["Truth Piercer", "Cane of the Beastlord"],
+        "pairswith": ["Heavy Lance", "Amplification Orb"]
     },
     {
         "name": "Ancient Dragon Eye",
@@ -610,7 +709,9 @@
             "Intelligence: +5",
             "Mana Regeneration: +3"
         ],
-        "combination": "Can be combined with <b>Drakehide Shoulderpads</b> to create <b>Shadowstalker's Cloak</b>"
+        "combination": "Can be combined with <b>Drakehide Shoulderpads</b> to create <b>Shadowstalker's Cloak</b>",
+        "upgrades": "Shadowstalker's Cloak",
+        "pairswith": "Drakehide Shoulderpads"
     },
     {
         "name": "Bert's Legacy",
@@ -620,7 +721,9 @@
             " ",
             "An ancient mastercrafted sword, though it's spectral appearance, it can still be held. The tip of the sword seems to be broken. as if a piece of it is missing. Maybe it could be restored somehow?"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Spectral Sword Piece</b> to create <b>Ghostclaw</b>",
+        "upgrades": "Ghostclaw",
+        "pairswith": "Spectral Sword Piece"
     },
     {
         "name": "Centurion's Mask",
@@ -642,7 +745,9 @@
             "Mana Regeneration: +8",
             "Item Activation: Heals for 2000 Health"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Dragon's Shield</b> to create <b>Embrace of the Void</b>",
+        "upgrades": "Embrace of the Void",
+        "pairswith": "Dragon's Shield"
     },
     {
         "name": "Champion's Bottomless Mana Potion",
@@ -696,7 +801,9 @@
             "Mana: +350",
             "Item Activation - Chain Lightning: Calls forth a bolt of lightning that bounces up to 8 times, dealing 1000 damage on the primary target. Each jump deals 10% less damage."
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Marauder's Hammer</b> and <b>Tempest Fist</b> near a <b>Storming Peak</b> to create <b>Stormbringer, Uending Fury</b> </br> or with <b>Amplification Orb</b> near a <b>Storming Peak</b> to create <b>Eye of the Storm</b>",
+        "upgrades": ["Stormbringer, Uending Fury", "Eye of the Storm"],
+        "pairswith": ["Marauder's Hammer", "Amplification Orb"]
     },
     {
         "name": "Fan of Endless Flow",
@@ -707,7 +814,9 @@
             "Mana Regeneration Rate: +50%",
             "Health: +250"
         ],
-        "combination": "Can be combined with <b>Mana Edge</b> to create <b>Crystal of Unleashed Power</b>"
+        "combination": "Can be combined with <b>Mana Edge</b> to create <b>Crystal of Unleashed Power</b>",
+        "upgrades": "Crystal of Unleashed Power",
+        "pairswith": "Mana Edge"
     },
     {
         "name": "Heart of the Goddess",
@@ -738,7 +847,9 @@
             "Movement Speed: +50",
             "Item Passive - Precision: Attacks that hit enemies from +300 range deals 80% increased base damage"
         ],
-        "combination": "Can be combined with <b>Manticore Throwing Knives</b> and <b>Phoenix Talon</b> near the <b>Heart of the Volcano</b> to create <b>Shard of the Sun</b>"
+        "combination": "Can be combined with <b>Manticore Throwing Knives</b> and <b>Phoenix Talon</b> near the <b>Heart of the Volcano</b> to create <b>Shard of the Sun</b>",
+        "upgrades": "Shard of the Sun",
+        "pairswith": "Phoenix Talon"
     },
     {
         "name": "Relic Hunter",
@@ -769,7 +880,9 @@
             "Intelligence: +40",
             "Item Activation - Draw Power: Grants +50 Intelligence for 20 seconds"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Nebula Key</b> and <b>Oblivion Spike</b> near <b>Nothing</b> to create <b>Kronos, Bane of the Cosmos</b>",
+        "upgrades": "Kronos, Bane of the Cosmos",
+        "pairswith": "Nebula Key"
     },
     {
         "name": "Shellcore Blaster",
@@ -803,7 +916,9 @@
         "stats": [
             "Attack Damage: +200"
         ],
-        "combination": "Can be combined with <b>Bert's Legacy</b> to create <b>Ghostclaw</b>"
+        "combination": "Can be combined with <b>Bert's Legacy</b> to create <b>Ghostclaw</b>",
+        "upgrades": "Ghostclaw",
+        "pairswith": "Bert's Legacy"
     },
     {
         "name": "Swiftshot",
@@ -814,7 +929,9 @@
             "Attack Damage: +7",
             "Movement Speed: +50"
         ],
-        "combination": "Can be combined with <b>Serrated Arrows</b> to create <b>Phantom Piercer</b>"
+        "combination": "Can be combined with <b>Serrated Arrows</b> to create <b>Phantom Piercer</b>",
+        "upgrades": "Phantom Piercer",
+        "pairswith": "Serrated Arrows"
     },
     {
         "name": "Tempest Fist",
@@ -879,7 +996,9 @@
             "Attack Damage: +7",
             "Item Activation - Chain Lightning: Calls forth a bolt of lightning that bounces up to 3 times, dealing 500 damage on the primary target. Each jump deals 25% less damage."
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Invoker's Mantle</b> to create <b>Essence of Lightning</b>",
+        "upgrades": "Essence of Lightning",
+        "pairswith": "Invoker's Mantle"
     },
     {
         "name": "Amplification Orb",
@@ -888,7 +1007,9 @@
             "Intelligence: +30",
             "Attack Damage: -30"
         ],
-        "combination": "Can be combined with <b>Essence of Lightning</b> near a <b>Storming Peak</b> to create <b>Eye of the Storm</b>"
+        "combination": "Can be combined with <b>Zealot's Belt</b> to create <b>Cane of the Beastlord</b> </br> or with <b>Essence of Lightning</b> near a <b>Storming Peak</b> to create <b>Eye of the Storm</b> </br> or with <b>Unholy Urn</b> near a <b>Crypt Altar</b> to create <b>Cryptdweller's Thirst</b>",
+        "upgrades": ["Cane of the Beastlord", "Eye of the Storm", "Cryptdweller's Thirst"],
+        "pairswith": ["Zealot's Belt", "Essence of Lightning", "Unholy Urn"]
     },
     {
         "name": "Blade Gloves",
@@ -929,7 +1050,9 @@
             "Health: +350",
             "Mana: +350"
         ],
-        "combination": "Can be combined with <b>Gloves of the Mage Kings</b> to create <b>Vision of the God King</b>"
+        "combination": "Can be combined with <b>Gloves of the Mage Kings</b> to create <b>Vision of the God King</b>",
+        "upgrades": "Vision of the God King",
+        "pairswith": "Gloves of the Mage Kings"
     },
     {
         "name": "Cursed Mask of Fear",
@@ -970,7 +1093,9 @@
             "Mana Regeneration +2",
             "Item Passive - Spellblock: Take 32% Reduced Damage from Abilities."
         ],
-        "combination": "Can be combined with <b>Champion's Bottomless Healing Potion</b> to create <b>Embrace of the Void</b>"
+        "combination": "Can be combined with <b>Champion's Bottomless Healing Potion</b> to create <b>Embrace of the Void</b>",
+        "upgrades": "Embrace of the Void",
+        "pairswith": "Champion's Bottomless Healing Potion"
     },
     {
         "name": "Enigma",
@@ -982,7 +1107,9 @@
             "Health Regeneration: +5",
             "Item Passive - Block: Passively blocks 64 damage from enemy attacks"
         ],
-        "combination": "Can be combined with <b>Purified Bloodstone Helmet</b> and <b>Indestructible</b> near a <b>Holy Fountain</b> to create <b>Divinuas, Heaven's Vanguard</b>"
+        "combination": "Can be combined with <b>Purified Bloodstone Helmet</b> and <b>Indestructible</b> near a <b>Holy Fountain</b> to create <b>Divinuas, Heaven's Vanguard</b>",
+        "upgrades": "Divinuas, Heaven's Vanguard",
+        "pairswith": "Indestructible"
     },
     {
         "name": "Ferocity",
@@ -994,7 +1121,9 @@
             "Health: +75",
             "Item Passive - Carnage: Attacks Restore 15 health"
         ],
-        "combination": "Can be combined with <b>Doom Cleaver</b> and <b>Fireguard</b> near a <b>Crypt Altar</b> to create <b>Corpse Carnage</b>"
+        "combination": "Can be combined with <b>Doom Cleaver</b> and <b>Fireguard</b> near a <b>Crypt Altar</b> to create <b>Corpse Carnage</b>",
+        "upgrades": "Corpse Carnage",
+        "pairswith": "Fireguard"
     },
     {
         "name": "Fireguard",
@@ -1003,7 +1132,9 @@
             "Attack Damage: +15",
             "Strength: +9"
         ],
-        "combination": "Can be combined with <b>Heart of the Phoenix</b> to create <b>Gloves of the First Flame</b>"
+        "combination": "Can be combined with <b>Ferocity</b> and <b>Doom Cleaver</b> near a <b>Crypt Altar</b> to create <b>Corpse Carnage</b> </br> or with <b>Heart of the Phoenix</b> to create <b>Gloves of the First Flame</b>",
+        "upgrades": ["Corpse Carnage", "Gloves of the First Flame"],
+        "pairswith": ["Ferocity", "Heart of the Phoenix"]
     },
     {
         "name": "Flayer's Cursed Dagger",
@@ -1037,7 +1168,9 @@
             "Agility: +2",
             "Item Passive - Critical Strike: Gives a 10% chance on an attack to deal 150% damage"
         ],
-        "combination": "Can be combined with <b>Drakehide Shoulderpads</b> to create <b>Bounty Hunter's Garb</b>"
+        "combination": "Can be combined with <b>Drakehide Shoulderpads</b> to create <b>Bounty Hunter's Garb</b> </br> or with <b>Sword of Kings</b> to create <b>Relic Hunter</b>",
+        "upgrades": ["Bounty Hunter's Garb", "Relic Hunter"],
+        "pairswith": ["Drakehide Shoulderpads", "Sword of Kings"]
     },
     {
         "name": "Zephyr's Tome",
@@ -1048,7 +1181,9 @@
             "Item Activation - Hasten: Grants an allied target 25% Attack Speed for 15 seconds",
             "Item Passive - Intelligent: Activating Hasten refunds 100 Mana if the Bearer has atleast 75 Intelligence"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Viper Gloves</b> to create <b>Tempest Fist</b>",
+        "upgrades": "Tempest Fist",
+        "pairswith": "Viper Gloves"
     },
     {
         "name": "Warlord's Crown",
@@ -1058,7 +1193,9 @@
             "Attack Damage: +25",
             "Health: +250"
         ],
-        "combination": "Can be combined with a Horn of Bloodshed to create The Shieldmaiden"
+        "combination": "Can be combined with a Horn of Bloodshed to create The Shieldmaiden",
+        "upgrades": "The Shieldmaiden",
+        "pairswith": "Horn of Bloodshed"
     },
     {
         "name": "War Bell",
@@ -1068,7 +1205,9 @@
             "Health: +250",
             "Item Activation - Call to Arms: Reduces the armor of all nearby enemy units by 12 and increasing all allied units damage by 35% for 12 seconds"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Pristine Holy Essence</b> to create <b>Divine Bell</b>",
+        "upgrades": "Divine Bell",
+        "pairswith": "Pristine Holy Essence"
     },
     {
         "name": "Viper Gloves",
@@ -1076,7 +1215,9 @@
         "stats": [
             "Attack Speed: +55%"
         ],
-        "combination": "Can be combined with Zephyr's Tome to create Tempest Fist"
+        "combination": "Can be combined with Zephyr's Tome to create Tempest Fist",
+        "upgrades": "Tempest Fist",
+        "pairswith": "Zephyr's Tome"
     },
     {
         "name": "Vanguard Helmet",
@@ -1086,7 +1227,9 @@
             "Armor: +2",
             "Health Regeneration: +2"
         ],
-        "combination": "Can be combined with Pristine Holy Essence to create Angelic Faceguard"
+        "combination": "Can be combined with Pristine Holy Essence to create Angelic Faceguard",
+        "upgrades": "Angelic Faceguard",
+        "pairswith": "Pristine Holy Essence"
     },
     {
         "name": "Unholy Urn",
@@ -1096,7 +1239,9 @@
             "Mana: +150",
             "Item Passive - Unholy Urn: Nearby allied heroes restore 6% of their damage with attacks as health."
         ],
-        "combination": "Can be combined with a Bone Cudgel and an Amplification Orb near a Crypt Altar to create Cryptdweller's Thirst"
+        "combination": "Can be combined with a Bone Cudgel and an Amplification Orb near a Crypt Altar to create Cryptdweller's Thirst",
+        "upgrades": "Cryptdweller's Thirst",
+        "pairswith": "Amplification Orb"
     },
     {
         "name": "Trickster's Cloak",
@@ -1105,7 +1250,9 @@
             "Agility: +12",
             "Damage: -12"
         ],
-        "combination": "Can be combined with Jade Figurine to create Armor of Incision"
+        "combination": "Can be combined with Jade Figurine to create Armor of Incision",
+        "upgrades": "Armor of Incision",
+        "pairswith": "Jade Figurine"
     },
     {
         "name": "Sword of Kings",
@@ -1113,7 +1260,9 @@
         "stats": [
             "Attack Damage: +50"
         ],
-        "combination": "Can be combined with Gloves of Fury to create Relic Hunter"
+        "combination": "Can be combined with Gloves of Fury to create Relic Hunter",
+        "upgrades": "Relic Hunter",
+        "pairswith": "Gloves of Fury"
     },
     {
         "name": "Swiftstep",
@@ -1123,7 +1272,9 @@
             "Attack Speed: +10%",
             "Movement Speed: 50"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Elven Shortbow</b> to create <b>Swiftshot</b>",
+        "upgrades": "Swiftshot",
+        "pairswith": "Elven Shortbow"
     },
     {
         "name": "Swampstalker's Grasp",
@@ -1133,7 +1284,9 @@
             "Mana: +650",
             "Mana Regeneration: +5"
         ],
-        "combination": "Can be combined with Iaijutsu and Ghost Lotus near The Void to create Realm Edge"
+        "combination": "Can be combined with Iaijutsu and Ghost Lotus near The Void to create Realm Edge",
+        "upgrades": "Realm Edge",
+        "pairswith": "Ghost Lotus"
     },
     {
         "name": "Shellcore Rifle",
@@ -1142,7 +1295,9 @@
             "Attack Damage: +40",
             "Agility: +5"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Shellcore Hollow Points</b> to create <b>Shellcore Blaster</b>",
+        "upgrades": "Shellcore Blaster",
+        "pairswith": "Shellcore Hollow Points"
     },
     {
         "name": "Shellcore Hollow Points",
@@ -1152,7 +1307,9 @@
             "Agility: +4",
             "Intelligence: +4"
         ],
-        "combination": "Can be combined with a Shellcore Rifle to create a Shellcore Blaster"
+        "combination": "Can be combined with a Shellcore Rifle to create a Shellcore Blaster",
+        "upgrades": "Shellcore Blaster",
+        "pairswith": "Shellcore Rifle"
     },
     {
         "name": "Sacred Tome",
@@ -1162,7 +1319,9 @@
             "Mana Regeneration Rate: +75%",
             "Item Activation - Restore: Instantly heal an allied target for 1000 + (6 healing per point of Intelligence the wielder has)"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Archmage's Rune</b> to create <b>Equilibrium</b>",
+        "upgrades": "Equilibrium",
+        "pairswith": "Archmage's Rune"
     },
     {
         "name": "Royal Vestment",
@@ -1174,7 +1333,9 @@
             "Mana: +400",
             "Armor: +8"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Band of Life</b> to create <b>Dream Band</b>",
+        "upgrades": "Dream Band",
+        "pairswith": "Band of Life"
     },
     {
         "name": "Purified Bloodstone Helmet",
@@ -1193,7 +1354,9 @@
         "stats": [
             "All Attributes: +6"
         ],
-        "combination": "Can be combined with a War Bell to create a Divine Bell"
+        "combination": "Can be combined with <b>Vanguard Helmet</b> to create <b>Angelic Faceguard</b> </br> or with a <b>War Bell</b> to create a <b>Divine Bell</b>",
+        "upgrades": ["Angelic Faceguard", "Divine Bell"],
+        "pairswith": ["Vanguard Helmet", "War Bell"]
     },
     {
         "name": "Phoenix Talon",
@@ -1203,7 +1366,9 @@
             "Agility: +20",
             "Mana Regeneration: +4"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Phantom Piercer</b> and <b>Manticore Throwing Knives</b> near the <b>Heart of the Volcano</b> to create <b>Shard of the Sun</b>",
+        "upgrades": "Shard of the Sun",
+        "pairswith": "Phantom Piercer"
     },
     {
         "name": "Obsidian Core",
@@ -1232,7 +1397,9 @@
             "Health: +400",
             "Mana Regeneration Rate: +35%"
         ],
-        "combination": "Can be combined with an Oblivion Spike and a Scepter of Power near Nothing to create Kronos, Bane of the Cosmos"
+        "combination": "Can be combined with an Oblivion Spike and a Scepter of Power near Nothing to create Kronos, Bane of the Cosmos",
+        "upgrades": "Kronos, Bane of the Cosmos",
+        "pairswith": "Scepter of Power"
     },
     {
         "name": "Nature's Runestone",
@@ -1250,7 +1417,9 @@
         "stats": [
             "Intelligence: +35"
         ],
-        "combination": "Can be combined with a Greensprout to create Aneyashhek, Staff of Life"
+        "combination": "Can be combined with a Greensprout to create Aneyashhek, Staff of Life",
+        "upgrades": "Aneyashhek, Staff of Life",
+        "pairswith": "Greensprout"
     },
     {
         "name": "Mask of Fear",
@@ -1259,7 +1428,9 @@
             "All Attributes: +8",
             "Armor: +7"
         ],
-        "combination": "Can be combined with a Pendant of Balance to create Doom Visage"
+        "combination": "Can be combined with a Pendant of Balance to create Doom Visage",
+        "upgrades": "Doom Visage",
+        "pairswith": "Pendant of Balance"
     },
     {
         "name": "Marius' Energised Wand",
@@ -1291,7 +1462,9 @@
             "Strength: +2",
             "Agility: +2"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Holy Essence</b> to create <b>Divine Sabre</b>",
+        "upgrades": "Divine Sabre",
+        "pairswith": "Holy Essence"
     },
     {
         "name": "Lifebinder's Artifact",
@@ -1301,7 +1474,6 @@
             "Attack Damage: -8",
             "Attack Speed: -5%",
             "Item Activation - Preserve Life: Restore 150 health + (2 per point of Intelligence) to an allied target and yourself.",
-
             "Can be cast on yourself for double the effect"
         ],
         "combination": ""
@@ -1312,7 +1484,9 @@
         "stats": [
             "Armor: +5"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Battle Hammer</b> to create <b>Juggernaut's Crusher</b>",
+        "upgrades": "Juggernaut's Crusher",
+        "pairswith": "Battle Hammer"
     },
     {
         "name": "Jade Figurine",
@@ -1322,7 +1496,9 @@
             "Intelligence: +3",
             "Agility: +3"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Trickster's Cloak</b> to create <b>Armor of Incision</b>",
+        "upgrades": "Armor of Incision",
+        "pairswith": "Trickster's Cloak"
     },
     {
         "name": "Indestructible",
@@ -1331,7 +1507,9 @@
             "Health: +500",
             "Armor: +14"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Enigma</b> and <b>Purified Bloodstone Helmet</b> near a <b>Holy Fountain</b> to create <b>Divinuas, Heaven's Vanguard</b>",
+        "upgrades": "Divinuas, Heaven's Vanguard",
+        "pairswith": "Enigma"
     },
     {
         "name": "Iaijutsu",
@@ -1351,7 +1529,9 @@
             "Armor: +17",
             "Item Passive - Hungering Bulwark: Attacks against the wielder has a 25% chance to reflect 100 damage + (1% of the Wielder's Maximum Health) to the attacker."
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Legionnaire's Buckler</b> to create <b>Insatiable Nemesis</b>",
+        "upgrades": "Insatiable Nemesis",
+        "pairswith": "Legionnaire's Buckler"
     },
     {
         "name": "Huge Glaive",
@@ -1373,7 +1553,9 @@
             "Mana Regeneration: +3",
             "Item Activation - Taunt: Forces the closest 10 enemies to attack this target."
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Warlord's Crown</b> to create <b>The Shieldmaiden</b>",
+        "upgrades": "The Shieldmaiden",
+        "pairswith": "Warlord's Crown"
     },
     {
         "name": "Hero's Bottomless Mana Potion",
@@ -1383,7 +1565,9 @@
             "Health Regeneration: +3",
             "Item Activation: Restores 600 Mana (30 Seconds cooldown)"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Greensprout</b> to create <b>Champion's Bottomless Mana Potion</b>",
+        "upgrades": "Champion's Bottomless Mana Potion",
+        "pairswith": "Greensprout"
     },
     {
         "name": "Hero's Bottomless Healing Potion",
@@ -1393,7 +1577,9 @@
             "Mana Regeneration: +3",
             "Item Activation: Heals for 1000 Health (30 Seconds cooldown)"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Pure Bloodstone Gem</b> to create <b>Champion's Bottomless Healing Potion</b>",
+        "upgrades": "Champion's Bottomless Healing Potion",
+        "pairswith": "Pure Bloodstone Gem"
     },
     {
         "name": "Hallowed Skull",
@@ -1402,7 +1588,9 @@
             "Intelligence: +100",
             "Mana: -1000"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Crystalized Heart</b> to create <b>Sight of Beyond</b>",
+        "upgrades": "Sight of Beyond",
+        "pairswith": "Crystalized Heart"
     },
     {
         "name": "Greater Bottomless Mana Potion",
@@ -1412,7 +1600,9 @@
             "Health Regeneration: +1",
             "Item Activation: Restores 300 Mana (30 Second cooldown)"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Spellbinder's Rod</b> to create <b>Hero's Bottomless Mana Potion</b>",
+        "upgrades": "Hero's Bottomless Mana Potion",
+        "pairswith": "Spellbinder's Rod"
     },
     {
         "name": "Greater Bottomless Healing Potion",
@@ -1432,5 +1622,32 @@
             "Armor: +4"
         ],
         "combination": ""
+    },
+    {
+        "name": "Armor Splitter",
+        "rarity": "Tier 1 Unique Epic",
+        "stats": [
+            "Attack Damage: +10",
+            "All Attributes: +2",
+            "Attack Speed: +15%",
+            "Item Passive - Shred Armor: Attacks reduce the armor of the target by 2 for 5 seconds"
+        ],
+        "combination": "Can be combined with <b>Heavy Lance</b> to create <b>Obsidian Greataxe</b>",
+        "upgrades": "Obsidian Greataxe",
+        "pairswith": "Heavy Lance",
+        "upgradesfrom": ["Swift Blade", "Battle Hammer"]
+    },
+    {
+        "name": "Juggernaut's Crusher",
+        "rarity": "Tier 1 Unique Legendary",
+        "stats": [
+            "Attack Damage: +5",
+            "Intelligence: +3",
+            "Strength: +3",
+            "Armor: +5",
+            "Item Passive - Crush: Attacks deal 8 bonus damage for each point of armor the wielder has"
+        ],
+        "combination": "",
+        "upgradesfrom": ["Battle Hammer", "Knight's Medallion"]
     }
 ]
