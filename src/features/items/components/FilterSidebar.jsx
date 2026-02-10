@@ -1,13 +1,19 @@
 import { useState } from 'react';
 import './FilterSidebar.css';
 
+// This component provides filtering options for items based on rarity, tier, and stats.
+// onFilterChange -> function to tell the parent which filters are currently selected
+// isVisible -> whether the sidebar should be shown (for mobile view)
+// onClose -> function to close the sidebar (for mobile view)
 export default function FilterSidebar({ onFilterChange, isVisible, onClose }) {
+  // States to keep track of selected rarities, tiers, and stats
   const [selectedRarities, setSelectedRarities] = useState([]);
   const [selectedTiers, setSelectedTiers] = useState([]);
   const [selectedStats, setSelectedStats] = useState([]);
 
-  const rarities = ['Uncommon', 'Rare', 'Epic', 'Legendary'];
-  const tiers = ['Tier 1', 'Tier 2', 'Tier 3', 'Tier 4', 'Tier 5'];
+  // Available filter options
+  const rarities = ['Uncommon', 'Rare', 'Epic', 'Legendary', 'Relic', 'Divine'];
+  const tiers = ['Tier 1', 'Tier 2', 'Tier 3', 'Tier 4'];
   const stats = [
     'Agility',
     'Intelligence',
@@ -18,14 +24,19 @@ export default function FilterSidebar({ onFilterChange, isVisible, onClose }) {
     'Health Regeneration',
     'Attack Damage',
     'Attack Speed',
-    'Armor'
+    'Armor',
+    'Item Passive',
+    'Passive Orb Effect',
+    'Item Activation'
   ];
 
+  // Handler for rarity change
   const handleRarityChange = (rarity) => {
     const newRarities = selectedRarities.includes(rarity)
       ? selectedRarities.filter(r => r !== rarity)
       : [...selectedRarities, rarity];
     
+    // Update the selected rarities state and notify the parent component of the change
     setSelectedRarities(newRarities);
     onFilterChange({
       rarities: newRarities,
@@ -34,6 +45,7 @@ export default function FilterSidebar({ onFilterChange, isVisible, onClose }) {
     });
   };
 
+  // Handler for tier change
   const handleTierChange = (tier) => {
     const newTiers = selectedTiers.includes(tier)
       ? selectedTiers.filter(t => t !== tier)
@@ -47,6 +59,7 @@ export default function FilterSidebar({ onFilterChange, isVisible, onClose }) {
     });
   };
 
+  // Handler for stat change
   const handleStatChange = (stat) => {
     const newStats = selectedStats.includes(stat)
       ? selectedStats.filter(s => s !== stat)
@@ -60,6 +73,7 @@ export default function FilterSidebar({ onFilterChange, isVisible, onClose }) {
     });
   };
 
+  // Function to clear all filters
   const clearAllFilters = () => {
     setSelectedRarities([]);
     setSelectedTiers([]);
@@ -67,8 +81,10 @@ export default function FilterSidebar({ onFilterChange, isVisible, onClose }) {
     onFilterChange({ rarities: [], tiers: [], stats: [] });
   };
 
+  // Check if there are any active filters to conditionally show the "Clear All" button
   const hasActiveFilters = selectedRarities.length > 0 || selectedTiers.length > 0 || selectedStats.length > 0;
 
+  // JSX for the sidebar UI
   return (
     <aside className={`filter-sidebar ${isVisible ? 'visible' : ''}`}>
       <div className="filter-header">

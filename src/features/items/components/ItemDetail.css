@@ -88,11 +88,6 @@
   background: linear-gradient(135deg, rgba(40, 167, 69, 0.1), rgba(40, 167, 69, 0.05));
 }
 
-.selected-item-section.rarity-common {
-  border: 2px solid #6c757d;
-  background: linear-gradient(135deg, rgba(108, 117, 125, 0.1), rgba(108, 117, 125, 0.05));
-}
-
 .selected-item-section.rarity-rare {
   border: 2px solid #007bff;
   background: linear-gradient(135deg, rgba(0, 123, 255, 0.1), rgba(0, 123, 255, 0.05));
@@ -104,6 +99,16 @@
 }
 
 .selected-item-section.rarity-legendary {
+  border: 2px solid #ff8c00;
+  background: linear-gradient(135deg, rgba(255, 140, 0, 0.1), rgba(255, 140, 0, 0.05));
+}
+
+.selected-item-section.rarity-relic {
+  border: 2px solid #00CED1;
+  background: linear-gradient(135deg, rgba(0, 206, 209, 0.1), rgba(0, 206, 209, 0.05));
+}
+
+.selected-item-section.rarity-divine {
   border: 2px solid #ff6b6b;
   background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(255, 107, 107, 0.05));
 }
@@ -132,22 +137,32 @@
 
 .selected-item-section.rarity-uncommon .selected-item-image {
   border-color: #28a745;
-}
-
-.selected-item-section.rarity-common .selected-item-image {
-  border-color: #6c757d;
+  box-shadow: 0 0 15px rgba(40, 167, 69, 0.5);
 }
 
 .selected-item-section.rarity-rare .selected-item-image {
   border-color: #007bff;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
 }
 
 .selected-item-section.rarity-epic .selected-item-image {
   border-color: #9b59b6;
+  box-shadow: 0 0 15px rgba(155, 89, 182, 0.5);
 }
 
 .selected-item-section.rarity-legendary .selected-item-image {
+  border-color: #ff8c00;
+  box-shadow: 0 0 15px rgba(255, 140, 0, 0.5);
+}
+
+.selected-item-section.rarity-relic .selected-item-image {
+  border-color: #00CED1;
+  box-shadow: 0 0 15px rgba(0, 206, 209, 0.5);
+}
+
+.selected-item-section.rarity-divine .selected-item-image {
   border-color: #ff6b6b;
+  box-shadow: 0 0 15px rgba(255, 107, 107, 0.5);
 }
 
 .selected-item-image img {
@@ -232,10 +247,6 @@
   border-color: #28a745;
 }
 
-.upgrade-item.rarity-common {
-  border-color: #6c757d;
-}
-
 .upgrade-item.rarity-rare {
   border-color: #007bff;
 }
@@ -245,6 +256,14 @@
 }
 
 .upgrade-item.rarity-legendary {
+  border-color: #ff8c00;
+}
+
+.upgrade-item.rarity-relic {
+  border-color: #00CED1;
+}
+
+.upgrade-item.rarity-divine {
   border-color: #ff6b6b;
 }
 
@@ -271,22 +290,32 @@
 
 .upgrade-item.rarity-uncommon img {
   border-color: #28a745;
-}
-
-.upgrade-item.rarity-common img {
-  border-color: #6c757d;
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.6);
 }
 
 .upgrade-item.rarity-rare img {
   border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
 }
 
 .upgrade-item.rarity-epic img {
   border-color: #9b59b6;
+  box-shadow: 0 0 8px rgba(155, 89, 182, 0.6);
 }
 
 .upgrade-item.rarity-legendary img {
+  border-color: #ff8c00;
+  box-shadow: 0 0 8px rgba(255, 140, 0, 0.6);
+}
+
+.upgrade-item.rarity-relic img {
+  border-color: #00CED1;
+  box-shadow: 0 0 8px rgba(0, 206, 209, 0.6);
+}
+
+.upgrade-item.rarity-divine img {
   border-color: #ff6b6b;
+  box-shadow: 0 0 8px rgba(255, 107, 107, 0.6);
 }
 
 .upgrade-name {
@@ -322,10 +351,6 @@
   border-color: #28a745;
 }
 
-.component-item.rarity-common {
-  border-color: #6c757d;
-}
-
 .component-item.rarity-rare {
   border-color: #007bff;
 }
@@ -335,6 +360,14 @@
 }
 
 .component-item.rarity-legendary {
+  border-color: #ff8c00;
+}
+
+.component-item.rarity-relic {
+  border-color: #00CED1;
+}
+
+.component-item.rarity-divine {
   border-color: #ff6b6b;
 }
 
@@ -361,22 +394,32 @@
 
 .component-item.rarity-uncommon img {
   border-color: #28a745;
-}
-
-.component-item.rarity-common img {
-  border-color: #6c757d;
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.6);
 }
 
 .component-item.rarity-rare img {
   border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
 }
 
 .component-item.rarity-epic img {
   border-color: #9b59b6;
+  box-shadow: 0 0 8px rgba(155, 89, 182, 0.6);
 }
 
 .component-item.rarity-legendary img {
+  border-color: #ff8c00;
+  box-shadow: 0 0 8px rgba(255, 140, 0, 0.6);
+}
+
+.component-item.rarity-relic img {
+  border-color: #00CED1;
+  box-shadow: 0 0 8px rgba(0, 206, 209, 0.6);
+}
+
+.component-item.rarity-divine img {
   border-color: #ff6b6b;
+  box-shadow: 0 0 8px rgba(255, 107, 107, 0.6);
 }
 
 .component-name {
@@ -412,6 +455,16 @@
 }
 
 .item-rarity.legendary {
+  background: linear-gradient(135deg, #ff8c00, #ff6500);
+  color: #fff;
+}
+
+.item-rarity.relic {
+  background: linear-gradient(135deg, #00CED1, #20B2AA);
+  color: #fff;
+}
+
+.item-rarity.divine {
   background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
   color: #fff;
 }

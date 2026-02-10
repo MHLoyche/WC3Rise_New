@@ -70,7 +70,7 @@ export default function Items() {
 
     // Stats filter
     if (filters.stats.length > 0) {
-      const matchesStat = filters.stats.some(stat =>
+      const matchesStat = filters.stats.every(stat =>
         item.stats.some(itemStat => itemStat.includes(stat))
       );
       if (!matchesStat) return false;

@@ -83,6 +83,8 @@ export default function ItemDetail({ item, allItems, onItemClick, onClose }) {
     if (rarity.includes('Uncommon')) return 'uncommon';
     if (rarity.includes('Rare')) return 'rare';
     if (rarity.includes('Epic')) return 'epic';
+    if (rarity.includes('Relic')) return 'relic';
+    if (rarity.includes('Divine')) return 'divine';
     if (rarity.includes('Legendary')) return 'legendary';
     return '';
   };

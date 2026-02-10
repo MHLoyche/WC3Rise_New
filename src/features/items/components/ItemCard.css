@@ -97,6 +97,16 @@
 }
 
 .item-rarity.legendary {
+  background: linear-gradient(135deg, #ff8c00, #ff6500);
+  color: #fff;
+}
+
+.item-rarity.relic {
+  background: linear-gradient(135deg, #00CED1, #20B2AA);
+  color: #fff;
+}
+
+.item-rarity.divine {
   background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
   color: #fff;
 }

@@ -13,6 +13,8 @@ export default function ItemCard({ item, onClick, isSelected }) {
     if (rarity.includes('Uncommon')) return 'uncommon';
     if (rarity.includes('Rare')) return 'rare';
     if (rarity.includes('Epic')) return 'epic';
+    if (rarity.includes('Relic')) return 'relic';
+    if (rarity.includes('Divine')) return 'divine';
     if (rarity.includes('Legendary')) return 'legendary';
     return '';
   };
