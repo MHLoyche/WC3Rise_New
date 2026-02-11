@@ -29,20 +29,43 @@ export default function ItemDetail({ item, allItems, onItemClick, onClose }) {
 
     // Find what items combine to create THIS item (its components)
     const foundComponents = [];
-    const baseItems = allItems.filter(other => 
-        other.upgrades && (Array.isArray(other.upgrades) ? other.upgrades.includes(item.name) : other.upgrades === item.name)
-    );
+    
+    // First, check if this item has an "upgradesfrom" field (direct components list)
+    if (item.upgradesfrom) {
+        const componentNames = Array.isArray(item.upgradesfrom) ? item.upgradesfrom : [item.upgradesfrom];
+        componentNames.forEach(compName => {
+            const compItem = allItems.find(i => i.name === compName);
+            if (compItem && !foundComponents.some(c => c.name === compItem.name)) {
+                foundComponents.push(compItem);
+            }
+        });
+    } else {
+        // Fall back to the old logic: find items that upgrade into this one
+        const baseItems = allItems.filter(other => 
+            other.upgrades && (Array.isArray(other.upgrades) ? other.upgrades.includes(item.name) : other.upgrades === item.name)
+        );
 
-    if (baseItems.length > 0) {
-        // Now, for each base item, find its corresponding pair
-        baseItems.forEach(baseItem => {
-            if (Array.isArray(baseItem.upgrades)) {
-                const upgradeIndex = baseItem.upgrades.indexOf(item.name);
-                if (upgradeIndex !== -1) {
-                    const pairItemName = Array.isArray(baseItem.pairswith) ? baseItem.pairswith[upgradeIndex] : baseItem.pairswith;
-                    const pairItem = allItems.find(i => i.name === pairItemName);
+        if (baseItems.length > 0) {
+            // Now, for each base item, find its corresponding pair
+            baseItems.forEach(baseItem => {
+                if (Array.isArray(baseItem.upgrades)) {
+                    const upgradeIndex = baseItem.upgrades.indexOf(item.name);
+                    if (upgradeIndex !== -1) {
+                        const pairItemName = Array.isArray(baseItem.pairswith) ? baseItem.pairswith[upgradeIndex] : baseItem.pairswith;
+                        const pairItem = allItems.find(i => i.name === pairItemName);
+                        if (pairItem) {
+                            // Check for duplicates before adding
+                            if (!foundComponents.some(c => c.name === baseItem.name)) {
+                                foundComponents.push(baseItem);
+                            }
+                            if (!foundComponents.some(c => c.name === pairItem.name)) {
+                                foundComponents.push(pairItem);
+                            }
+                        }
+                    }
+                } else { // Single upgrade path
+                    const pairItem = allItems.find(i => i.name === baseItem.pairswith);
                     if (pairItem) {
-                        // Check for duplicates before adding
                         if (!foundComponents.some(c => c.name === baseItem.name)) {
                             foundComponents.push(baseItem);
                         }
@@ -51,18 +74,8 @@ export default function ItemDetail({ item, allItems, onItemClick, onClose }) {
                         }
                     }
                 }
-            } else { // Single upgrade path
-                const pairItem = allItems.find(i => i.name === baseItem.pairswith);
-                if (pairItem) {
-                    if (!foundComponents.some(c => c.name === baseItem.name)) {
-                        foundComponents.push(baseItem);
-                    }
-                    if (!foundComponents.some(c => c.name === pairItem.name)) {
-                        foundComponents.push(pairItem);
-                    }
-                }
-            }
-        });
+            });
+        }
     }
     setComponents(foundComponents);
 

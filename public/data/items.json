@@ -362,9 +362,9 @@
             "Health Regeneration: +2",
             "Mana Regeneration: +1"
         ],
-        "combination": "Can be combined with <b>Bottomless Healing Potion</b> to create <b>Greater Bottomless Healing Potion</b>",
-        "upgrades": "Greater Bottomless Healing Potion",
-        "pairswith": "Bottomless Healing Potion"
+        "combination": "Can be combined with <b>Bottomless Healing Potion</b> to create <b>Greater Bottomless Healing Potion</b><br>or with <b>Book of Vitality</b> to create <b>Book of Rebirth</b>",
+        "upgrades": ["Greater Bottomless Healing Potion", "Book of Rebirth"],
+        "pairswith": ["Bottomless Healing Potion", "Book of Vitality"]
     },
     {
         "name": "Lion's Aegis",
@@ -406,9 +406,9 @@
             "Mana: +500",
             "Mana Regeneration: +1"
         ],
-        "combination": "Can be combined with <b>Longsword</b> to create <b>Mana Edge</b> </br> or with <b>Mana-Infused Plate Shoulders</b> to create <b>Zealous</b>",
+        "combination": "Can be combined with <b>Longsword</b> to create <b>Mana Edge</b> </br> or with <b>Mana Infused Plate Shoulders</b> to create <b>Zealous</b>",
         "upgrades": ["Mana Edge", "Zealous"],
-        "pairswith": ["Longsword", "Mana-Infused Plate Shoulders"]
+        "pairswith": ["Longsword", "Mana Infused Plate Shoulders"]
     },
     {
         "name": "Marauder's Hammer",
@@ -419,7 +419,7 @@
         ],
         "combination": "Can be combined with <b>Tempest Fist</b> and <b>Essence of Lightning</b> near a Storming Peak to create <b>Stormbringer, Unending Fury</b>",
         "upgrades": "Stormbringer, Unending Fury",
-        "pairswith": "Essence of Lightning"
+        "pairswith": ["Tempest Fist", "Essence of Lightning"]
     },
     {
         "name": "Omensteel Axe",
@@ -447,9 +447,9 @@
         "stats": [
             "All Attributes: +10"
         ],
-        "combination": "Can be combined with <b>Oblivion Spike</b> to create <b>Gaze of the Abyss</b> </br> or with <b>Steelheart Shield</b> to create <b>Enigma</b> </br> or with <b>Mask of Fear</b> to create <b>Doom Visage</b>",
-        "upgrades": ["Gaze of the Abyss", "Enigma", "Doom Visage"],
-        "pairswith": ["Oblivion Spike", "Steelheart Shield", "Mask of Fear"]
+        "combination": "Can be combined with <b>Oblivion Spike</b> to create <b>Gaze of the Abyss</b> <br>or with <b>Steelheart Shield</b> to create <b>Enigma</b> <br> or with <b>Mask of Fear</b> to create <b>Doom Visage</b><br>or with <b>Book of Rebirth</b> to create <b>Codex of Eternal Life</b>",
+        "upgrades": ["Gaze of the Abyss", "Enigma", "Doom Visage", "Codex of Eternal Life"],
+        "pairswith": ["Oblivion Spike", "Steelheart Shield", "Mask of Fear", "Book of Rebirth"]
     },
     {
         "name": "Plate Shoulders",
@@ -553,7 +553,10 @@
             "Armor: +2",
             "Item Passive - Protect: Increased the armor of nearby allies by 1"
         ],
-        "combination": ""
+        "combination": "Can be combined with a <b>Spectral Bulwark</b> to create <b>The Wall</b>",
+        "upgrades": "The Wall",
+        "pairswith": "Spectral Bulwark",
+        "upgradesfrom": ["Plate Shield", "Holy Essence"]
     },
     {
         "name": "Shimmering Ring",
@@ -759,7 +762,9 @@
             "Health Regeneration: +6",
             "Item Activation: Restores 1200 Mana"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Ring of Power</b> to create <b>Mana Core</b>",
+        "upgrades": "Mana Core",
+        "pairswith": "Ring of Power"
     },
     {
         "name": "Divine Bell",
@@ -792,7 +797,9 @@
             "Item Passive - Equilibrium Aura: Grants nearby allied units 15 Mana Regeneration",
             "Item Activation - Restore: Instantly heal an allied target for 1000 + (6 healing per point of Intelligence the wielder has)"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Mana Core</b> and <b>Pristine Holy Essence</b> near a <b>Holy Fountain</b> to create <b>The Divine Hand</b>",
+        "upgrades": "The Divine Hand",
+        "pairswith": ["Mana Core", "Pristine Holy Essence"]
     },
     {
         "name": "Essence of Lightning",
@@ -816,9 +823,9 @@
             "Mana Regeneration Rate: +50%",
             "Health: +250"
         ],
-        "combination": "Can be combined with <b>Mana Edge</b> to create <b>Crystal of Unleashed Power</b>",
-        "upgrades": "Crystal of Unleashed Power",
-        "pairswith": "Mana Edge"
+        "combination": "Can be combined with <b>Mana Edge</b> to create <b>Crystal of Unleashed Power</b><br> or with <b>Staff of Brilliance</b> and <b>Heart of the Phoenix</b> to create <b>The Flame Serpent</b>",
+        "upgrades": ["Crystal of Unleashed Power", "The Flame Serpent"],
+        "pairswith": ["Mana Edge", "Staff of Brilliance", "Heart of the Phoenix"]
     },
     {
         "name": "Heart of the Goddess",
@@ -974,7 +981,7 @@
             "Strength: +45",
             "Health: +600",
             "Armor: +7",
-            "Mana Regeneration +5",
+            "Mana Regeneration: +5",
             "Item Activation - Taunt: Forces the closest 10 enemies to attack this target.",
             "Item Passive - Valkyrie's Chosen: For each enemy taunted restore 2% maximum health."
         ],
@@ -1041,7 +1048,9 @@
             "Attack Damage: +50",
             "Health: +600"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Beast Within</b> and <b>Obsidian Core</b> near a <b>Reaper Obelisk</b> to create <b>Amaroq's Claw</b>",
+        "upgrades": "Amaroq's Claw",
+        "pairswith": ["Beast Within", "Obsidian Core"]
     },
     {
         "name": "Crown of Order",
@@ -1092,7 +1101,7 @@
             "Health: +350",
             "Armor: +3",
             "Health Regeneration: +3",
-            "Mana Regeneration +2",
+            "Mana Regeneration: +2",
             "Item Passive - Spellblock: Take 32% Reduced Damage from Abilities."
         ],
         "combination": "Can be combined with <b>Champion's Bottomless Healing Potion</b> to create <b>Embrace of the Void</b>",
@@ -1123,9 +1132,9 @@
             "Health: +75",
             "Item Passive - Carnage: Attacks Restore 15 health"
         ],
-        "combination": "Can be combined with <b>Doom Cleaver</b> and <b>Fireguard</b> near a <b>Crypt Altar</b> to create <b>Corpse Carnage</b>",
-        "upgrades": "Corpse Carnage",
-        "pairswith": "Fireguard"
+        "combination": "Can be combined with <b>Doom Cleaver</b> and <b>Fireguard</b> near a <b>Crypt Altar</b> to create <b>Corpse Carnage</b><br>or with <b>The Bonesaw</b> to create <b>Beast Within</b>",
+        "upgrades": ["Corpse Carnage", "Beast Within"],
+        "pairswith": ["Fireguard", "The Bonesaw"]
     },
     {
         "name": "Fireguard",
@@ -1262,9 +1271,9 @@
         "stats": [
             "Attack Damage: +50"
         ],
-        "combination": "Can be combined with <b>Gloves of Fury</b> to create <b>Relic Hunter</b>",
-        "upgrades": "Relic Hunter",
-        "pairswith": "Gloves of Fury"
+        "combination": "Can be combined with <b>Gloves of Fury</b> to create <b>Relic Hunter</b><br>or with <b>Divine Sabre</b> and <b>Pristine Holy Essence</b> near a <b>Holy Fountain</b> to create <b>Interfector Malorum</b>",
+        "upgrades": ["Relic Hunter", "Interfector Malorum"],
+        "pairswith": ["Gloves of Fury", "Divine Sabre", "Pristine Holy Essence"]
     },
     {
         "name": "Swiftstep",
@@ -1356,9 +1365,9 @@
         "stats": [
             "All Attributes: +6"
         ],
-        "combination": "Can be combined with <b>Vanguard Helmet</b> to create <b>Angelic Faceguard</b> </br> or with a <b>War Bell</b> to create a <b>Divine Bell</b>",
-        "upgrades": ["Angelic Faceguard", "Divine Bell"],
-        "pairswith": ["Vanguard Helmet", "War Bell"]
+        "combination": "Can be combined with <b>Vanguard Helmet</b> to create <b>Angelic Faceguard</b> </br> or with a <b>War Bell</b> to create a <b>Divine Bell</b><br> or with <b>Angelic Faceguard</b> and <b>Zealous</b> near a <b>Holy Fountain</b> to create <b>Sol, Light's Birthright</b><br> or with <b>Mana Core</b> and <b>Equilibrium</b> near a <b>Holy Fountain</b> to create <b>The Divine Hand</b>",
+        "upgrades": ["Angelic Faceguard", "Divine Bell", "Sol, Light's Birthright", "The Divine Hand"],
+        "pairswith": ["Vanguard Helmet", "War Bell", "Angelic Faceguard", "Zealous", "Mana Core", "Equilibrium"]
     },
     {
         "name": "Phoenix Talon",
@@ -1368,9 +1377,9 @@
             "Agility: +20",
             "Mana Regeneration: +4"
         ],
-        "combination": "Can be combined with <b>Phantom Piercer</b> and <b>Manticore Throwing Knives</b> near the <b>Heart of the Volcano</b> to create <b>Shard of the Sun</b>",
-        "upgrades": "Shard of the Sun",
-        "pairswith": "Phantom Piercer"
+        "combination": "Can be combined with <b>Phantom Piercer</b> and <b>Manticore Throwing Knives</b> near the <b>Heart of the Volcano</b> to create <b>Shard of the Sun</b><br>or with <b>Crystal of Unleashed Power</b> and <b>Moonreaver</b> near a <b>Storming Peak</b> to create <b>Moonsplitter, Infinite Eclipse</b>",
+        "upgrades": ["Shard of the Sun", "Moonsplitter, Infinite Eclipse"],
+        "pairswith": ["Phantom Piercer", "Manticore Throwing Knives", "Crystal of Unleashed Power", "Moonreaver"]
     },
     {
         "name": "Obsidian Core",
@@ -1379,7 +1388,9 @@
             "All Attributes: +23",
             "Health: -460"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Crimson Guard</b> and <b>Beast Within</b> near a <b>Reaper Obelisk</b> to create <b>Amaroq's Claw</b><br>or with <b>The Impaler</b> and <b>Liquid Bloodstone</b> near a <b>Reaper Obelisk</b> to create <b>Soulreaper</b>",
+        "upgrades": ["Amaroq's Claw", "Soulreaper"],
+        "pairswith": ["Crimson Guard", "Beast Within", "The Impaler", "Liquid Bloodstone"]
     },
     {
         "name": "Oblivion Spike",
@@ -1389,7 +1400,9 @@
             "Mana Regeneration: +3",
             "Item Activation - Pierce Soul: Instantly deal 400 damage + (3 damage per point of Intelligence) to an enemy target and heal the wearer for the same amount"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Pendant of Balance</b> to create <b>Gaze of the Abyss</b><br>or with <b>Nebula Key</b> and <b>Scepter of Power</b> near <b>Nothing</b> to create <b>Kronos, Bane of the Cosmos</b>",
+        "upgrades": ["Gaze of the Abyss", "Kronos, Bane of the Cosmos"],
+        "pairswith": ["Pendant of Balance", "Nebula Key", "Scepter of Power"]
     },
     {
         "name": "Nebula Key",
@@ -1401,7 +1414,7 @@
         ],
         "combination": "Can be combined with an <b>Oblivion Spike</b> and a <b>Scepter of Power</b> near <b>Nothing</b> to create <b>Kronos, Bane of the Cosmos</b>",
         "upgrades": "Kronos, Bane of the Cosmos",
-        "pairswith": "Scepter of Power"
+        "pairswith": ["Oblivion Spike", "Scepter of Power"]
     },
     {
         "name": "Nature's Runestone",
@@ -1419,9 +1432,9 @@
         "stats": [
             "Intelligence: +35"
         ],
-        "combination": "Can be combined with a <b>Greensprout</b> to create <b>Aneyashhek, Staff of Life</b>",
-        "upgrades": "Aneyashhek, Staff of Life",
-        "pairswith": "Greensprout"
+        "combination": "Can be combined with a <b>Greensprout</b> to create <b>Aneyashhek, Staff of Life</b><br>or with <b>Phoenix Talon</b> and <b>Crystal of Unleashed Power</b> near a <b>Storming Peak</b> to create <b>Moonsplitter, Infinite Eclipse</b>",
+        "upgrades": ["Aneyashhek, Staff of Life", "Moonsplitter, Infinite Eclipse"],
+        "pairswith": ["Greensprout", "Phoenix Talon", "Crystal of Unleashed Power"]
     },
     {
         "name": "Mask of Fear",
@@ -1453,7 +1466,9 @@
             "Mana Regeneration: +1.5",
             "Passive Orb Effect - Lifesteal: Attacks restore 15% of the damage dealt as health"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Obsidian Core</b> and <b>The Impaler</b> near a <b>Reaper Obelisk</b> to create <b>Soulreaper</b>",
+        "upgrades": "Soulreaper",
+        "pairswith": ["Obsidian Core", "The Impaler"]
     },
     {
         "name": "Lightsteel Sabre",
@@ -1521,7 +1536,9 @@
             "Attack Damage: +50",
             "Attack Speed: +10%"
         ],
-        "combination": ""
+        "combination": "Can be combined with <b>Swampstalker's Grasp</b> and <b>Ghost Lotus</b> near The Void to create <b>Realm Edge</b>",
+        "upgrades": "Realm Edge",
+        "pairswith": ["Swampstalker's Grasp", "Ghost Lotus"]
     },
     {
         "name": "Hungering Bulwark",
@@ -1634,9 +1651,9 @@
             "Attack Speed: +15%",
             "Item Passive - Shred Armor: Attacks reduce the armor of the target by 2 for 5 seconds"
         ],
-        "combination": "Can be combined with <b>Heavy Lance</b> to create <b>Obsidian Greataxe</b>",
-        "upgrades": "Obsidian Greataxe",
-        "pairswith": "Heavy Lance",
+        "combination": "Can be combined with <b>Heavy Lance</b> to create <b>Obsidian Greataxe</b><br>or with <b>Serrated Arrows</b> to create <b>Obsidian Bow</b>",
+        "upgrades": ["Obsidian Greataxe", "Obsidian Bow"],
+        "pairswith": ["Heavy Lance", "Serrated Arrows"],
         "upgradesfrom": ["Swift Blade", "Battle Hammer"]
     },
     {
@@ -1711,6 +1728,9 @@
             "Item Activation - Restore Mana: Restores 150 mana",
             "Item Passive - Mana Infusion: Whenever the wielder is attacked, it restores 3 mana"
         ],
+        "combination": "Can be combined with <b>Mana Trinket</b> to create <b>Zealous</b>",
+        "upgrades": "Zealous", 
+        "pairswith": "Mana Trinket",
         "upgradesfrom": ["Bottomless Mana Potion", "Plate Shoulders"]
     },
     {
@@ -1718,7 +1738,7 @@
         "rarity": "Tier 1 Unique Legendary",
         "stats": [
             "Intelligence: +15",
-            "Mana Regeneration +2",
+            "Mana Regeneration: +2",
             "Health: +100",
             "Item Passive - Recharge: After using an ability that spends mana, the wielder restored 30 mana."
         ],
@@ -1841,7 +1861,11 @@
             "Attack Damage: +25",
             "Mana: +500",
             "Item Passive - Energize: Attacks have a 10% chance to restore 8% mana"
-        ]
+        ],
+        "combination": "Can be combined with <b>Fan of Endless Flow</b> to create <b>Crystal of Unleashed Power</b>",
+        "upgrades": "Crystal of Unleashed Power",
+        "pairswith": "Fan of Endless Flow",
+        "upgradesfrom": ["Longsword", "Mana Trinket"]
     },
     {
         "name": "Serrated Arrows",
@@ -1852,9 +1876,9 @@
             "Attack Damage: +26",
             "Item Passive - Ranged Ammunition: Grants a 15% bonus to attack damage for ranged heroes"
         ],
-        "combination": "Can be combined with <b>Armor Splitter</b> to create <b>Obsidian Bow</b>",
-        "upgrades": "Obsidian Bow",
-        "pairswith": "Armor Splitter",
+        "combination": "Can be combined with <b>Armor Splitter</b> to create <b>Obsidian Bow</b><br>or with <b>Swiftshot</b> to create <b>Phantom Piercer</b>",
+        "upgrades": ["Obsidian Bow", "Phantom Piercer"],
+        "pairswith": ["Armor Splitter", "Swiftshot"],
         "upgradesfrom": ["Longsword", "Runed Arrowhead"]
     },
     {
@@ -1869,6 +1893,9 @@
             "Item Activation - Restore Mana: Restores 150 mana",
             "Item Passive - Zealous: Being struck has a 10% chance to restore 100 mana"
         ],
+        "combination": "Can be combined with <b>Angelic Faceguard</b> and <b>Pristine Holy Essence</b> near a <b>Holy Fountain</b> to create <b>Sol, Light's Birthright</b>",
+        "upgrades": "Sol, Light's Birthright",
+        "pairswith": ["Angelic Faceguard", "Pristine Holy Essence"],
         "upgradesfrom": ["Mana Infused Plate Shoulders", "Mana trinket"]
     },
     {
@@ -1893,22 +1920,10 @@
         "stats": [
             "Intelligence: +20",
             "All Attributes: +10",
-            "Mana Regeneration +5",
+            "Mana Regeneration: +5",
             "Item Passive - Gaze of the Abyss: Every 12 Seconds your next ability restores 400 health + (5 healing per point of Intelligence) If the target of the ability is an enemy, deal the healing as damage to the target."
         ],
         "upgradesfrom": ["Pendant of Balance", "Oblivion Spike"]
-    },
-    {
-        "name": "Weigth of Thorns",
-        "rarity": "Tier 4 Epic",
-        "stats": [
-            "Attack Damage: +100",
-            "Strength: +45",
-            "Item Passive - Painful Swing: The wielder of this weapon takes 4% max health in damage whenever they attack"
-        ],
-        "combination": "Can be combined with <b>Reaver Gloves</b> to create <b>Flail of the Red Mist</b>",
-        "pairswith": "Reaver Gloves",
-        "upgrades": "Flail of the Red Mist"
     },
     {
         "name": "Flail of the Red Mist",
@@ -2013,7 +2028,7 @@
             "Item Passive - Energize: Attacks have a 10% chance to restore 8% mana"
         ],
         "combination": "Can be combined with a <b>Phoenix Talon</b> and a <b>Moonreaver</b> near a <b>Storming Peak</b> to create <b>Moonsplitter, Infinite Eclipse</b>",
-        "upgrades": "Moonsplitter, Infinite Eclipse",
+        "upgrades": ["Moonsplitter, Infinite Eclipse"],
         "pairswith": ["Phoenix Talon", "Moonreaver"],
         "upgradesfrom":["Fan of Endless Flow", "Mana Edge"]
     },
@@ -2064,7 +2079,7 @@
             "All Attributes: +15",
             "Intelligence: +30",
             "Mana: +250",
-            "Mana Regeneration +3",
+            "Mana Regeneration: +3",
             "Item Passive - Cryptdweller's Thirst: Nearby allied heroes restore 10% of their damage with attacks as health.",
             "Item Passive - Endless Thirst: Enemies slain by Heroes affected by Cryptdweller's Thirst has a chance to drop Bloodshards - Collecting 30 Bloodshards Increases the effect of Cryptdweller's Thirst by 8%"
         ],
@@ -2152,9 +2167,9 @@
             "Health Regeneration: +5",
             "Item Passive - Phoenix Fire: Inflicts 200 damage to a random nearby enemy every second"
         ],
-        "combination": "Can be combined with <b>Fireguard</b> to create <b>Gloves of the First Flame</b>, or with <b>Truth Piercer</b> to create <b>Sickle of Corrosion</b>",
-        "pairswith": ["Fireguard", "Truth Piercer"],
-        "upgrades": ["Gloves of the First Flame", "Sickle of Corrosion"]
+        "combination": "Can be combined with <b>Fireguard</b> to create <b>Gloves of the First Flame</b> <br>or with <b>Truth Piercer</b> to create <b>Sickle of Corrosion</b><br>or with <b>Staff of Brilliance</b> and <b>Fan of Endless Flow</b> to create <b>The Flame Serpent</b>",
+        "pairswith": ["Fireguard", "Truth Piercer", "Staff of Brilliance", "Fan of Endless Flow"],
+        "upgrades": ["Gloves of the First Flame", "Sickle of Corrosion", "The Flame Serpent"]
     },
     {
         "name": "the Flame Serpent",
@@ -2243,7 +2258,7 @@
         "name": "Branch of Life",
         "rarity": "Tier 1 Unique Uncommon",
         "stats":[
-            "Mana Regeneration +2",
+            "Mana Regeneration: +2",
             "Health Regeneration: +2"
         ]
     },
@@ -2268,7 +2283,7 @@
         "stats":[
             "Strength: +1",
             "Intelligence: +1",
-            "Mana Regeneration +1",
+            "Mana Regeneration: +1",
             "Health Regeneration: +1"
         ]
     },
@@ -2284,7 +2299,7 @@
         "combination": "Can be combined with <b>Zealous</b> and <b>Pristine Holy Essence</b> near a <b>Holy Fountain</b> to create <b>Sol, Light's Birthright</b>",
         "upgrades": "Sol, Light's Birthright",
         "pairswith": ["Zealous", "Pristine Holy Essence"],
-        "upgradesfrom": ["Zealous", "Pristine Holy Essence"]
+        "upgradesfrom": ["Vanguard Helmet", "Pristine Holy Essence"]
     },
     {
         "name": "Arcane Claw",
@@ -2348,7 +2363,7 @@
         "rarity": "Tier 1 Unique Mythical",
         "stats":[
             "Intelligence: +6",
-            "Mana Regeneration +1",
+            "Mana Regeneration: +1",
             "Item Activation - Restoration Pool: Summon a pool of magic waters for 16 seconds. Allies standing in the pool restores 2% + 12 health and mana every second."   
         ]
     },
@@ -2357,7 +2372,7 @@
         "rarity": "Tier 4 Unique Mythical",
         "stats":[
             "Intelligence: +125",
-            "Mana Regeneration +30",
+            "Mana Regeneration: +30",
             "Item Activation - Restoration Pool: Summon a pool of magic waters for 16 seconds. Allies standing in the pool restores 8% + 200 health and mana every second."   
         ]
     },
@@ -2434,5 +2449,447 @@
             "Strength: +95",
             "Item Passive - Greed is Good: After defeating a Boss while wielding this weapon, gain twice your Strength as gold."
         ]
-    }
+    },
+    {
+        "name": "Ring of Eldritch Hunger",
+        "rarity":"Tier 2 Unique Mythical",
+        "stats":[
+            "Health: +400",
+            "Health Regeneration: +12",
+            "Item Passive - Eldritch Hunger: Every 14 seconds, deal 100 damage + (10% maximum health) to nearby enemies and heal for 20% of the damage done.",
+            "Item Passive - Eldritch Command: If the bearer wears an Eldritch Mask theres a 25% chance when they use an ability that spends mana, to trigger Eldritch Hunger"
+        ]
+    },
+    {
+        "name": "Ring of Eldritch Hunger (Magnum Opus)",
+        "rarity":"Tier 4 Unique Mythical",
+        "stats":[
+            "Health: +750",
+            "Health Regeneration: +122",
+            "Item Passive - Eldritch Hunger: Every 14 seconds, deal 1000 damage + (20% maximum health) to nearby enemies and heal for 20% of the damage done.",
+            "Item Passive - Eldritch Command: If the bearer wears an Eldritch Mask theres a 25% chance when they use an ability that spends mana, to trigger Eldritch Hunger"
+        ]
+    },
+    {
+        "name": "Unhatched Sea Viper Egg",
+        "rarity": "Tier 3 Unique Mythical",
+        "stats":[
+            "Intelligence: +25",
+            "Item Passive - Matriach Aura: Increases the attack damage of nearby allied units by 10%",
+            "Item Active - Spawn Hatchling: Summon a Sea Viper Hatchling to fight for you for 40 seconds. The Sea Viper has 1000 health + (15 health per point of Intelligence) and deals 50 damage + (2 damage per point of Intelligence)"
+        ]
+    },
+    {
+        "name": "Unhatched Sea Viper Egg (Magnum Opus)",
+        "rarity": "Tier 4 Unique Mythical",
+        "stats":[
+            "Intelligence: +70",
+            "Item Passive - Matriach Aura: Increases the attack damage of nearby allied units by 20%",
+            "Item Active - Spawn Hatchling: Summon a Sea Viper Hatchling to fight for you for 40 seconds. The Sea Viper has 1000 health + (15 health per point of Intelligence) and deals 100 damage + (3 damage per point of Intelligence)"
+        ]
+    },
+    {
+        "name": "Beast Within",
+        "rarity": "Tier 2 Unique Legendary",
+        "stats":[
+            "Attack Speed: +40%",
+            "Attack Damage +75",
+            "Strength: +10",
+            "Health: +150",
+            "Item Passive - Fury: The wielder of this weapon takes 10 damage whenever they attack"
+        ],
+        "combination": "Can be combined with <b>Crimson Guard</b> and <b>Obsidian Core</b> near a <b>Reaper Obelisk</b> to create <b>Amaroq's Claw</b>",
+        "upgrades": "Amaroq's Claw",
+        "pairswith": ["Crimson Guard", "Obsidian Core"]
+    },
+    {
+        "name": "Burning Spider Chitin",
+        "rarity": "Tier 2 Unique Legendary",
+        "stats":[
+            "Health: +300",
+            "Strength: +8",
+            "Intelligence: +5",
+            "Item Passive - Reflect: Being struck reflects 16 damage + (1 damage per point of Strength) back to the attacker"
+        ]
+    },
+    {
+        "name": "Codex of Eternal Life",
+        "rarity": "Tier 2 Unique Legendary",
+        "stats":[
+            "All Attributes: +15",
+            "Mana: +400",
+            "Health Regeneration: +5",
+            "Mana Regeneration: +5",
+            "Item Passive - Eternal Life: After using an ability that spends mana, restore 200 health + (1 health per point of your highest attribute)"
+        ],
+        "upgradesfrom": ["Pendant of Balance", "Book of Rebirth"]
+    },
+    {
+        "name": "Deathstalker",
+        "rarity": "Tier 4 Legendary",
+        "stats":[
+            "Attack Damage: +75",
+            "Strength: +24",
+            "Agility: +17",
+            "Item Passive - Deathblow: Attacks against enemies below 35% health deal double damage"
+        ]
+    },
+    {
+        "name": "Eldritch Mask",
+        "rarity": "Tier 2 Unique Legendary",
+        "stats":[
+            "Health: +250",
+            "Intelligence: +4",
+            "Strength: +4",
+            "Armor: +3",
+            "Mana Regeneration: +1",
+            "Item Passive - Horrifying Visions: Attacking enemies have a 10% chance to become affected by Horrifying Visions for 10 seconds, reducing their chance to hit with attacks by 75%"
+        ]
+    },
+    {
+        "name": "Essence of Life",
+        "rarity": "Tier 1 Unique Legendary",
+        "stats":[
+            "Intelligence: +15",
+            "Health: +100",
+            "Item Activation - Essence of Life: Restore 300 health + (3 per point of Intelligence) to an allied target. "
+        ]
+    },
+    {
+        "name": "Ghost Lotus",
+        "rarity": "Tier 4 Unique Legendary",
+        "stats":[
+            "Agility: +50",
+            "Item Passive - Realm Shift: Theres a 25% chance when casting an ability to gain Realm Shift, granting 50% Evasion and 25% Crit Chance for 10 seconds"
+        ],
+        "combination": "Can be combined with <b>Iaijutsu</b> and <b>Swampstalker's Grasp</b> near The Void to create <b>Realm Edge</b>",
+        "upgrades": "Realm Edge",
+        "pairswith": ["Iaijutsu", "Swampstalker's Grasp"]
+    },
+    {
+        "name": "Morax' Soul Gem",
+        "rarity": "Tier 2 Unique Legendary",
+        "stats":[
+            "Intelligence +35",
+            "Item Passive - Release Morax: Using an ability that spends mana releases Morax, upon being released he feeds on 20% of the wielder's current health and increases his health and damage by 50% of the consumed health. Morax scales based on the Intelligence of the Wielder (90 Seconds Cooldown)"
+        ]
+    },
+    {
+        "name": "Skull of Cerbestriasz",
+        "rarity": "Tier 2 Unique Legendary",
+        "stats":[
+            "Intelligence: +13",
+            "Agility: +13",
+            "Strenght: +9",
+            "Health: +600",
+            "Mana: +500",
+            "Item Activation - Cerbestriasz's Breath: Breathe cold fire in a cone dealing 1000 damage to all enemies hit"
+        ]
+    },
+    {
+        "name": "Spear of Hate",
+        "rarity": "Tier 2 Unique Legendary",
+        "stats":[
+            "Agility: +18",
+            "Attack Speed: -10%",
+            "Item Passive - Heartpierce: Attacks deal 10 bonus damage + (1 damage per point of Agility the Wielder has)"
+        ]
+    },
+    {
+        "name": "The Wall",
+        "rarity": "Tier 2 Unique Legendary",
+        "stats":[
+            "All Attributes: +6",
+            "Health: +600",
+            "Armor: +3",
+            "Item Passive - Armor Aura: Increases the armor of nearby allies by 3",
+            "Item Passive - Evasion: Grants 10% chance to evade an attack"
+        ]
+    },
+    {
+        "name": "Torch of Hell",
+        "rarity": "Tier 2 Unique Legendary",
+        "stats":[
+            "Intelligence: +8",
+            "Mana Regeneration: +2",
+            "Health: +175",
+            "Item Activation - Dark Ritual: Sacrifice 150 health to summon a beast for 60 seconds that has 500 health + (10 health per point of Intelligence) and deals 20 damage + (1 damage per point of Intelligence)"
+        ]
+    },
+    {
+        "name": "Touch of Midas (T1)",
+        "rarity": "Tier 1 Unique Legendary",
+        "stats":[
+            "All Attributes: +2",
+            "Armor: +1",
+            "Item Passive - Touch of Midas: Every 24 seconds your next attack deals bonus damage equal to gold carried. Up to a maximum of 500 bonus damage.",
+            "Item Passive - Silver: This item sells for 100 Gold"
+        ],
+        "combination": "Can be upgraded with <b>500 Gold</b> to create <b>Touch of Midas (T2)</b>",
+        "upgrades": "Touch of Midas (T2)"
+    },
+    {
+        "name": "Touch of Midas (T2)",
+        "rarity": "Tier 2 Unique Legendary",
+        "stats":[
+            "All Attributes: +8",
+            "Armor: +2",
+            "Item Passive - Touch of Midas: Every 12 seconds your next attack deals bonus damage equal to gold carried. Up to a maximum of 3000 bonus damage.",
+            "Item Passive - Silver: This item sells for 300 Gold"
+        ],
+        "combination": "Can be upgraded with <b>1000 Gold</b> to create <b>Touch of Midas (T3)</b>",
+        "upgrades": "Touch of Midas (T3)",
+        "upgradesfrom": "Touch of Midas (T1)"
+    },
+    {
+        "name": "Touch of Midas (T3)",
+        "rarity": "Tier 3 Unique Legendary",
+        "stats":[
+            "All Attributes: +16",
+            "Armor: +3",
+            "Item Passive - Touch of Midas: Every 10 seconds your next attack deals bonus damage equal to gold carried. Up to a maximum of 4000 bonus damage.",
+            "Item Passive - Silver: This item sells for 800 Gold"
+        ],
+        "combination": "Can be upgraded with <b>3000 Gold</b> to create <b>Touch of Midas (T4)</b>",
+        "upgrades": "Touch of Midas (T4)",
+        "upgradesfrom": "Touch of Midas (T2)"
+     },
+    {
+        "name": "Touch of Midas (T4)",
+        "rarity": "Tier 4 Unique Legendary",
+        "stats":[
+            "All Attributes: +40",
+            "Armor: +4",
+            "Item Passive - Touch of Midas: Every 8 seconds your next attack deals bonus damage equal to gold carried. Up to a maximum of 5000 bonus damage.",
+            "Item Passive - Silver: This item sells for 2300 Gold"
+        ],
+        "combination": "Can be upgraded with <b>8000 Gold</b> to create <b>Touch of Midas (T5)</b>",
+        "upgrades": "Touch of Midas (T4D)",
+        "upgradesfrom": "Touch of Midas (T3)"
+     },
+    {
+        "name": "Touch of Midas (T4D)",
+        "rarity": "Tier 4 Unique Divine",
+        "stats":[
+            "All Attributes: +60",
+            "Armor: +5",
+            "Item Passive - Touch of Midas: Every 6 seconds your next attack deals bonus damage equal to gold carried. Up to a maximum of 8000 bonus damage.",
+            "Item Passive - Silver: This item sells for 6300 Gold"
+        ],
+        "upgradesfrom": "Touch of Midas (T4)"
+     },
+     {
+        "name": "Trident of Wrath",
+        "rarity": "Tier 3 Unique Legendary",
+        "stats":[
+            "Agility: +23",
+            "Strength: +18",
+            "Item Passive - Wrath: Whenever an allied hero dies, gain 75% increased attack and movement speed for 30 seconds."
+        ]
+     },
+     {
+        "name": "Amaroq's Claw",
+        "rarity": "Tier 3 Unique Divine",
+        "stats":[
+            "All Attributes: +30",
+            "Attack Speed: +40%",
+            "Attack Damage +75",
+            "Strength: +10",
+            "Health: +150",
+            "Item Passive - Amaroq's Feast: Each consecutive attack against the same target deals 50 bonus damage, stacking infinitely (Stacks are lost upon death)"
+        ]
+     },
+     {
+        "name": "Demonbane",
+        "rarity": "Tier 2 Unique Divine",
+        "stats":[
+            "Strength: +40",
+            "Agility: +5",
+            "Armor: +7",
+            "Health: +250",
+            "Health Regeneration: +12",
+            "Item Passive - Demonbane Aura: Deals 200 damage + 5 damage per point of the wielder's Armor to all nearby enemies every second. The wielder heals for 10% of this damage."
+        ]
+     },
+     {
+        "name": "Purified Bloodstone Helmet",
+        "rarity": "Tier 3 Epic",
+        "stats":[
+            "Health: +450",
+            "Attack Damage: +60",
+            "Armor: +5",
+            "Item Passive - Purify Blood: Attacks restore 50 health."
+        ],
+        "combination": "Can be combined with <b>Enigma</b> and <b>Indestructible</b> near a <b>Holy Fountain</b> to create <b>Divinuas, Heaven's Vanguard</b>",
+        "upgrades": "Divinuas, Heaven's Vanguard",
+        "pairswith": ["Enigma", "Indestructible"]
+     },
+     {
+        "name": "Fury of the Goddess",
+        "rarity": "Tier 2 Unique Divine",
+        "stats":[
+            "All Attributes: +35",
+            "Item Passive - Devotion: The Fury of the Goddess passive can trigger in the following ways depending on your highest attribute: Strength: Being struck 25 times - Agility: Attacking 50 times - Intelligence: Spending 1000 mana",
+            "Item Passive - Fury of the Goddess: Unleash a wave of fury in the Wielders direction, dealing 1000 damage + (10 damage per point of the Wielder's highest attribute)"
+        ]
+     },
+     {
+        "name": "Omniscience",
+        "rarity": "Tier 2 Unique Divine",
+        "stats":[
+            "All Attributes. +5",
+            "Intelligence: +25",
+            "Health: +350",
+            "Mana: +200",
+            "Item Passive - Omniscience Aura: Grants nearby allied units 5 Increased Mana Regeneration, 3 Bonus Armor and 15% Increased Attack Speed",
+            "Item Passive - Celestial Knowledge: Upon gaining a level, the wielder gains an additional +3 Intelligence and +400 bonus Experience"
+        ]
+     },
+     {
+        "name": "Pyrrhic Victory",
+        "rarity": "Tier 3 Unique Divine",
+        "stats":[
+            "Strength: +50",
+            "Agility: +45",
+            "Attack Damage. +40",
+            "Health: +300",
+            "Item Passive - Annihilation: Attacks deal 50 bonus damage + (1 damage per point of Strength or Agility the wielder has - Whichever is highest)",
+            "Item Passive - Pyrrhic Victory: Whenever an allied hero dies, gain 100% increased attack and movement speed for 30 seconds and double the effect of Annihilation for the duration.",
+            "Item Passive - Glory: Every 3rd enemy killed in the Wielder's vicinity grants 1 permanent bonus attack damage"
+        ]
+     },
+     {
+        "name": "Realm Edge",
+        "rarity": "Tier 4 Unique Divine",
+        "stats":[
+            "Agility: +125",
+            "Attack Damage: +50",
+            "Mana: +800",
+            "Mana Regeneration: +10",
+            "Item Passive - Realm Shift: Theres a 25% chance when casting an ability to gain Realm Shift, granting 50% Evasion and 25% Crit Chance for 10 seconds",
+            "Item Passive - Unleash Realmwyrm: If the Wielder of this weapon has atleast 275 Agility, your attacks have a chance to summon the Realmwyrm while affected by Realm Shift (90 Seconds Cooldown)"
+        ],
+        "upgradesfrom": ["Swampstalker's Grasp", "Iaijutsu", "Ghost Lotus"]
+     },
+     {
+        "name": "Sol, Light's Birthright",
+        "rarity": "Tier 2 Unique Divine",
+        "stats":[
+            "Health: +1100",
+            "Mana: +600",
+            "All Attributes: +15",
+            "Armor: +12",
+            "Item Passive - Light's Birthright: Nearby allies restore 1% of their max health each second.",
+            "Item Passive - Guardian Angel: Allies affected by Light's Birthright restore 1250 health when they take damage while below 20% health (180 Second Cooldown)",
+            "Item Passive - Zealous: Being struck has a 10% chance to restore 200 mana"
+        ],
+        "upgradesfrom": ["Zealous", "Pristine Holy Essence", "Angelic Faceguard"]
+     },
+     {
+        "name": "Soulreaper",
+        "rarity": "Tier 3 Unique Divine",
+        "stats":[
+            "All Attributes: +30",
+            "Health: -600",
+            "Attack Speed: +25%",
+            "Strength: +30",
+            "Agility: +10",
+            "Mana Regeneration: +4",
+            "Passive Orb Effect - Lifesteal: Attacks restores 20% of the damage dealt as health",
+            "Item Passive - Soulreap: Grants a 20% chance on attacks to reap nearby enemies, dealing 500 damage + (5 damage per point of Strength or Agility - Whichever is highest) and restoring health equal to 20% of the damage done by Soulreap. If an enemy is killed by Soulreap the wielder gains 10 bonus maximum health (1 Second Cooldown)"
+        ],
+        "upgradesfrom": ["Liquid Bloodstone", "Obsidian Core", "The Impaler"]
+     },
+     {
+        "name": "Untamed Rage",
+        "rarity": "Tier 4 Unique Divine",
+        "stats":[
+            "Item Passive - Godly Rage: Your attacks have a chance to grant you 250 Strength for 16 seconds."
+        ]
+     },
+     {
+        "name": "Book of Rebirth",
+        "rarity": "Tier 1 Unique Epic",
+        "stats":[
+            "All Attributes: +3",
+            "Mana: +250",
+            "Health Regeneration: +2",
+            "Mana Regeneration: +1",
+            "Item Passive - Rebirth: After using an ability that spends mana, restore 150 health"
+        ],
+        "combination": "Can be combined with a <b>Pendant of Balance</b> to create <b>Codex of Eternal Life</b>",
+        "pairswith": ["Pendant of Balance"],
+        "upgrades": "Codex of Eternal Life",
+        "upgradesfrom": ["Tome of Vitality", "Liferoot"]
+     },
+     {
+        "name": "Corrupted Bloodstone Helmet",
+        "rarity": "Tier 3 Unique Epic",
+        "stats":[
+            "Health: +450",
+            "Armor: -5",
+            "Item Passive - Drain Lifeforce: Attacks drain 125 health from the target.",
+            "Item Passive - Soul Corruption: Reduces the health regeneration of nearby allies by 24"
+        ]
+     },
+     {
+        "name": "Spectral Bulwark",
+        "rarity": "Tier 2 Unique Epic",
+        "stats":[
+            "Health: +300",
+            "All Attributes: +2",
+            "Item Passive - Evasion: Grants 10% chance to evade an attack"
+        ],
+        "combination": "Can be combined with a <b>Shield of Light</b> to create <b>The Wall</b>",
+        "pairswith": ["Shield of Light"],
+        "upgrades": "The Wall"
+     },
+     {
+        "name": "The Bonesaw",
+        "rarity": "Tier 2 Unique Epic",
+        "stats":[
+            "Attack Speed: +15%",
+            "Attack Damage: +60",
+            "Item Passive - Double Edged: The wielder of this weapon takes 25 damage whenever they attack"
+        ],
+        "combination": "Can be combined with <b>Ferocity</b> to create <b>Beast Within</b>",
+        "pairswith": ["Ferocity"],
+        "upgrades": "Beast Within"
+     },
+     {
+        "name": "The Impaler",
+        "rarity": "Tier 3 Unique Epic",
+        "stats": [
+            "Attack Speed: +25%",
+            "Strength: +20",
+            "Item Passive - Impale: Grants a 20% chance on attacks to impale the enemy, dealing 1000 bonus damage (1 Second Cooldown)"
+        ],
+        "combination": "Can be combined with <b>Liquid Bloodstone</b> and <b>Obsidian Core</b> near a <b>Reaper Obelisk</b> to create <b>Soulreaper</b>",
+        "pairswith": ["Liquid Bloodstone", "Obsidian Core"],
+        "upgrades": "Soulreaper"
+     },
+     {
+        "name": "Tome of Vitality",
+        "rarity": "Tier 1 Unique Epic",
+        "stats":[
+            "All Attributes: +2",
+            "Mana: +250",
+            "Item Passive - Vitality: After using an ability that spends mana, restore 100 health"
+        ],
+        "combination": "Can be combined with a <b>Liferoot</b> to create <b>Book of Rebirth</b>",
+        "pairswith": ["Liferoot"],
+        "upgrades": "Book of Rebirth"
+     },
+     {
+        "name": "Weight of Thorns",
+        "rarity": "Tier 4 Unique Epic",
+        "stats":[
+            "Attack Damage: +100",
+            "Strength: +45",
+            "Item Passive - Painful Swing: The wielder of this weapon takes 4% max health in damage whenever they attack"
+        ],
+        "combination": "Can be combined with <b>Reaver Gloves</b> to create <b>Flail of the Red Mist</b>",
+        "upgrades": "Flail of the Red Mist",
+        "pairswith": "Reaver Gloves"
+     }
 ]
