@@ -5,7 +5,7 @@ export default function Home() {
     <div className="home">
       <section className="hero-section">
         <div className="hero-content">
-          <h1 className="hero-title">Enter the Depths of Rise</h1>
+          <h1 className="hero-title">Enter the game of Rise</h1>
           <p className="hero-subtitle">A Warcraft III Custom Map Experience</p>
           <div className="hero-divider"></div>
         </div>
@@ -15,19 +15,19 @@ export default function Home() {
         <div className="content-container">
           <h2>About the Game</h2>
           <p>
-            Venture into the cursed lands of Azeroth, where ancient dungeons await the bravest of heroes. 
-            Rise is an immersive dungeon crawler that challenges you to battle formidable bosses, collect 
-            powerful artifacts, and uncover the dark secrets hidden beneath the surface.
+            Venture into the lands of Rise, where gruelling trials await the bravest of heroes.
+            Rise is a game mode that challenges you to battle formidable bosses, collect 
+            powerful artifacts, and uncover the secrets hidden beneath the surface.
           </p>
           <p>
             Choose your hero wisely - each possesses unique abilities and playstyles. Forge legendary weapons, 
-            discover rare items, and combine them to create equipment of unimaginable power. The deeper you 
-            descend, the greater the rewards... and the deadlier the threats.
+            discover rare items, and combine them to create equipment of unimaginable power. The further you travel, 
+            the greater the rewards... and the deadlier the threats.
           </p>
           <p>
-            Face increasingly challenging encounters, from corrupted creatures to ancient guardians. Only the 
+            Face increasingly challenging encounters, from humanoid adversaries to demonic creatures. Only the 
             most skilled adventurers will survive the trials that await in the deepest chambers. Will you rise 
-            to the challenge, or fall to the darkness below?
+            to the challenge, or fall to the darkness?
           </p>
         </div>
       </section>
@@ -55,6 +55,16 @@ export default function Home() {
               <h3>Regular Updates</h3>
               <p>New content, balance changes, and features added frequently</p>
             </div>
+            <div className="feature-card">
+              <div className="feature-icon">🌐</div>
+              <h3>Community Driven</h3>
+              <p>Engage with our community and contribute to the game's development</p>
+            </div>
+            <div className="feature-card">
+              <div className="feature-icon">🎮</div>
+              <h3>Single- & multiplayer</h3>
+              <p>Try both modes and enjoy the full Rise experience</p>
+            </div>
           </div>
         </div>
       </section>
@@ -63,20 +73,22 @@ export default function Home() {
         <div className="content-container">
           <h2>About This Website</h2>
           <p>
-            This database serves as your comprehensive guide to the world of Rise. Browse our extensive 
-            collection of items, heroes, and bosses. Each entry includes detailed statistics, abilities, 
-            and crafting recipes to help you plan your perfect build.
+            This website serves as your wiki to the world of Rise. Browse the extensive 
+            collection of items, heroes, and bosses.
           </p>
           <p>
             Navigate through the menu to explore different sections: discover item combinations, learn 
-            hero strategies, study boss mechanics, review patch notes, and download the latest version 
-            of the map.
+            hero strategies, study boss mechanics, and download the latest version 
+            of the map so you can host a new game yourself!
+          </p>
+          <p>
+            This website is developed by AweSatura - a passionate gamer and developer who has been following Rise since the early days.
           </p>
           <div className="creator-info">
-            <h3>Created by the Rise Development Team</h3>
+            <h3>Rise is created by Rel!chunter</h3>
             <p>
-              This project is a labor of love, continuously updated and improved based on community 
-              feedback. Join our community and embark on your journey through the depths!
+              This game-project is a labor of love, continuously updated and improved based on community 
+              feedback. Join our community on discord and embark on your journey!
             </p>
           </div>
         </div>
