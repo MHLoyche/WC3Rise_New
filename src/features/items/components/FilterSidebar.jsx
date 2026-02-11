@@ -12,7 +12,7 @@ export default function FilterSidebar({ onFilterChange, isVisible, onClose }) {
   const [selectedStats, setSelectedStats] = useState([]);
 
   // Available filter options
-  const rarities = ['Uncommon', 'Rare', 'Epic', 'Legendary', 'Relic', 'Divine'];
+  const rarities = ['Uncommon', 'Rare', 'Epic', 'Mythical', 'Legendary', 'Divine'];
   const tiers = ['Tier 1', 'Tier 2', 'Tier 3', 'Tier 4'];
   const stats = [
     'Agility',

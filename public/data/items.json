@@ -2240,20 +2240,199 @@
         "upgradesfrom": ["Crystal of Unleashed Power", "Phoenix Talon", "Moonreaver"]
     },
     {
-        "name": "Cursed Ceremonial Dagger",
-        "rarity": "Tier 3 Relic",
+        "name": "Branch of Life",
+        "rarity": "Tier 1 Unique Uncommon",
         "stats":[
-            "Attack Damage: +40",
-            "Intelligence: +10",
-            "Agility: +8",
-            "Health Regeneration: -100"
+            "Mana Regeneration +2",
+            "Health Regeneration: +2"
         ]
     },
     {
-        "name": "Henry's Filtration Bottle",
-        "rarity": "Tier 2 Unique Relic",
+        "name": "Dwarven Ale",
+        "rarity": "Tier 1 Unique Uncommon",
         "stats":[
-            "Item Activation - Filtration: Grants all allied Heroes the ability to consume conconctions without receiving any negative effects."
+            "Item Activation: Restores 50 Mana (30 Seconds cooldown)"
+        ]
+    },
+    {
+        "name": "Memento Mori",
+        "rarity": "Tier 1 Unique Uncommon",
+        "stats":[
+            "Attack Damage: +3",
+            "Item Passive - Critical Strike: Gives a 5% chance on an attack to deal 250% damage"
+        ]
+    },
+    {
+        "name": "Trinket of the Sea",
+        "rarity": "Tier 1 Unique Uncommon",
+        "stats":[
+            "Strength: +1",
+            "Intelligence: +1",
+            "Mana Regeneration +1",
+            "Health Regeneration: +1"
+        ]
+    },
+    {
+        "name": "Angelic Faceguard",
+        "rarity": "Tier 2 Unique Legendary",
+        "stats":[
+            "Health: +600",
+            "All Attributes: +9",
+            "Armor: +7",
+            "Item Passive - Guardian Angel: Being struck while below 20% health restores 1250 health (180 Second Cooldown)"
+        ],
+        "combination": "Can be combined with <b>Zealous</b> and <b>Pristine Holy Essence</b> near a <b>Holy Fountain</b> to create <b>Sol, Light's Birthright</b>",
+        "upgrades": "Sol, Light's Birthright",
+        "pairswith": ["Zealous", "Pristine Holy Essence"],
+        "upgradesfrom": ["Zealous", "Pristine Holy Essence"]
+    },
+    {
+        "name": "Arcane Claw",
+        "rarity": "Tier 1 Unique Legendary",
+        "stats":[
+            "Intelligence: +10",
+            "Item Activation - Arcane Barrage: Fire 5 projectiles each second at nearby random enemies, each projectile deals 50 damage. Lasts 3 seconds",
+            "Item Passive - Intelligent: The Arcane Barrage ability receives bonus duration based on the Intelligence of the bearer. Having atleast 60 Intelligence increases the duration by 2 seconds. Having atleast 100 Intelligence increases the duration by additional 3 seconds."
+        ]
+    },
+    {
+        "name": "Aegis of the Unyielding",
+        "rarity": "Tier 1 Unique Mythical",
+        "stats":[
+            "Health: +250",
+            "Armor: +3",
+            "Item Activation - Aegis of the Unyielding: Instantly restore 25% maximum health and increase armor by 5 and health regeneration by 35 for 10 seconds.",
+            "Item Passive - Evasion: Grants 10% chance to evade an attack"
+        ]
+    },
+    {
+        "name": "Aegis of the Unyielding (Magnum Opus)",
+        "rarity": "Tier 4 Unique Mythical",
+        "stats":[
+            "Health: +2500",
+            "Armor: +15",
+            "Item Activation - Aegis of the Unyielding: Instantly restore 45% maximum health and increase armor by 45 and health regeneration by 150 for 10 seconds.",
+            "Item Passive - Evasion: Grants 15% chance to evade an attack"
+        ]
+    },
+    {
+        "name": "Ancient Frostmaul",
+        "rarity": "Tier 3 Unique Mythical",
+        "stats":[
+            "Strength: +20",
+            "Intelligence: +20",
+            "Item Passive - Crushing Hits: Deal 10% of your maximum health as bonus damage on attacks"
+        ]
+    },
+    {
+        "name": "Ancient Frostmaul (Magnum Opus)",
+        "rarity": "Tier 4 Unique Mythical",
+        "stats":[
+            "Strength: +35",
+            "Intelligence: +35",
+            "Item Passive - Crushing Hits: Deal 15% of your maximum health as bonus damage on attacks"
+        ]
+    },
+    {
+        "name": "Edge of Sin",
+        "rarity": "Tier 4 Unique Mythical",
+        "stats":[
+            "Attack Dmage: +70",
+            "Strength: +28",
+            "Agility: +28",
+            "Item Passive - Unleash Sin: Every 20 attacks with this weapon unleashes a nova that deals 2000 damage + (5 damage per point of base attack damage)"
+        ]
+    },
+    {
+        "name": "Essence of Water",
+        "rarity": "Tier 1 Unique Mythical",
+        "stats":[
+            "Intelligence: +6",
+            "Mana Regeneration +1",
+            "Item Activation - Restoration Pool: Summon a pool of magic waters for 16 seconds. Allies standing in the pool restores 2% + 12 health and mana every second."   
+        ]
+    },
+    {
+        "name": "Essence of Water (Magnum Opus)",
+        "rarity": "Tier 4 Unique Mythical",
+        "stats":[
+            "Intelligence: +125",
+            "Mana Regeneration +30",
+            "Item Activation - Restoration Pool: Summon a pool of magic waters for 16 seconds. Allies standing in the pool restores 8% + 200 health and mana every second."   
+        ]
+    },
+    {
+        "name": "Fang of Arachnox",
+        "rarity": "Tier 2 Unique Mythical",
+        "stats":[
+            "Agility: +20",
+            "Passive Orb Effect - Venom of Arachnox: Attacks causes enemies to take 50 damage + (2 damage per point of Agility of the Wielder) every second for 8 seconds. Additionally their attack and movement speed is reduced by 10%"
+        ]
+    },
+    {
+        "name": "Fang of Arachnox (Magnum Opus)",
+        "rarity": "Tier 4 Unique Mythical",
+        "stats":[
+            "Agility: +60",
+            "Passive Orb Effect - Venom of Arachnox: Attacks causes enemies to take 100 damage + (3 damage per point of Agility of the Wielder) every second for 8 seconds. Additionally their attack and movement speed is reduced by 10%"
+        ]
+    },
+    {
+        "name": "Key of the Realm",
+        "rarity": "Tier 4 Unique Mythical",
+        "stats":[
+            "All Attributes: +40",
+            "Armor: +3",
+            "Item Passive - Voidfire: Every 3 seconds fire a Void Bolt at a nearby random enemy, dealing 2000 damage.",
+            "Item Passive - Realmsworn Swarm: Units you summon gain the effects of Voidfire at 50% reduced effectiveness."
+        ]
+    },
+    {
+        "name": "Magma Edge",
+        "rarity": "Tier 2 Unique Mythical",
+        "stats":[
+            "Attack Damage: +70",
+            "Passive Orb Effect - Fire Splash: The Attack Damage from this weapon is also dealt on attacks to nearby enemies."
+        ]
+    },
+    {
+        "name": "Magma Edge (Magnum Opus)",
+        "rarity": "Tier 2 Unique Mythical",
+        "stats":[
+            "Attack Damage: +350",
+            "Passive Orb Effect - Fire Splash: The Attack Damage from this weapon is also dealt on attacks to nearby enemies."
+        ]
+    },
+    {
+        "name": "Mirror of Zz'likesh",
+        "rarity": "Tier 2 Unique Mythical",
+        "stats":[
+            "Intelligence: +40",
+            "Item Activation - Reflection's Twin: Duplicate a non-unique item once"
+        ]
+    },
+    {
+        "name": "Mirror of Zz'likesh (Magnum Opus)",
+        "rarity": "Tier 4 Unique Mythical",
+        "stats":[
+            "Intelligence: +175",
+            "Item Activation - Reflection's Twin: Duplicate a non-unique item once"
+        ]
+    },
+    {
+        "name": "Ogo's Greedy Pickaxe",
+        "rarity": "Tier 3 Unique Mythical",
+        "stats":[
+            "Strength: +43",
+            "Item Passive - Greed is Good: After defeating a Boss while wielding this weapon, gain your Strength as gold."
+        ]
+    },
+    {
+        "name": "Ogo's Greedy Pickaxe (Magnum Opus)",
+        "rarity": "Tier 4 Unique Mythical",
+        "stats":[
+            "Strength: +95",
+            "Item Passive - Greed is Good: After defeating a Boss while wielding this weapon, gain twice your Strength as gold."
         ]
     }
 ]

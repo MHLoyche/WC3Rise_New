@@ -98,14 +98,14 @@
   background: linear-gradient(135deg, rgba(155, 89, 182, 0.1), rgba(155, 89, 182, 0.05));
 }
 
+.selected-item-section.rarity-mythical {
+  border: 2px solid #5a2a7a;
+  background: linear-gradient(135deg, rgba(90, 42, 122, 0.12), rgba(61, 26, 85, 0.06));
+}
+
 .selected-item-section.rarity-legendary {
   border: 2px solid #ff8c00;
   background: linear-gradient(135deg, rgba(255, 140, 0, 0.1), rgba(255, 140, 0, 0.05));
-}
-
-.selected-item-section.rarity-relic {
-  border: 2px solid #00CED1;
-  background: linear-gradient(135deg, rgba(0, 206, 209, 0.1), rgba(0, 206, 209, 0.05));
 }
 
 .selected-item-section.rarity-divine {
@@ -150,14 +150,14 @@
   box-shadow: 0 0 15px rgba(155, 89, 182, 0.5);
 }
 
+.selected-item-section.rarity-mythical .selected-item-image {
+  border-color: #5a2a7a;
+  box-shadow: 0 0 15px rgba(90, 42, 122, 0.55);
+}
+
 .selected-item-section.rarity-legendary .selected-item-image {
   border-color: #ff8c00;
   box-shadow: 0 0 15px rgba(255, 140, 0, 0.5);
-}
-
-.selected-item-section.rarity-relic .selected-item-image {
-  border-color: #00CED1;
-  box-shadow: 0 0 15px rgba(0, 206, 209, 0.5);
 }
 
 .selected-item-section.rarity-divine .selected-item-image {
@@ -255,12 +255,12 @@
   border-color: #9b59b6;
 }
 
-.upgrade-item.rarity-legendary {
-  border-color: #ff8c00;
+.upgrade-item.rarity-mythical {
+  border-color: #5a2a7a;
 }
 
-.upgrade-item.rarity-relic {
-  border-color: #00CED1;
+.upgrade-item.rarity-legendary {
+  border-color: #ff8c00;
 }
 
 .upgrade-item.rarity-divine {
@@ -303,14 +303,14 @@
   box-shadow: 0 0 8px rgba(155, 89, 182, 0.6);
 }
 
+.upgrade-item.rarity-mythical img {
+  border-color: #5a2a7a;
+  box-shadow: 0 0 8px rgba(90, 42, 122, 0.6);
+}
+
 .upgrade-item.rarity-legendary img {
   border-color: #ff8c00;
   box-shadow: 0 0 8px rgba(255, 140, 0, 0.6);
-}
-
-.upgrade-item.rarity-relic img {
-  border-color: #00CED1;
-  box-shadow: 0 0 8px rgba(0, 206, 209, 0.6);
 }
 
 .upgrade-item.rarity-divine img {
@@ -359,12 +359,12 @@
   border-color: #9b59b6;
 }
 
-.component-item.rarity-legendary {
-  border-color: #ff8c00;
+.component-item.rarity-mythical {
+  border-color: #5a2a7a;
 }
 
-.component-item.rarity-relic {
-  border-color: #00CED1;
+.component-item.rarity-legendary {
+  border-color: #ff8c00;
 }
 
 .component-item.rarity-divine {
@@ -407,14 +407,14 @@
   box-shadow: 0 0 8px rgba(155, 89, 182, 0.6);
 }
 
+.component-item.rarity-mythical img {
+  border-color: #5a2a7a;
+  box-shadow: 0 0 8px rgba(90, 42, 122, 0.6);
+}
+
 .component-item.rarity-legendary img {
   border-color: #ff8c00;
   box-shadow: 0 0 8px rgba(255, 140, 0, 0.6);
-}
-
-.component-item.rarity-relic img {
-  border-color: #00CED1;
-  box-shadow: 0 0 8px rgba(0, 206, 209, 0.6);
 }
 
 .component-item.rarity-divine img {
@@ -454,13 +454,13 @@
   color: #fff;
 }
 
-.item-rarity.legendary {
-  background: linear-gradient(135deg, #ff8c00, #ff6500);
+.item-rarity.mythical {
+  background: linear-gradient(135deg, #5a2a7a, #3d1a55);
   color: #fff;
 }
 
-.item-rarity.relic {
-  background: linear-gradient(135deg, #00CED1, #20B2AA);
+.item-rarity.legendary {
+  background: linear-gradient(135deg, #ff8c00, #ff6500);
   color: #fff;
 }
 
