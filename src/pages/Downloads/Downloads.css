@@ -1,0 +1,13 @@
+.intro-section a {
+    color: #f2c94c;
+    text-decoration: underline;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    display: inline-block;
+    text-align: center;
+}
+
+.intro-section .content-container {
+    text-align: center;
+}

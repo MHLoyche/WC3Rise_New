@@ -5,7 +5,7 @@ export default function PatchNotes() {
     <div className="home">
       <section className="hero-section">
         <div className="hero-content">
-          <h1 className="hero-title">Enter the Depths of Rise</h1>
+          <h1 className="hero-title">Stay updated with the changes in Rise!</h1>
           <p className="hero-subtitle">A Warcraft III Custom Map Experience</p>
           <div className="hero-divider"></div>
         </div>

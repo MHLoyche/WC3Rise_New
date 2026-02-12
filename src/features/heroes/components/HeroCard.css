@@ -1,0 +1,180 @@
+.hero-card {
+  background: linear-gradient(135deg, rgba(20, 20, 20, 0.9), rgba(30, 30, 30, 0.8));
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  height: 100%;
+}
+
+/* Header */
+.hero-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #333;
+}
+
+.hero-header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-image {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid #444;
+  border-radius: 8px;
+  padding: 0.2rem;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.hero-name {
+  font-size: 1.15rem;
+  color: #fff;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  line-height: 1.3;
+}
+
+.hero-meta {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* Attribute Badges */
+.hero-attribute,
+.hero-attack-type {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: 15px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.hero-attribute.strength {
+  background: linear-gradient(135deg, #dc3545, #a71d2a);
+  color: #fff;
+}
+
+.hero-attribute.agility {
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+  color: #fff;
+}
+
+.hero-attribute.intelligence {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: #fff;
+}
+
+.hero-attack-type {
+  background: linear-gradient(135deg, #6c757d, #495057);
+  color: #fff;
+}
+
+/* Stats Section */
+.hero-stats h4,
+.hero-abilities h4 {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin: 0 0 0.5rem 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  border: 1px solid #444;
+}
+
+.stat-item.strength {
+  border-color: rgba(220, 53, 69, 0.5);
+}
+
+.stat-item.agility {
+  border-color: rgba(40, 167, 69, 0.5);
+}
+
+.stat-item.intelligence {
+  border-color: rgba(0, 123, 255, 0.5);
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.stat-growth {
+  font-size: 0.75rem;
+  color: #7CFC00;
+  font-weight: 500;
+}
+
+/* Abilities */
+.hero-abilities ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.hero-abilities li {
+  font-size: 0.85rem;
+  color: #ddd;
+  padding: 0.4rem 0.6rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-left: 3px solid #FFD700;
+  border-radius: 3px;
+}
+
+.hero-abilities li:hover {
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}

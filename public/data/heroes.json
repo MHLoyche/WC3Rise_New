@@ -1,0 +1,560 @@
+[
+    {
+        "name": "Father of the Forest",
+        "abilities": [
+            "Restoration",
+            "Wrath of Nature",
+            "Revitalizing Waters",
+            "Nature's Grace",
+            "Mass Entangle"
+        ],
+        "primary_attribute": "Intelligence",
+        "attack_type": "Ranged (600)",
+        "agility": 15,
+        "intelligence": 18,
+        "strength": 16,
+        "agility_growth": 1.5,
+        "intelligence_growth": 2.7,
+        "strength_growth": 1.8
+    },
+    {
+        "name": "Void Entity",
+        "abilities": [
+            "Eye of the Void",
+            "Void Burst",
+            "Summon Voidstone",
+            "Siphon Life",
+            "Lost Soul"
+        ],
+        "primary_attribute": "Intelligence",
+        "attack_type": "Ranged (400)",
+        "agility": 15,
+        "intelligence": 18,
+        "strength": 16,
+        "agility_growth": 1.5,
+        "intelligence_growth": 2.7,
+        "strength_growth": 1.8
+    },
+    {
+        "name": "Ancient Marksman",
+        "abilities": [
+            "Ancient Presence",
+            "Soul Hunt",
+            "Dark Veil",
+            "Deadly Shot",
+            "Split Shot"
+        ],
+        "primary_attribute": "Agility",
+        "attack_type": "Ranged (600)",
+        "agility": 19,
+        "intelligence": 15,
+        "strength": 18,
+        "agility_growth": 2,
+        "intelligence_growth": 2.6,
+        "strength_growth": 1.9
+    },
+    {
+        "name": "Legionsong Countess",
+        "abilities": [
+            "Song of Immortality",
+            "Enhance Song",
+            "Song of Despair",
+            "Song of war",
+            "Song of Victory"
+        ],
+        "primary_attribute": "Intelligence",
+        "attack_type": "Ranged (600)",
+        "agility": 19,
+        "intelligence": 15,
+        "strength": 18,
+        "agility_growth": 1.5,
+        "intelligence_growth": 2.6,
+        "strength_growth": 1.9
+    },
+    {
+        "name": "Royal Guard",
+        "abilities": [
+            "Divine Wrath",
+            "Divine Storm",
+            "Mark of the Phoenix",
+            "Royal Barrier",
+            "Bouncing Glaive"
+        ],
+        "primary_attribute": "Agility",
+        "attack_type": "Ranged (600)",
+        "agility": 19,
+        "intelligence": 15,
+        "strength": 18,
+        "agility_growth": 2,
+        "intelligence_growth": 2.6,
+        "strength_growth": 1.9
+    },
+    {
+        "name": "Demon Slayer",
+        "abilities": [
+            "Felfire Comet",
+            "Fel Imprisonment",
+            "Demon Burn",
+            "Lycoris Radiata",
+            "Felforged"
+        ],
+        "primary_attribute": "Agility",
+        "attack_type": "Melee (100)",
+        "agility": 17,
+        "intelligence": 17,
+        "strength": 18,
+        "agility_growth": 2.5,
+        "intelligence_growth": 2.1,
+        "strength_growth": 2.25
+    },
+    {
+        "name": "Iron Raven",
+        "abilities": [
+            "Raven Form",
+            "Blink Strike",
+            "Expose Weakness",
+            "Iron Feathers",
+            "Eluding Stance"
+        ],
+        "primary_attribute": "Agility",
+        "attack_type": "Melee (100)",
+        "agility": 24,
+        "intelligence": 15,
+        "strength": 14,
+        "agility_growth": 2.75,
+        "intelligence_growth": 2.25,
+        "strength_growth": 2
+    },
+    {
+        "name": "Bone Emperor",
+        "abilities": [
+            "Terror of the Sands",
+            "Harden Exoskeleton",
+            "Spiked Exoskeleton",
+            "Absorb Bone Marrow",
+            "Paralyzing Strike"
+        ],
+        "primary_attribute": "Strength",
+        "attack_type": "Melee (100)",
+        "agility": 5,
+        "intelligence": 17,
+        "strength": 22,
+        "agility_growth": 0.5,
+        "intelligence_growth": 1.8,
+        "strength_growth": 2.7
+    },
+    {
+        "name": "Sir Daniel",
+        "abilities": [
+            "Solar Flare",
+            "Swift Justice",
+            "Holy Infusion",
+            "Glory",
+            "Divine Ascension"
+        ],
+        "primary_attribute": "Strength",
+        "attack_type": "Melee (90)",
+        "agility": 13,
+        "intelligence": 18,
+        "strength": 20,
+        "agility_growth": 2,
+        "intelligence_growth": 1.8,
+        "strength_growth": 3.5
+    },
+    {
+        "name": "Tide Guardian",
+        "abilities": [
+            "Goring Hew",
+            "Reinforce Scales",
+            "Tidal Strike",
+            "Kraken's Venom",
+            "Blessing of the Deeps"
+        ],
+        "primary_attribute": "Strength",
+        "attack_type": "Melee (100)",
+        "agility": 15,
+        "intelligence": 15,
+        "strength": 20,
+        "agility_growth": 1.75,
+        "intelligence_growth": 1.5,
+        "strength_growth": 3
+    },
+    {
+        "name": "Lightwyrm",
+        "abilities": [
+            "Lightwyrm Brood",
+            "Holy Strike",
+            "Wyrmblood",
+            "Divine Judgement",
+            "Glorious Roar"
+        ],
+        "primary_attribute": "Strength",
+        "attack_type": "Melee (128)",
+        "agility": 14,
+        "intelligence": 18,
+        "strength": 18,
+        "agility_growth": 1,
+        "intelligence_growth": 2.5,
+        "strength_growth": 2.5
+    },
+    {
+        "name": "Berserker",
+        "abilities": [
+            "Brutal Strikes",
+            "Battle Cry",
+            "Exxecute",
+            "Puncture",
+            "Ruthlessness"
+        ],
+        "primary_attribute": "Strength",
+        "attack_type": "Melee (128)",
+        "agility": 10,
+        "intelligence": 14,
+        "strength": 17,
+        "agility_growth": 1,
+        "intelligence_growth": 1,
+        "strength_growth": 2
+    },
+    {
+        "name": "Dark Spiritualist",
+        "abilities": [
+            "Empower",
+            "Malevolent Hex",
+            "Raise Dead",
+            "Quirky Bones",
+            "Unholy Might"
+        ],
+        "primary_attribute": "Intelligence",
+        "attack_type": "Ranged (600)",
+        "agility": 14,
+        "intelligence": 21,
+        "strength": 17,
+        "agility_growth": 1,
+        "intelligence_growth": 3.2,
+        "strength_growth": 2
+    },
+    {
+        "name": "Exiled Priest",
+        "abilities": [
+            "Prayer",
+            "Summon Shadowbeast",
+            "Smite",
+            "Power Infusion",
+            "Holy Beacon"
+        ],
+        "primary_attribute": "Intelligence",
+        "attack_type": "Ranged (600)",
+        "agility": 13,
+        "intelligence": 22,
+        "strength": 14,
+        "agility_growth": 1,
+        "intelligence_growth": 3.5,
+        "strength_growth": 1.8
+    },
+    {
+        "name": "Frost Mage",
+        "abilities": [
+            "Ice Shard",
+            "Winter's Curse",
+            "Shatter",
+            "Iceblock",
+            "Endless Winter"
+        ],
+        "primary_attribute": "Intelligence",
+        "attack_type": "Ranged (600)",
+        "agility": 14,
+        "intelligence": 22,
+        "strength": 15,
+        "agility_growth": 1,
+        "intelligence_growth": 3.5,
+        "strength_growth": 2
+    },
+    {
+        "name": "Naga Queen",
+        "abilities": [
+            "Storming Winds",
+            "Hydra's Breath",
+            "Storm Blast",
+            "Mending Touch",
+            "Tailwind"
+        ],
+        "primary_attribute": "Intelligence",
+        "attack_type": "Ranged (600)",
+        "agility": 14,
+        "intelligence": 19,
+        "strength": 18,
+        "agility_growth": 1,
+        "intelligence_growth": 3,
+        "strength_growth": 2
+    },
+    {
+        "name": "Nether Shaman",
+        "abilities": [
+            "Sacrifice",
+            "Mana Implosion",
+            "Healing Tendrils",
+            "Energize",
+            "Mind Drain"
+        ],
+        "primary_attribute": "Intelligence",
+        "attack_type": "Ranged (600)",
+        "agility": 14,
+        "intelligence": 19,
+        "strength": 18,
+        "agility_growth": 1,
+        "intelligence_growth": 3,
+        "strength_growth": 2
+    },
+    {
+        "name": "Thundermancer",
+        "abilities": [
+            "Lightning Strike",
+            "Ball Lightning",
+            "Volatile Energy",
+            "Power Surge",
+            "Charged Attacks"
+        ],
+        "primary_attribute": "Intelligence",
+        "attack_type": "Ranged (600)",
+        "agility": 13,
+        "intelligence": 21,
+        "strength": 19,
+        "agility_growth": 1.25,
+        "intelligence_growth": 2.5,
+        "strength_growth": 2
+    },
+    {
+        "name": "Weaver of Veil",
+        "abilities": [
+            "Soul Rip",
+            "Veiled Blessing",
+            "Piercing Wail",
+            "Shadow Shell",
+            "Threads of Veil"
+        ],
+        "primary_attribute": "Intelligence",
+        "attack_type": "Ranged (450)",
+        "agility": 16,
+        "intelligence": 16,
+        "strength": 16,
+        "agility_growth": 1,
+        "intelligence_growth": 3,
+        "strength_growth": 1
+    },
+    {
+        "name": "Artillery Team",
+        "abilities": [
+            "Cluster Shell",
+            "Armageddon",
+            "Napalm Strike",
+            "Armor-Piercing Shells",
+            "Heavy Artillery"
+        ],
+        "primary_attribute": "Strength",
+        "attack_type": "Ranged (650)",
+        "agility": 8,
+        "intelligence": 21,
+        "strength": 19,
+        "agility_growth": 1,
+        "intelligence_growth": 2.5,
+        "strength_growth": 4
+    },
+    {
+        "name": "Bladedancer",
+        "abilities": [
+            "Dexterity",
+            "Shuriken Fling",
+            "Flurry of Strikes",
+            "Dancing Duo",
+            "Blade Dance"
+        ],
+        "primary_attribute": "Agility",
+        "attack_type": "Melee (100)",
+        "agility": 23,
+        "intelligence": 16,
+        "strength": 18,
+        "agility_growth": 2.75,
+        "intelligence_growth": 2.5,
+        "strength_growth": 2
+    },
+    {
+        "name": "Feral Druid",
+        "abilities": [
+            "Wild Strike",
+            "Untamed Ferocity",
+            "Leader of the Pack",
+            "Feral Rage",
+            "Shapeshift"
+        ],
+        "primary_attribute": "Agility",
+        "attack_type": "Melee (100)",
+        "agility": 22,
+        "intelligence": 17,
+        "strength": 22,
+        "agility_growth": 3,
+        "intelligence_growth": 1,
+        "strength_growth": 3
+    },
+    {
+        "name": "Earthbreaker",
+        "abilities": [
+            "Strength of Earth",
+            "Destroy",
+            "Earth Shake",
+            "Pulverize",
+            "Thick Skin"
+        ],
+        "primary_attribute": "Strength",
+        "attack_type": "Melee (128)",
+        "agility": 10,
+        "intelligence": 14,
+        "strength": 25,
+        "agility_growth": 1.5,
+        "intelligence_growth": 1.3,
+        "strength_growth": 3.2
+    },
+    {
+        "name": "Venomthorn Seer",
+        "abilities": [
+            "Death in a Bottle",
+            "Venomtouched Glaive",
+            "Withering Curse",
+            "Voodoo",
+            "Venomthorn Ward"
+        ],
+        "primary_attribute": "Intelligence",
+        "attack_type": "Ranged (500)",
+        "agility": 20,
+        "intelligence": 17,
+        "strength": 15,
+        "agility_growth": 1.5,
+        "intelligence_growth": 2.5,
+        "strength_growth": 2
+    },
+    {
+        "name": "Blood Lord",
+        "abilities": [
+            "Reap",
+            "Blood Lust",
+            "Sanguine Rebirth",
+            "Undying Hunger",
+            "Transfusion"
+        ],
+        "primary_attribute": "Strength",
+        "attack_type": "Melee (100)",
+        "agility": 16,
+        "intelligence": 18,
+        "strength": 20,
+        "agility_growth": 1,
+        "intelligence_growth": 2.5,
+        "strength_growth": 3.75
+    },
+    {
+        "name": "Crypt King",
+        "abilities": [
+            "Mass Impale",
+            "Crypt King's Might",
+            "Spiked Carapace",
+            "Feasting Strike",
+            "Rotting Swarm"
+        ],
+        "primary_attribute": "Strength",
+        "attack_type": "Melee (128)",
+        "agility": 14,
+        "intelligence": 14,
+        "strength": 26,
+        "agility_growth": 1.2,
+        "intelligence_growth": 1.6,
+        "strength_growth": 3.2
+    },
+    {
+        "name": "Death Revenant",
+        "abilities": [
+            "Primordial Being",
+            "Drowning Oblivion",
+            "Soul Discharge",
+            "Death Strike",
+            "Soul Barrier"
+        ],
+        "primary_attribute": "Intelligence",
+        "attack_type": "Melee (128)",
+        "agility": 15,
+        "intelligence": 19,
+        "strength": 22,
+        "agility_growth": 1.5,
+        "intelligence_growth": 3,
+        "strength_growth": 2
+    },
+    {
+        "name": "Princess of Anguish",
+        "abilities": [
+            "Lust for Flesh",
+            "Succulent Anguish",
+            "Shadow Strike",
+            "Death Scythe",
+            "Seduce"
+        ],
+        "primary_attribute": "Intelligence",
+        "attack_type": "Melee (128)",
+        "agility": 14,
+        "intelligence": 22,
+        "strength": 20,
+        "agility_growth": 1,
+        "intelligence_growth": 3,
+        "strength_growth": 2.5
+    },
+    {
+        "name": "Bounty Hunter",
+        "abilities": [
+            "Killshot",
+            "Hellspike Trap",
+            "Marked for Death",
+            "Bounty Hunt",
+            "Big Boom"
+        ],
+        "primary_attribute": "Agility",
+        "attack_type": "Ranged (600)",
+        "agility": 22,
+        "intelligence": 19,
+        "strength": 18,
+        "agility_growth": 2.25,
+        "intelligence_growth": 1.75,
+        "strength_growth": 1.5
+    },
+    {
+        "name": "Elementress",
+        "abilities": [
+            "Rain of Arrows",
+            "Call Elemental Guardian",
+            "Incineration Arrows",
+            "Frost Shot",
+            "Windweaving"
+        ],
+        "primary_attribute": "Agility",
+        "attack_type": "Ranged (600)",
+        "agility": 21,
+        "intelligence": 20,
+        "strength": 16,
+        "agility_growth": 2,
+        "intelligence_growth": 3,
+        "strength_growth": 1.5
+    },
+    {
+        "name": "",
+        "abilities": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "primary_attribute": "",
+        "attack_type": "",
+        "agility": 0,
+        "intelligence": 0,
+        "strength": 0,
+        "agility_growth": 0,
+        "intelligence_growth": 0,
+        "strength_growth": 0
+    }
+]
