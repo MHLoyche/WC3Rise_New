@@ -10,6 +10,12 @@ export default function Bosses() {
           <div className="hero-divider"></div>
         </div>
       </section>
+
+      <section className="intro-section">
+        <div className="content-container">
+          <h2>To be implemented</h2>
+          </div>
+      </section>
     </div>
   );
 }

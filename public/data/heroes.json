@@ -2,11 +2,110 @@
     {
         "name": "Father of the Forest",
         "abilities": [
-            "Restoration",
-            "Wrath of Nature",
-            "Revitalizing Waters",
-            "Nature's Grace",
-            "Mass Entangle"
+            {
+              "name": "Restoration",
+              "type": "Healing",
+              "description": "Nurtures an ally with the power of nature, restoring their health. Healing scales with Intelligence.",
+              "cooldown": [6, 5, 4, 3, 2],
+              "manaCost": [75, 150, 225, 300, 375],
+              "values": [
+                {
+                  "label": "Base Healing",
+                  "levels": [150, 200, 250, 300, 350],
+                  "color": "healing"
+                },
+                {
+                  "label": "Intelligence Heal Scaling",
+                  "levels": [1.5, 2, 2.5, 3, 3.5],
+                  "color": "scaling"
+                }
+              ]
+            },
+            {
+              "name": "Wrath of Nature",
+              "type": "Summon",
+              "description": "Summons a massive War Ent to fight alongside the Father of the Forest. The health and damage scales on the Intelligence of the Father of the Forest.",
+              "cooldown": [60,60,60],
+              "manaCost": [250,500,750],
+              "values": [
+                {
+                  "label": "Base Damage",
+                  "levels": [50,75,100],
+                  "color": "damage"
+                },
+                {
+                    "label": "Base Health",
+                    "levels": [125,250,500],
+                    "color": "healing"
+                },
+                {
+                  "label": "Intelligence Scaling (Damage)",
+                  "levels": [1,2,3],
+                  "color": "scaling"
+                },
+                {
+                    "label": "Intelligence Scaling (Health)",
+                    "levels": [25,50,100],
+                    "color": "scaling"
+                },
+                {
+                    "label": "Duration",
+                    "levels": [20,20,20],
+                    "color": "control"
+                }
+              ]
+            },
+            {
+              "name": "Revitalizing Waters",
+              "type": "Support",
+              "description": "The Father of the Forest blesses an allied target with empowering waters. Restoring mana and temporarily increasing their damage",
+              "cooldown": [14,13,12,11,10],
+              "manaCost": [10,20,30,40,50],
+              "values": [
+                {
+                  "label": "Damage Bonus",
+                  "levels": ["20%","30%","40%","50%","60%"],
+                  "color": "damage"
+                },
+                {
+                    "label": "Mana Restored",
+                    "levels": [20,40,60,80,100],
+                    "color": "healing"
+                },
+                {
+                    "label": "Duration",
+                    "levels": [10,10,10,10,10],
+                    "color": "control"
+                },
+                {
+                    "label": "Mana Restore Intelligence Scaling",
+                    "levels": [1,1.5,2,2.5,3],
+                    "color": "scaling"
+                }
+              ]
+            },
+            {
+              "name": "Nature's Grace",
+              "type": "Support",
+              "description": "PLACEHOLDER TEXT HERE",
+              "cooldown": [5, 5, 4, 4, 3],
+              "manaCost": [50, 75, 100, 125, 150],
+              "values": []
+            },
+            {
+              "name": "Mass Entangle",
+              "type": "Control",
+              "description": "PLACEHOLDER TEXT HERE",
+              "cooldown": [15, 14, 13, 12, 11],
+              "manaCost": [200, 250, 300, 350, 400],
+              "values": [
+                {
+                  "label": "Stun Duration",
+                  "levels": [2, 2.5, 3, 3.5, 4],
+                  "color": "control"
+                }
+              ]
+            }
         ],
         "primary_attribute": "Intelligence",
         "attack_type": "Ranged (600)",
@@ -20,11 +119,11 @@
     {
         "name": "Void Entity",
         "abilities": [
-            "Eye of the Void",
-            "Void Burst",
-            "Summon Voidstone",
-            "Siphon Life",
-            "Lost Soul"
+            {"name": "Eye of the Void", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [10, 9, 8, 7, 6], "manaCost": [120, 160, 200, 240, 280], "values": [{"label": "Base Damage", "levels": [130, 180, 230, 280, 330], "color": "damage"},{"label": "Intelligence Scaling", "levels": [1.3, 1.5, 1.7, 1.9, 2.1], "color": "scaling"}]},
+            {"name": "Void Burst", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [7, 6, 5, 4, 3], "manaCost": [100, 140, 180, 220, 260], "values": [{"label": "Base Damage", "levels": [100, 150, 200, 250, 300], "color": "damage"}]},
+            {"name": "Summon Voidstone", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [20, 18, 16, 14, 12], "manaCost": [200, 250, 300, 350, 400], "values": []},
+            {"name": "Siphon Life", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [110, 150, 190, 230, 270], "values": [{"label": "Damage/Heal", "levels": [80, 120, 160, 200, 240], "color": "healing"}]},
+            {"name": "Lost Soul", "type": "Control", "description": "PLACEHOLDER TEXT HERE", "cooldown": [12, 11, 10, 9, 8], "manaCost": [150, 200, 250, 300, 350], "values": [{"label": "Duration", "levels": [2.5, 3, 3.5, 4, 4.5], "color": "control"}]}
         ],
         "primary_attribute": "Intelligence",
         "attack_type": "Ranged (400)",
@@ -38,11 +137,11 @@
     {
         "name": "Ancient Marksman",
         "abilities": [
-            "Ancient Presence",
-            "Soul Hunt",
-            "Dark Veil",
-            "Deadly Shot",
-            "Split Shot"
+            {"name": "Ancient Presence", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [5, 5, 4, 4, 3], "manaCost": [40, 60, 80, 100, 120], "values": []},
+            {"name": "Soul Hunt", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [6, 5, 4, 3, 2], "manaCost": [75, 110, 145, 180, 215], "values": [{"label": "Base Damage", "levels": [90, 135, 180, 225, 270], "color": "damage"}]},
+            {"name": "Dark Veil", "type": "Control", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [100, 140, 180, 220, 260], "values": [{"label": "Duration", "levels": [2, 2.5, 3, 3.5, 4], "color": "control"}]},
+            {"name": "Deadly Shot", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [4, 3.5, 3, 2.5, 2], "manaCost": [50, 75, 100, 125, 150], "values": [{"label": "Base Damage", "levels": [120, 170, 220, 270, 320], "color": "damage"}]},
+            {"name": "Split Shot", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [5, 5, 4, 4, 3], "manaCost": [80, 120, 160, 200, 240], "values": [{"label": "Projectiles", "levels": [3, 4, 4, 5, 5], "color": "damage"}]}
         ],
         "primary_attribute": "Agility",
         "attack_type": "Ranged (600)",
@@ -56,11 +155,11 @@
     {
         "name": "Legionsong Countess",
         "abilities": [
-            "Song of Immortality",
-            "Enhance Song",
-            "Song of Despair",
-            "Song of war",
-            "Song of Victory"
+            {"name": "Song of Immortality", "type": "Healing", "description": "PLACEHOLDER TEXT HERE", "cooldown": [12, 11, 10, 9, 8], "manaCost": [150, 200, 250, 300, 350], "values": [{"label": "Healing", "levels": [100, 150, 200, 250, 300], "color": "healing"}]},
+            {"name": "Enhance Song", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [100, 130, 160, 190, 220], "values": []},
+            {"name": "Song of Despair", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [7, 6, 5, 4, 3], "manaCost": [90, 120, 150, 180, 210], "values": [{"label": "Base Damage", "levels": [80, 130, 180, 230, 280], "color": "damage"}]},
+            {"name": "Song of war", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [10, 9, 8, 7, 6], "manaCost": [120, 160, 200, 240, 280], "values": []},
+            {"name": "Song of Victory", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [15, 14, 13, 12, 11], "manaCost": [200, 250, 300, 350, 400], "values": []}
         ],
         "primary_attribute": "Intelligence",
         "attack_type": "Ranged (600)",
@@ -74,11 +173,11 @@
     {
         "name": "Royal Guard",
         "abilities": [
-            "Divine Wrath",
-            "Divine Storm",
-            "Mark of the Phoenix",
-            "Royal Barrier",
-            "Bouncing Glaive"
+            {"name": "Divine Wrath", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [6, 5, 4, 3, 2], "manaCost": [100, 140, 180, 220, 260], "values": [{"label": "Base Damage", "levels": [110, 160, 210, 260, 310], "color": "damage"}]},
+            {"name": "Divine Storm", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [120, 160, 200, 240, 280], "values": [{"label": "Base Damage", "levels": [100, 150, 200, 250, 300], "color": "damage"}]},
+            {"name": "Mark of the Phoenix", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [7, 6, 5, 4, 3], "manaCost": [80, 110, 140, 170, 200], "values": []},
+            {"name": "Royal Barrier", "type": "Shield", "description": "PLACEHOLDER TEXT HERE", "cooldown": [10, 9, 8, 7, 6], "manaCost": [100, 140, 180, 220, 260], "values": [{"label": "Shield Amount", "levels": [150, 200, 250, 300, 350], "color": "damage"}]},
+            {"name": "Bouncing Glaive", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [5, 4, 3, 2, 1], "manaCost": [60, 90, 120, 150, 180], "values": [{"label": "Base Damage", "levels": [80, 130, 180, 230, 280], "color": "damage"}]}
         ],
         "primary_attribute": "Agility",
         "attack_type": "Ranged (600)",
@@ -92,11 +191,11 @@
     {
         "name": "Demon Slayer",
         "abilities": [
-            "Felfire Comet",
-            "Fel Imprisonment",
-            "Demon Burn",
-            "Lycoris Radiata",
-            "Felforged"
+            {"name": "Felfire Comet", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [7, 6, 5, 4, 3], "manaCost": [100, 140, 180, 220, 260], "values": [{"label": "Base Damage", "levels": [120, 170, 220, 270, 320], "color": "damage"}]},
+            {"name": "Fel Imprisonment", "type": "Control", "description": "PLACEHOLDER TEXT HERE", "cooldown": [9, 8, 7, 6, 5], "manaCost": [110, 150, 190, 230, 270], "values": [{"label": "Duration", "levels": [2, 2.5, 3, 3.5, 4], "color": "control"}]},
+            {"name": "Demon Burn", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [5, 4, 3, 2, 1], "manaCost": [80, 110, 140, 170, 200], "values": [{"label": "Base Damage", "levels": [100, 150, 200, 250, 300], "color": "damage"}]},
+            {"name": "Lycoris Radiata", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [6, 5, 4, 3, 2], "manaCost": [90, 130, 170, 210, 250], "values": [{"label": "Base Damage", "levels": [110, 160, 210, 260, 310], "color": "damage"}]},
+            {"name": "Felforged", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [12, 11, 10, 9, 8], "manaCost": [150, 200, 250, 300, 350], "values": []}
         ],
         "primary_attribute": "Agility",
         "attack_type": "Melee (100)",
@@ -110,11 +209,11 @@
     {
         "name": "Iron Raven",
         "abilities": [
-            "Raven Form",
-            "Blink Strike",
-            "Expose Weakness",
-            "Iron Feathers",
-            "Eluding Stance"
+            {"name": "Raven Form", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [10, 9, 8, 7, 6], "manaCost": [100, 140, 180, 220, 260], "values": []},
+            {"name": "Blink Strike", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [4, 3.5, 3, 2.5, 2], "manaCost": [70, 100, 130, 160, 190], "values": [{"label": "Base Damage", "levels": [130, 180, 230, 280, 330], "color": "damage"}]},
+            {"name": "Expose Weakness", "type": "Control", "description": "PLACEHOLDER TEXT HERE", "cooldown": [6, 5, 4, 3, 2], "manaCost": [80, 110, 140, 170, 200], "values": [{"label": "Duration", "levels": [3, 3.5, 4, 4.5, 5], "color": "control"}]},
+            {"name": "Iron Feathers", "type": "Shield", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [100, 140, 180, 220, 260], "values": [{"label": "Shield", "levels": [120, 170, 220, 270, 320], "color": "damage"}]},
+            {"name": "Eluding Stance", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [7, 6, 5, 4, 3], "manaCost": [90, 120, 150, 180, 210], "values": []}
         ],
         "primary_attribute": "Agility",
         "attack_type": "Melee (100)",
@@ -128,11 +227,11 @@
     {
         "name": "Bone Emperor",
         "abilities": [
-            "Terror of the Sands",
-            "Harden Exoskeleton",
-            "Spiked Exoskeleton",
-            "Absorb Bone Marrow",
-            "Paralyzing Strike"
+            {"name": "Terror of the Sands", "type": "Control", "description": "PLACEHOLDER TEXT HERE", "cooldown": [10, 9, 8, 7, 6], "manaCost": [120, 160, 200, 240, 280], "values": [{"label": "Fear Duration", "levels": [2, 2.5, 3, 3.5, 4], "color": "control"}]},
+            {"name": "Harden Exoskeleton", "type": "Shield", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [100, 130, 160, 190, 220], "values": [{"label": "Shield", "levels": [180, 240, 300, 360, 420], "color": "damage"}]},
+            {"name": "Spiked Exoskeleton", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [6, 5, 4, 3, 2], "manaCost": [80, 110, 140, 170, 200], "values": [{"label": "Spike Damage", "levels": [100, 150, 200, 250, 300], "color": "damage"}]},
+            {"name": "Absorb Bone Marrow", "type": "Healing", "description": "PLACEHOLDER TEXT HERE", "cooldown": [9, 8, 7, 6, 5], "manaCost": [90, 130, 170, 210, 250], "values": [{"label": "Heal", "levels": [120, 170, 220, 270, 320], "color": "healing"}]},
+            {"name": "Paralyzing Strike", "type": "Control", "description": "PLACEHOLDER TEXT HERE", "cooldown": [7, 6, 5, 4, 3], "manaCost": [100, 140, 180, 220, 260], "values": [{"label": "Stun Duration", "levels": [1.5, 2, 2.5, 3, 3.5], "color": "control"}]}
         ],
         "primary_attribute": "Strength",
         "attack_type": "Melee (100)",
@@ -146,11 +245,11 @@
     {
         "name": "Sir Daniel",
         "abilities": [
-            "Solar Flare",
-            "Swift Justice",
-            "Holy Infusion",
-            "Glory",
-            "Divine Ascension"
+            {"name": "Solar Flare", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [6, 5, 4, 3, 2], "manaCost": [100, 140, 180, 220, 260], "values": [{"label": "Base Damage", "levels": [140, 190, 240, 290, 340], "color": "damage"}]},
+            {"name": "Swift Justice", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [4, 3.5, 3, 2.5, 2], "manaCost": [80, 110, 140, 170, 200], "values": [{"label": "Base Damage", "levels": [120, 170, 220, 270, 320], "color": "damage"}]},
+            {"name": "Holy Infusion", "type": "Healing", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [120, 160, 200, 240, 280], "values": [{"label": "Healing", "levels": [150, 200, 250, 300, 350], "color": "healing"}]},
+            {"name": "Glory", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [10, 9, 8, 7, 6], "manaCost": [130, 170, 210, 250, 290], "values": []},
+            {"name": "Divine Ascension", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [15, 14, 13, 12, 11], "manaCost": [200, 250, 300, 350, 400], "values": []}
         ],
         "primary_attribute": "Strength",
         "attack_type": "Melee (90)",
@@ -164,11 +263,11 @@
     {
         "name": "Tide Guardian",
         "abilities": [
-            "Goring Hew",
-            "Reinforce Scales",
-            "Tidal Strike",
-            "Kraken's Venom",
-            "Blessing of the Deeps"
+            {"name": "Goring Hew", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [5, 4, 3, 2, 1], "manaCost": [80, 110, 140, 170, 200], "values": [{"label": "Base Damage", "levels": [130, 180, 230, 280, 330], "color": "damage"}]},
+            {"name": "Reinforce Scales", "type": "Shield", "description": "PLACEHOLDER TEXT HERE", "cooldown": [9, 8, 7, 6, 5], "manaCost": [100, 140, 180, 220, 260], "values": [{"label": "Shield", "levels": [160, 220, 280, 340, 400], "color": "damage"}]},
+            {"name": "Tidal Strike", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [6, 5, 4, 3, 2], "manaCost": [90, 120, 150, 180, 210], "values": [{"label": "Base Damage", "levels": [120, 170, 220, 270, 320], "color": "damage"}]},
+            {"name": "Kraken's Venom", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [110, 150, 190, 230, 270], "values": [{"label": "Poison Damage", "levels": [100, 150, 200, 250, 300], "color": "damage"}]},
+            {"name": "Blessing of the Deeps", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [12, 11, 10, 9, 8], "manaCost": [140, 180, 220, 260, 300], "values": []}
         ],
         "primary_attribute": "Strength",
         "attack_type": "Melee (100)",
@@ -182,11 +281,11 @@
     {
         "name": "Lightwyrm",
         "abilities": [
-            "Lightwyrm Brood",
-            "Holy Strike",
-            "Wyrmblood",
-            "Divine Judgement",
-            "Glorious Roar"
+            {"name": "Lightwyrm Brood", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [10, 9, 8, 7, 6], "manaCost": [120, 160, 200, 240, 280], "values": []},
+            {"name": "Holy Strike", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [5, 4, 3, 2, 1], "manaCost": [100, 130, 160, 190, 220], "values": [{"label": "Base Damage", "levels": [140, 190, 240, 290, 340], "color": "damage"}]},
+            {"name": "Wyrmblood", "type": "Healing", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [110, 150, 190, 230, 270], "values": [{"label": "Healing", "levels": [130, 180, 230, 280, 330], "color": "healing"}]},
+            {"name": "Divine Judgement", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [9, 8, 7, 6, 5], "manaCost": [130, 170, 210, 250, 290], "values": [{"label": "Base Damage", "levels": [150, 200, 250, 300, 350], "color": "damage"}]},
+            {"name": "Glorious Roar", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [12, 11, 10, 9, 8], "manaCost": [150, 200, 250, 300, 350], "values": []}
         ],
         "primary_attribute": "Strength",
         "attack_type": "Melee (128)",
@@ -200,11 +299,11 @@
     {
         "name": "Berserker",
         "abilities": [
-            "Brutal Strikes",
-            "Battle Cry",
-            "Exxecute",
-            "Puncture",
-            "Ruthlessness"
+            {"name": "Brutal Strikes", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [3, 2.5, 2, 1.5, 1], "manaCost": [60, 80, 100, 120, 140], "values": [{"label": "Base Damage", "levels": [110, 160, 210, 260, 310], "color": "damage"}]},
+            {"name": "Battle Cry", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [90, 120, 150, 180, 210], "values": []},
+            {"name": "Exxecute", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [6, 5, 4, 3, 2], "manaCost": [100, 130, 160, 190, 220], "values": [{"label": "Base Damage", "levels": [140, 190, 240, 290, 340], "color": "damage"}]},
+            {"name": "Puncture", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [5, 4, 3, 2, 1], "manaCost": [80, 110, 140, 170, 200], "values": [{"label": "Base Damage", "levels": [120, 170, 220, 270, 320], "color": "damage"}]},
+            {"name": "Ruthlessness", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [10, 9, 8, 7, 6], "manaCost": [120, 160, 200, 240, 280], "values": []}
         ],
         "primary_attribute": "Strength",
         "attack_type": "Melee (128)",
@@ -218,11 +317,11 @@
     {
         "name": "Dark Spiritualist",
         "abilities": [
-            "Empower",
-            "Malevolent Hex",
-            "Raise Dead",
-            "Quirky Bones",
-            "Unholy Might"
+            {"name": "Empower", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [100, 130, 160, 190, 220], "values": []},
+            {"name": "Malevolent Hex", "type": "Control", "description": "PLACEHOLDER TEXT HERE", "cooldown": [7, 6, 5, 4, 3], "manaCost": [110, 150, 190, 230, 270], "values": [{"label": "Duration", "levels": [3, 3.5, 4, 4.5, 5], "color": "control"}]},
+            {"name": "Raise Dead", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [12, 11, 10, 9, 8], "manaCost": [150, 200, 250, 300, 350], "values": []},
+            {"name": "Quirky Bones", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [6, 5, 4, 3, 2], "manaCost": [90, 120, 150, 180, 210], "values": [{"label": "Base Damage", "levels": [100, 150, 200, 250, 300], "color": "damage"}]},
+            {"name": "Unholy Might", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [10, 9, 8, 7, 6], "manaCost": [130, 170, 210, 250, 290], "values": []}
         ],
         "primary_attribute": "Intelligence",
         "attack_type": "Ranged (600)",
@@ -236,11 +335,11 @@
     {
         "name": "Exiled Priest",
         "abilities": [
-            "Prayer",
-            "Summon Shadowbeast",
-            "Smite",
-            "Power Infusion",
-            "Holy Beacon"
+            {"name": "Prayer", "type": "Healing", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [120, 160, 200, 240, 280], "values": [{"label": "Healing", "levels": [150, 200, 250, 300, 350], "color": "healing"}]},
+            {"name": "Summon Shadowbeast", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [12, 11, 10, 9, 8], "manaCost": [150, 200, 250, 300, 350], "values": []},
+            {"name": "Smite", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [6, 5, 4, 3, 2], "manaCost": [100, 130, 160, 190, 220], "values": [{"label": "Base Damage", "levels": [130, 180, 230, 280, 330], "color": "damage"}]},
+            {"name": "Power Infusion", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [10, 9, 8, 7, 6], "manaCost": [140, 180, 220, 260, 300], "values": []},
+            {"name": "Holy Beacon", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [15, 14, 13, 12, 11], "manaCost": [200, 250, 300, 350, 400], "values": []}
         ],
         "primary_attribute": "Intelligence",
         "attack_type": "Ranged (600)",
@@ -254,11 +353,11 @@
     {
         "name": "Frost Mage",
         "abilities": [
-            "Ice Shard",
-            "Winter's Curse",
-            "Shatter",
-            "Iceblock",
-            "Endless Winter"
+            {"name": "Ice Shard", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [4, 3, 2, 1, 0.5], "manaCost": [80, 110, 140, 170, 200], "values": [{"label": "Base Damage", "levels": [100, 150, 200, 250, 300], "color": "damage"}]},
+            {"name": "Winter's Curse", "type": "Control", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [120, 160, 200, 240, 280], "values": [{"label": "Slow", "levels": [30, 40, 50, 60, 70], "color": "control"}]},
+            {"name": "Shatter", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [6, 5, 4, 3, 2], "manaCost": [100, 130, 160, 190, 220], "values": [{"label": "Base Damage", "levels": [120, 170, 220, 270, 320], "color": "damage"}]},
+            {"name": "Iceblock", "type": "Shield", "description": "PLACEHOLDER TEXT HERE", "cooldown": [10, 9, 8, 7, 6], "manaCost": [130, 170, 210, 250, 290], "values": [{"label": "Shield Duration", "levels": [2, 2.5, 3, 3.5, 4], "color": "damage"}]},
+            {"name": "Endless Winter", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [15, 14, 13, 12, 11], "manaCost": [200, 250, 300, 350, 400], "values": []}
         ],
         "primary_attribute": "Intelligence",
         "attack_type": "Ranged (600)",
@@ -272,11 +371,11 @@
     {
         "name": "Naga Queen",
         "abilities": [
-            "Storming Winds",
-            "Hydra's Breath",
-            "Storm Blast",
-            "Mending Touch",
-            "Tailwind"
+            {"name": "Storming Winds", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [6, 5, 4, 3, 2], "manaCost": [100, 130, 160, 190, 220], "values": [{"label": "Base Damage", "levels": [110, 160, 210, 260, 310], "color": "damage"}]},
+            {"name": "Hydra's Breath", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [7, 6, 5, 4, 3], "manaCost": [110, 150, 190, 230, 270], "values": [{"label": "Base Damage", "levels": [130, 180, 230, 280, 330], "color": "damage"}]},
+            {"name": "Storm Blast", "type": "Control", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [120, 160, 200, 240, 280], "values": [{"label": "Knock Back", "levels": [1.5, 2, 2.5, 3, 3.5], "color": "control"}]},
+            {"name": "Mending Touch", "type": "Healing", "description": "PLACEHOLDER TEXT HERE", "cooldown": [9, 8, 7, 6, 5], "manaCost": [130, 170, 210, 250, 290], "values": [{"label": "Healing", "levels": [140, 190, 240, 290, 340], "color": "healing"}]},
+            {"name": "Tailwind", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [10, 9, 8, 7, 6], "manaCost": [140, 180, 220, 260, 300], "values": []}
         ],
         "primary_attribute": "Intelligence",
         "attack_type": "Ranged (600)",
@@ -290,11 +389,11 @@
     {
         "name": "Nether Shaman",
         "abilities": [
-            "Sacrifice",
-            "Mana Implosion",
-            "Healing Tendrils",
-            "Energize",
-            "Mind Drain"
+            {"name": "Sacrifice", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [100, 140, 180, 220, 260], "values": []},
+            {"name": "Mana Implosion", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [7, 6, 5, 4, 3], "manaCost": [110, 150, 190, 230, 270], "values": [{"label": "Base Damage", "levels": [120, 170, 220, 270, 320], "color": "damage"}]},
+            {"name": "Healing Tendrils", "type": "Healing", "description": "PLACEHOLDER TEXT HERE", "cooldown": [9, 8, 7, 6, 5], "manaCost": [120, 160, 200, 240, 280], "values": [{"label": "Healing", "levels": [130, 180, 230, 280, 330], "color": "healing"}]},
+            {"name": "Energize", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [6, 5, 4, 3, 2], "manaCost": [90, 120, 150, 180, 210], "values": []},
+            {"name": "Mind Drain", "type": "Control", "description": "PLACEHOLDER TEXT HERE", "cooldown": [10, 9, 8, 7, 6], "manaCost": [140, 180, 220, 260, 300], "values": [{"label": "Mana Drain", "levels": [50, 75, 100, 125, 150], "color": "control"}]}
         ],
         "primary_attribute": "Intelligence",
         "attack_type": "Ranged (600)",
@@ -308,11 +407,11 @@
     {
         "name": "Thundermancer",
         "abilities": [
-            "Lightning Strike",
-            "Ball Lightning",
-            "Volatile Energy",
-            "Power Surge",
-            "Charged Attacks"
+            {"name": "Lightning Strike", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [5, 4, 3, 2, 1], "manaCost": [100, 130, 160, 190, 220], "values": [{"label": "Base Damage", "levels": [130, 180, 230, 280, 330], "color": "damage"}]},
+            {"name": "Ball Lightning", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [7, 6, 5, 4, 3], "manaCost": [120, 160, 200, 240, 280], "values": [{"label": "Base Damage", "levels": [120, 170, 220, 270, 320], "color": "damage"}]},
+            {"name": "Volatile Energy", "type": "Control", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [130, 170, 210, 250, 290], "values": [{"label": "Duration", "levels": [2, 2.5, 3, 3.5, 4], "color": "control"}]},
+            {"name": "Power Surge", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [6, 5, 4, 3, 2], "manaCost": [110, 150, 190, 230, 270], "values": []},
+            {"name": "Charged Attacks", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [10, 9, 8, 7, 6], "manaCost": [140, 180, 220, 260, 300], "values": []}
         ],
         "primary_attribute": "Intelligence",
         "attack_type": "Ranged (600)",
@@ -326,11 +425,11 @@
     {
         "name": "Weaver of Veil",
         "abilities": [
-            "Soul Rip",
-            "Veiled Blessing",
-            "Piercing Wail",
-            "Shadow Shell",
-            "Threads of Veil"
+            {"name": "Soul Rip", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [6, 5, 4, 3, 2], "manaCost": [100, 130, 160, 190, 220], "values": [{"label": "Base Damage", "levels": [110, 160, 210, 260, 310], "color": "damage"}]},
+            {"name": "Veiled Blessing", "type": "Healing", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [120, 160, 200, 240, 280], "values": [{"label": "Healing", "levels": [120, 170, 220, 270, 320], "color": "healing"}]},
+            {"name": "Piercing Wail", "type": "Control", "description": "PLACEHOLDER TEXT HERE", "cooldown": [7, 6, 5, 4, 3], "manaCost": [110, 150, 190, 230, 270], "values": [{"label": "Duration", "levels": [2.25, 2.75, 3.25, 3.75, 4.25], "color": "control"}]},
+            {"name": "Shadow Shell", "type": "Shield", "description": "PLACEHOLDER TEXT HERE", "cooldown": [9, 8, 7, 6, 5], "manaCost": [130, 170, 210, 250, 290], "values": [{"label": "Shield", "levels": [140, 190, 240, 290, 340], "color": "damage"}]},
+            {"name": "Threads of Veil", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [10, 9, 8, 7, 6], "manaCost": [140, 180, 220, 260, 300], "values": []}
         ],
         "primary_attribute": "Intelligence",
         "attack_type": "Ranged (450)",
@@ -344,11 +443,11 @@
     {
         "name": "Artillery Team",
         "abilities": [
-            "Cluster Shell",
-            "Armageddon",
-            "Napalm Strike",
-            "Armor-Piercing Shells",
-            "Heavy Artillery"
+            {"name": "Cluster Shell", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [6, 5, 4, 3, 2], "manaCost": [120, 160, 200, 240, 280], "values": [{"label": "Explosion Damage", "levels": [140, 190, 240, 290, 340], "color": "damage"}]},
+            {"name": "Armageddon", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [12, 11, 10, 9, 8], "manaCost": [200, 250, 300, 350, 400], "values": [{"label": "Ultimate Damage", "levels": [300, 400, 500, 600, 700], "color": "damage"}]},
+            {"name": "Napalm Strike", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [130, 170, 210, 250, 290], "values": [{"label": "Burn Damage", "levels": [120, 170, 220, 270, 320], "color": "damage"}]},
+            {"name": "Armor-Piercing Shells", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [7, 6, 5, 4, 3], "manaCost": [100, 140, 180, 220, 260], "values": []},
+            {"name": "Heavy Artillery", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [10, 9, 8, 7, 6], "manaCost": [150, 200, 250, 300, 350], "values": []}
         ],
         "primary_attribute": "Strength",
         "attack_type": "Ranged (650)",
@@ -362,11 +461,11 @@
     {
         "name": "Bladedancer",
         "abilities": [
-            "Dexterity",
-            "Shuriken Fling",
-            "Flurry of Strikes",
-            "Dancing Duo",
-            "Blade Dance"
+            {"name": "Dexterity", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [100, 130, 160, 190, 220], "values": []},
+            {"name": "Shuriken Fling", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [4, 3, 2, 1, 0.5], "manaCost": [70, 100, 130, 160, 190], "values": [{"label": "Base Damage", "levels": [100, 150, 200, 250, 300], "color": "damage"}]},
+            {"name": "Flurry of Strikes", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [5, 4, 3, 2, 1], "manaCost": [80, 110, 140, 170, 200], "values": [{"label": "combo Damage", "levels": [130, 180, 230, 280, 330], "color": "damage"}]},
+            {"name": "Dancing Duo", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [7, 6, 5, 4, 3], "manaCost": [110, 150, 190, 230, 270], "values": []},
+            {"name": "Blade Dance", "type": "Control", "description": "PLACEHOLDER TEXT HERE", "cooldown": [9, 8, 7, 6, 5], "manaCost": [130, 170, 210, 250, 290], "values": [{"label": "Dodge Chance", "levels": [30, 40, 50, 60, 70], "color": "control"}]}
         ],
         "primary_attribute": "Agility",
         "attack_type": "Melee (100)",
@@ -380,11 +479,11 @@
     {
         "name": "Feral Druid",
         "abilities": [
-            "Wild Strike",
-            "Untamed Ferocity",
-            "Leader of the Pack",
-            "Feral Rage",
-            "Shapeshift"
+            {"name": "Wild Strike", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [4, 3, 2, 1, 0.5], "manaCost": [80, 110, 140, 170, 200], "values": [{"label": "Base Damage", "levels": [120, 170, 220, 270, 320], "color": "damage"}]},
+            {"name": "Untamed Ferocity", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [100, 140, 180, 220, 260], "values": []},
+            {"name": "Leader of the Pack", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [10, 9, 8, 7, 6], "manaCost": [130, 170, 210, 250, 290], "values": []},
+            {"name": "Feral Rage", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [6, 5, 4, 3, 2], "manaCost": [100, 130, 160, 190, 220], "values": [{"label": "Rage Damage", "levels": [140, 190, 240, 290, 340], "color": "damage"}]},
+            {"name": "Shapeshift", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [12, 11, 10, 9, 8], "manaCost": [150, 200, 250, 300, 350], "values": []}
         ],
         "primary_attribute": "Agility",
         "attack_type": "Melee (100)",
@@ -398,11 +497,11 @@
     {
         "name": "Earthbreaker",
         "abilities": [
-            "Strength of Earth",
-            "Destroy",
-            "Earth Shake",
-            "Pulverize",
-            "Thick Skin"
+            {"name": "Strength of Earth", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [100, 140, 180, 220, 260], "values": []},
+            {"name": "Destroy", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [6, 5, 4, 3, 2], "manaCost": [110, 150, 190, 230, 270], "values": [{"label": "Base Damage", "levels": [150, 200, 250, 300, 350], "color": "damage"}]},
+            {"name": "Earth Shake", "type": "Control", "description": "PLACEHOLDER TEXT HERE", "cooldown": [7, 6, 5, 4, 3], "manaCost": [130, 170, 210, 250, 290], "values": [{"label": "Stun", "levels": [1.5, 2, 2.5, 3, 3.5], "color": "control"}]},
+            {"name": "Pulverize", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [120, 160, 200, 240, 280], "values": [{"label": "Base Damage", "levels": [160, 210, 260, 310, 360], "color": "damage"}]},
+            {"name": "Thick Skin", "type": "Shield", "description": "PLACEHOLDER TEXT HERE", "cooldown": [10, 9, 8, 7, 6], "manaCost": [140, 180, 220, 260, 300], "values": [{"label": "Armor", "levels": [5, 10, 15, 20, 25], "color": "damage"}]}
         ],
         "primary_attribute": "Strength",
         "attack_type": "Melee (128)",
@@ -416,11 +515,11 @@
     {
         "name": "Venomthorn Seer",
         "abilities": [
-            "Death in a Bottle",
-            "Venomtouched Glaive",
-            "Withering Curse",
-            "Voodoo",
-            "Venomthorn Ward"
+            {"name": "Death in a Bottle", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [6, 5, 4, 3, 2], "manaCost": [100, 130, 160, 190, 220], "values": [{"label": "Poison Damage", "levels": [110, 160, 210, 260, 310], "color": "damage"}]},
+            {"name": "Venomtouched Glaive", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [5, 4, 3, 2, 1], "manaCost": [80, 110, 140, 170, 200], "values": [{"label": "Base Damage", "levels": [120, 170, 220, 270, 320], "color": "damage"}]},
+            {"name": "Withering Curse", "type": "Control", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [110, 150, 190, 230, 270], "values": [{"label": "Debuff", "levels": [40, 55, 70, 85, 100], "color": "control"}]},
+            {"name": "Voodoo", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [10, 9, 8, 7, 6], "manaCost": [130, 170, 210, 250, 290], "values": []},
+            {"name": "Venomthorn Ward", "type": "Shield", "description": "PLACEHOLDER TEXT HERE", "cooldown": [12, 11, 10, 9, 8], "manaCost": [140, 180, 220, 260, 300], "values": [{"label": "Shield HP", "levels": [100, 150, 200, 250, 300], "color": "damage"}]}
         ],
         "primary_attribute": "Intelligence",
         "attack_type": "Ranged (500)",
@@ -434,11 +533,11 @@
     {
         "name": "Blood Lord",
         "abilities": [
-            "Reap",
-            "Blood Lust",
-            "Sanguine Rebirth",
-            "Undying Hunger",
-            "Transfusion"
+            {"name": "Blood Drain", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [6, 5, 4, 3, 2], "manaCost": [100, 130, 160, 190, 220], "values": [{"label": "Drain Damage", "levels": [130, 180, 230, 280, 330], "color": "damage"}]},
+            {"name": "Blood Ritual", "type": "Healing", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [120, 160, 200, 240, 280], "values": [{"label": "Healing", "levels": [110, 160, 210, 260, 310], "color": "healing"}]},
+            {"name": "Bloodfury", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [7, 6, 5, 4, 3], "manaCost": [110, 150, 190, 230, 270], "values": [{"label": "Bonus Damage", "levels": [50, 75, 100, 125, 150], "color": "damage"}]},
+            {"name": "Vampiric Aura", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [12, 11, 10, 9, 8], "manaCost": [150, 200, 250, 300, 350], "values": []},
+            {"name": "Crimson Ascension", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [15, 14, 13, 12, 11], "manaCost": [170, 220, 270, 320, 370], "values": []}
         ],
         "primary_attribute": "Strength",
         "attack_type": "Melee (100)",
@@ -452,11 +551,11 @@
     {
         "name": "Crypt King",
         "abilities": [
-            "Mass Impale",
-            "Crypt King's Might",
-            "Spiked Carapace",
-            "Feasting Strike",
-            "Rotting Swarm"
+            {"name": "Bone Spike", "type": "Control", "description": "PLACEHOLDER TEXT HERE", "cooldown": [5, 4, 3, 2, 1], "manaCost": [80, 110, 140, 170, 200], "values": [{"label": "Stun", "levels": [1, 1.5, 2, 2.5, 3], "color": "control"}]},
+            {"name": "Death Brand", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [7, 6, 5, 4, 3], "manaCost": [100, 140, 180, 220, 260], "values": [{"label": "Damage Amplify", "levels": [20, 30, 40, 50, 60], "color": "damage"}]},
+            {"name": "Spectral Form", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [10, 9, 8, 7, 6], "manaCost": [130, 170, 210, 250, 290], "values": [{"label": "Duration", "levels": [4, 5, 6, 7, 8], "color": "scaling"}]},
+            {"name": "Skeletal Army", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [12, 11, 10, 9, 8], "manaCost": [150, 200, 250, 300, 350], "values": [{"label": "Army Damage", "levels": [100, 150, 200, 250, 300], "color": "damage"}]},
+            {"name": "Death Curse", "type": "Control", "description": "PLACEHOLDER TEXT HERE", "cooldown": [9, 8, 7, 6, 5], "manaCost": [140, 180, 220, 260, 300], "values": [{"label": "Debuff Strength", "levels": [40, 55, 70, 85, 100], "color": "control"}]}
         ],
         "primary_attribute": "Strength",
         "attack_type": "Melee (128)",
@@ -470,11 +569,11 @@
     {
         "name": "Death Revenant",
         "abilities": [
-            "Primordial Being",
-            "Drowning Oblivion",
-            "Soul Discharge",
-            "Death Strike",
-            "Soul Barrier"
+            {"name": "Death Touch", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [5, 4, 3, 2, 1], "manaCost": [100, 130, 160, 190, 220], "values": [{"label": "Base Damage", "levels": [140, 190, 240, 290, 340], "color": "damage"}]},
+            {"name": "Unholy Resurrection", "type": "Healing", "description": "PLACEHOLDER TEXT HERE", "cooldown": [15, 14, 13, 12, 11], "manaCost": [170, 220, 270, 320, 370], "values": [{"label": "Heal Amount", "levels": [130, 180, 230, 280, 330], "color": "healing"}]},
+            {"name": "Soul Reaper", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [120, 160, 200, 240, 280], "values": [{"label": "Execute Dmg", "levels": [150, 210, 270, 330, 390], "color": "damage"}]},
+            {"name": "Death Pact", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [12, 11, 10, 9, 8], "manaCost": [140, 180, 220, 260, 300], "values": []},
+            {"name": "Unholy Armor", "type": "Shield", "description": "PLACEHOLDER TEXT HERE", "cooldown": [10, 9, 8, 7, 6], "manaCost": [130, 170, 210, 250, 290], "values": [{"label": "Armor", "levels": [6, 12, 18, 24, 30], "color": "damage"}]}
         ],
         "primary_attribute": "Intelligence",
         "attack_type": "Melee (128)",
@@ -488,11 +587,11 @@
     {
         "name": "Princess of Anguish",
         "abilities": [
-            "Lust for Flesh",
-            "Succulent Anguish",
-            "Shadow Strike",
-            "Death Scythe",
-            "Seduce"
+            {"name": "Anguish Wave", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [6, 5, 4, 3, 2], "manaCost": [110, 140, 170, 200, 230], "values": [{"label": "Base Damage", "levels": [130, 180, 230, 280, 330], "color": "damage"}]},
+            {"name": "Nightmare", "type": "Control", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [130, 170, 210, 250, 290], "values": [{"label": "Stun", "levels": [2, 2.5, 3, 3.5, 4], "color": "control"}]},
+            {"name": "Soul Torment", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [7, 6, 5, 4, 3], "manaCost": [120, 160, 200, 240, 280], "values": [{"label": "DoT Damage", "levels": [100, 150, 200, 250, 300], "color": "damage"}]},
+            {"name": "Veil of Sorrow", "type": "Control", "description": "PLACEHOLDER TEXT HERE", "cooldown": [10, 9, 8, 7, 6], "manaCost": [140, 180, 220, 260, 300], "values": [{"label": "Slow", "levels": [30, 40, 50, 60, 70], "color": "control"}]},
+            {"name": "Crown of Thorns", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [12, 11, 10, 9, 8], "manaCost": [150, 200, 250, 300, 350], "values": []}
         ],
         "primary_attribute": "Intelligence",
         "attack_type": "Melee (128)",
@@ -506,11 +605,11 @@
     {
         "name": "Bounty Hunter",
         "abilities": [
-            "Killshot",
-            "Hellspike Trap",
-            "Marked for Death",
-            "Bounty Hunt",
-            "Big Boom"
+            {"name": "Killshot", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [5, 4, 3, 2, 1], "manaCost": [90, 120, 150, 180, 210], "values": [{"label": "Base Damage", "levels": [140, 190, 240, 290, 340], "color": "damage"}]},
+            {"name": "Hellspike Trap", "type": "Control", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [110, 150, 190, 230, 270], "values": [{"label": "Trap Damage", "levels": [100, 150, 200, 250, 300], "color": "damage"}]},
+            {"name": "Marked for Death", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [10, 9, 8, 7, 6], "manaCost": [130, 170, 210, 250, 290], "values": [{"label": "Mark Duration", "levels": [6, 7, 8, 9, 10], "color": "scaling"}]},
+            {"name": "Bounty Hunt", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [12, 11, 10, 9, 8], "manaCost": [140, 180, 220, 260, 300], "values": []},
+            {"name": "Big Boom", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [9, 8, 7, 6, 5], "manaCost": [150, 190, 230, 270, 310], "values": [{"label": "Explosion Dmg", "levels": [160, 220, 280, 340, 400], "color": "damage"}]}
         ],
         "primary_attribute": "Agility",
         "attack_type": "Ranged (600)",
@@ -524,11 +623,11 @@
     {
         "name": "Elementress",
         "abilities": [
-            "Rain of Arrows",
-            "Call Elemental Guardian",
-            "Incineration Arrows",
-            "Frost Shot",
-            "Windweaving"
+            {"name": "Rain of Arrows", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [6, 5, 4, 3, 2], "manaCost": [100, 130, 160, 190, 220], "values": [{"label": "Rain Damage", "levels": [130, 180, 230, 280, 330], "color": "damage"}]},
+            {"name": "Call Elemental Guardian", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [15, 14, 13, 12, 11], "manaCost": [170, 220, 270, 320, 370], "values": [{"label": "Guardian HP", "levels": [100, 150, 200, 250, 300], "color": "scaling"}]},
+            {"name": "Incineration Arrows", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [7, 6, 5, 4, 3], "manaCost": [110, 150, 190, 230, 270], "values": [{"label": "Fire Damage", "levels": [120, 170, 220, 270, 320], "color": "damage"}]},
+            {"name": "Frost Shot", "type": "Control", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [120, 160, 200, 240, 280], "values": [{"label": "Slow", "levels": [40, 50, 60, 70, 80], "color": "control"}]},
+            {"name": "Windweaving", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [10, 9, 8, 7, 6], "manaCost": [130, 170, 210, 250, 290], "values": [{"label": "Wind Duration", "levels": [5, 6, 7, 8, 9], "color": "scaling"}]}
         ],
         "primary_attribute": "Agility",
         "attack_type": "Ranged (600)",
@@ -538,23 +637,5 @@
         "agility_growth": 2,
         "intelligence_growth": 3,
         "strength_growth": 1.5
-    },
-    {
-        "name": "",
-        "abilities": [
-            "",
-            "",
-            "",
-            "",
-            ""
-        ],
-        "primary_attribute": "",
-        "attack_type": "",
-        "agility": 0,
-        "intelligence": 0,
-        "strength": 0,
-        "agility_growth": 0,
-        "intelligence_growth": 0,
-        "strength_growth": 0
     }
 ]
