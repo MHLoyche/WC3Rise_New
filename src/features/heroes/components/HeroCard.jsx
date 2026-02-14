@@ -97,18 +97,24 @@ export default function HeroCard({ hero }) {
                   <div className="ability-description">
                     <p className="ability-desc-text">{ability.description}</p>
                     
-                    {(ability.cooldown || ability.manaCost) && (
+                    {(ability.cooldown || ability.manaCost || ability.manaCostPerSecond) && (
                       <div className="ability-stats">
                         {ability.cooldown && (
                           <div className="stat-row">
                             <span className="stat-label">Cooldown:</span>
-                            <span className="stat-value cooldown">{ability.cooldown.join('/')}</span>
+                            <span className="stat-value cooldown">{Array.isArray(ability.cooldown) ? ability.cooldown.join('/') : ability.cooldown}</span>
                           </div>
                         )}
                         {ability.manaCost && (
                           <div className="stat-row">
                             <span className="stat-label">Mana Cost:</span>
-                            <span className="stat-value mana">{ability.manaCost.join('/')}</span>
+                            <span className="stat-value mana">{Array.isArray(ability.manaCost) ? ability.manaCost.join('/') : ability.manaCost}</span>
+                          </div>
+                        )}
+                        {ability.manaCostPerSecond && (
+                          <div className="stat-row">
+                            <span className="stat-label">Mana/Sec:</span>
+                            <span className="stat-value mana">{Array.isArray(ability.manaCostPerSecond) ? ability.manaCostPerSecond.join('/') : ability.manaCostPerSecond}</span>
                           </div>
                         )}
                       </div>
@@ -119,7 +125,7 @@ export default function HeroCard({ hero }) {
                         {ability.values.map((value, vIndex) => (
                           <div key={vIndex} className="value-row">
                             <span className={`value-label ${value.color}`}>{value.label}:</span>
-                            <span className={`value-levels ${value.color}`}>{value.levels.join('/')}</span>
+                            <span className={`value-levels ${value.color}`}>{value.levels ? value.levels.join('/') : 'N/A'}</span>
                           </div>
                         ))}
                       </div>

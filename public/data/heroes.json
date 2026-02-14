@@ -2,110 +2,11 @@
     {
         "name": "Father of the Forest",
         "abilities": [
-            {
-              "name": "Restoration",
-              "type": "Healing",
-              "description": "Nurtures an ally with the power of nature, restoring their health. Healing scales with Intelligence.",
-              "cooldown": [6, 5, 4, 3, 2],
-              "manaCost": [75, 150, 225, 300, 375],
-              "values": [
-                {
-                  "label": "Base Healing",
-                  "levels": [150, 200, 250, 300, 350],
-                  "color": "healing"
-                },
-                {
-                  "label": "Intelligence Heal Scaling",
-                  "levels": [1.5, 2, 2.5, 3, 3.5],
-                  "color": "scaling"
-                }
-              ]
-            },
-            {
-              "name": "Wrath of Nature",
-              "type": "Summon",
-              "description": "Summons a massive War Ent to fight alongside the Father of the Forest. The health and damage scales on the Intelligence of the Father of the Forest.",
-              "cooldown": [60,60,60],
-              "manaCost": [250,500,750],
-              "values": [
-                {
-                  "label": "Base Damage",
-                  "levels": [50,75,100],
-                  "color": "damage"
-                },
-                {
-                    "label": "Base Health",
-                    "levels": [125,250,500],
-                    "color": "healing"
-                },
-                {
-                  "label": "Intelligence Scaling (Damage)",
-                  "levels": [1,2,3],
-                  "color": "scaling"
-                },
-                {
-                    "label": "Intelligence Scaling (Health)",
-                    "levels": [25,50,100],
-                    "color": "scaling"
-                },
-                {
-                    "label": "Duration",
-                    "levels": [20,20,20],
-                    "color": "control"
-                }
-              ]
-            },
-            {
-              "name": "Revitalizing Waters",
-              "type": "Support",
-              "description": "The Father of the Forest blesses an allied target with empowering waters. Restoring mana and temporarily increasing their damage",
-              "cooldown": [14,13,12,11,10],
-              "manaCost": [10,20,30,40,50],
-              "values": [
-                {
-                  "label": "Damage Bonus",
-                  "levels": ["20%","30%","40%","50%","60%"],
-                  "color": "damage"
-                },
-                {
-                    "label": "Mana Restored",
-                    "levels": [20,40,60,80,100],
-                    "color": "healing"
-                },
-                {
-                    "label": "Duration",
-                    "levels": [10,10,10,10,10],
-                    "color": "control"
-                },
-                {
-                    "label": "Mana Restore Intelligence Scaling",
-                    "levels": [1,1.5,2,2.5,3],
-                    "color": "scaling"
-                }
-              ]
-            },
-            {
-              "name": "Nature's Grace",
-              "type": "Support",
-              "description": "PLACEHOLDER TEXT HERE",
-              "cooldown": [5, 5, 4, 4, 3],
-              "manaCost": [50, 75, 100, 125, 150],
-              "values": []
-            },
-            {
-              "name": "Mass Entangle",
-              "type": "Control",
-              "description": "PLACEHOLDER TEXT HERE",
-              "cooldown": [15, 14, 13, 12, 11],
-              "manaCost": [200, 250, 300, 350, 400],
-              "values": [
-                {
-                  "label": "Stun Duration",
-                  "levels": [2, 2.5, 3, 3.5, 4],
-                  "color": "control"
-                }
-              ]
-            }
+            {"name": "Restoration", "type": "Healing", "description": "Nurtures an ally with the power of nature, restoring their health. Healing scales with Intelligence.", "cooldown": [6, 5, 4, 3, 2], "manaCost": [75, 150, 225, 300, 375], "values": [{"label": "Base Healing", "levels": [150, 200, 250, 300, 350], "color": "healing"}, {"label": "Intelligence Heal Scaling", "levels": [1.5, 2, 2.5, 3, 3.5], "color": "scaling"}]},
+            {"name": "Revitalizing Waters", "type": "Support", "description": "The Father of the Forest blesses an allied target with empowering waters. Restoring mana and temporarily increasing their damage", "cooldown": [14,13,12,11,10], "manaCost": [10,20,30,40,50], "values": [{"label": "Damage Bonus", "levels": ["20%","30%","40%","50%","60%"], "color": "damage"}, {"label": "Mana Restored", "levels": [20,40,60,80,100], "color": "healing"}, {"label": "Duration", "levels": [10,10,10,10,10], "color": "control"}, {"label": "Mana Restore Intelligence Scaling", "levels": [1,1.5,2,2.5,3], "color": "scaling"}]},
+            {"name": "Nature's Grace", "type": "Support/Passive", "description": "The Father of the Forest passively grants nearby allies bonus armor when they're in his vicinity, additionally whenever an ally is attacked while affected by this aura they heal nearby allies. Healing scales with Intelligence.", "values": [{"label": "Armor Bonus", "levels": [2,4,6,8,10], "color": "defense"}, {"label": "Base Healing", "levels": [2,3,4,5,6], "color": "healing"}, {"label": "Intelligence Heal Scaling", "levels": [0.1,0.2,0.3,0.4,0.5], "color": "scaling"}]},
+            {"name": "Mass Entangle", "type": "Control/Damage", "description": "Calls upon the power of nature causing vines to sprout from the earth beneath nearby enemies, entangling them and dealing damage. The damage scales on Intelligence.", "cooldown": [12,11,10,9,8], "manaCost": [100,150,200,250,300], "values": [{"label": "Base Damage", "levels": [50,75,100,125,150], "color": "damage"}, {"label": "Intelligence Scaling", "levels": [2,3,4,5,6], "color": "scaling"}, {"label": "Entangle Duration", "levels": [3,4,5,6,7], "color": "control"}, {"label": "Movement Speed Slow", "levels": ["90%", "90%", "90%", "90%", "90%"], "color": "control"}, {"label": "Attack Speed Slow", "levels": ["15%", "20%", "25%", "30%", "35%"], "color": "control"}]},
+            {"name": "Wrath of Nature", "type": "Summon", "description": "Summons a massive War Ent to fight alongside the Father of the Forest. The health and damage scales on the Intelligence of the Father of the Forest.", "cooldown": [60,60,60], "manaCost": [250,500,750], "values": [{"label": "Base Damage", "levels": [50,75,100], "color": "damage"}, {"label": "Base Health", "levels": [125,250,500], "color": "healing"}, {"label": "Intelligence Scaling (Damage)", "levels": [1,2,3], "color": "scaling"}, {"label": "Intelligence Scaling (Health)", "levels": [25,50,100], "color": "scaling"}, {"label": "Duration", "levels": [20,20,20], "color": "control"}]}
         ],
         "primary_attribute": "Intelligence",
         "attack_type": "Ranged (600)",
@@ -119,11 +20,11 @@
     {
         "name": "Void Entity",
         "abilities": [
-            {"name": "Eye of the Void", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [10, 9, 8, 7, 6], "manaCost": [120, 160, 200, 240, 280], "values": [{"label": "Base Damage", "levels": [130, 180, 230, 280, 330], "color": "damage"},{"label": "Intelligence Scaling", "levels": [1.3, 1.5, 1.7, 1.9, 2.1], "color": "scaling"}]},
-            {"name": "Void Burst", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [7, 6, 5, 4, 3], "manaCost": [100, 140, 180, 220, 260], "values": [{"label": "Base Damage", "levels": [100, 150, 200, 250, 300], "color": "damage"}]},
-            {"name": "Summon Voidstone", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [20, 18, 16, 14, 12], "manaCost": [200, 250, 300, 350, 400], "values": []},
-            {"name": "Siphon Life", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [110, 150, 190, 230, 270], "values": [{"label": "Damage/Heal", "levels": [80, 120, 160, 200, 240], "color": "healing"}]},
-            {"name": "Lost Soul", "type": "Control", "description": "PLACEHOLDER TEXT HERE", "cooldown": [12, 11, 10, 9, 8], "manaCost": [150, 200, 250, 300, 350], "values": [{"label": "Duration", "levels": [2.5, 3, 3.5, 4, 4.5], "color": "control"}]}
+            {"name": "Void Burst", "type": "Damage", "description": "Deals damage to an enemy based on the Intelligence of the Void Entity. If the damage would kill the target the Void Burst ability gains permanent bonus damage.", "cooldown": [12,11,10,9,8], "manaCost": [75,100,125,150,175], "values": [{"label": "Base Damage", "levels": [50,75,100,125,150], "color": "damage"}, {"label": "Intelligence Scaling", "levels": [1,1.5,2,2.5,3], "color": "scaling"}, {"label": "Permanent Bonus Damage per Kill", "levels": [3,3,3,3,3], "color": "damage"}]},
+            {"name": "Summon Voidstone", "type": "Support", "description": "Summons a Void Stone with an aura that grants one random of the following bonuses: Armor, Damage, Health Regeneration, Mana Regeneration or Attack and Movement speed", "cooldown": [14,13,12,11,10], "manaCost": [50,75,100,125,150], "values": [{"label": "Armor Aura", "levels": [10,20,30,40,50], "color": "defense"},{"label": "Damage Aura", "levels": ["30%", "40%", "50%", "60%", "70%"], "color": "damage"},{"label": "Health Regeneration Aura", "levels": [10,20,30,40,50], "color": "healing"},{"label": "Mana Regeneration Aura", "levels": [5,10,15,20,25], "color": "healing"},{"label": "Attack and Movement Speed Aura", "levels": ["30%","40%","50%","60%","70%"], "color": "control"}, {"label": "Duration", "levels": [20,20,20,20,20], "color": "control"}]},
+            {"name": "Siphon Life", "type": "Damage/Heal", "description": "Drains health from an enemy target over time, the last ally targeted with Lost Soul will recieve the leeched health.", "cooldown": [12,11,10,9,8], "manaCost": [100,125,150,175,200], "values": [{"label": "Damage/Heal per tick", "levels": [10,20,30,40,50], "color": "healing"}, {"label": "Ticks", "levels": [4,6,8,10,12], "color": "control"}, {"label": "Intelligence Scaling", "levels": [0.6,0.7,0.8,0.9,1.0], "color": "scaling"}]},
+            {"name": "Lost Soul", "type": "Damage/Heal", "description": "Heal a friendly target, or damages an enemy target. Healing/Damage scales with Intelligence.", "cooldown": [6,5,4,3,2], "manaCost": [40,50,60,70,80], "values": [{"label": "Base Damage", "levels": [100,150,200,250,300], "color": "damage"},{"label": "Base Heal", "levels": [100,150,200,250,300], "color": "healing"},{"label": "Intelligence Scaling", "levels": [1,1.25,1.5,1.75,2], "color": "scaling"}]},
+            {"name": "Eye of the Void", "type": "Damage/Heal", "description": "Surrounds the Void Entity in a mist of concentrated void energy that constantly drains the mana of the Void Entity, while damaging and healing nearby allies every second.", "cooldown": [10, 10, 10], "manaCost": [100,150,200], "manaCostPerSecond": [100,150,200], "values": [{"label": "Base Damage", "levels": [125,200,275], "color": "damage"},{"label": "Base Heal", "levels": [125,200,275], "color": "healing"},{"label": "Intelligence Scaling", "levels": [2,3,4], "color": "scaling"}]}
         ],
         "primary_attribute": "Intelligence",
         "attack_type": "Ranged (400)",
@@ -137,11 +38,11 @@
     {
         "name": "Ancient Marksman",
         "abilities": [
-            {"name": "Ancient Presence", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [5, 5, 4, 4, 3], "manaCost": [40, 60, 80, 100, 120], "values": []},
-            {"name": "Soul Hunt", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [6, 5, 4, 3, 2], "manaCost": [75, 110, 145, 180, 215], "values": [{"label": "Base Damage", "levels": [90, 135, 180, 225, 270], "color": "damage"}]},
-            {"name": "Dark Veil", "type": "Control", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [100, 140, 180, 220, 260], "values": [{"label": "Duration", "levels": [2, 2.5, 3, 3.5, 4], "color": "control"}]},
-            {"name": "Deadly Shot", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [4, 3.5, 3, 2.5, 2], "manaCost": [50, 75, 100, 125, 150], "values": [{"label": "Base Damage", "levels": [120, 170, 220, 270, 320], "color": "damage"}]},
-            {"name": "Split Shot", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [5, 5, 4, 4, 3], "manaCost": [80, 120, 160, 200, 240], "values": [{"label": "Projectiles", "levels": [3, 4, 4, 5, 5], "color": "damage"}]}
+            {"name": "Ancient Presence", "type": "Support", "description": "The Ancient Marksman's presence increases the damage of nearby allied units.", "values": [{"label": "Damage Bonus", "levels": ["10%","15%","20%","25%","30%"], "color": "damage"}]},
+            {"name": "Dark Veil", "type": "Defense", "description": "Shrouds the Ancient Marksman in a thick mist, making him impervious to damage.", "cooldown": [30,28,26,24,22], "manaCost": [70,80,90,100,110], "values": [{"label": "Duration", "levels": [5,6,7,8,9], "color": "control"}]},
+            {"name": "Deadly Shot", "type": "Damage/Control", "description": "The Ancient Marksman marks a target for the perfect shot, after a delay, firing a shot that deals massive damage and stunning the target. Damage scales with Agility.", "cooldown": [13,12,11,10,9], "manaCost": [90,110,130,150,170], "values": [{"label": "Base Damage", "levels": [125,175,225,275,325], "color": "damage"}, {"label": "Agility Scaling", "levels": [4,5,6,7,8], "color": "scaling"}, {"label": "Stun Duration", "levels": [1,1.5,2,2.5,3], "color": "control"}]},
+            {"name": "Split Shot", "type": "Damage", "description": "The Ancient Marksman fires additional arrows at enemies near his primary target. During this time, his attack speed is increased.", "cooldown": [22,21,20,19,18], "manaCost": [80,90,100,110,120], "values": [{"label": "Bonus Projectiles", "levels": [2,3,4,5,6], "color": "damage"}, {"label": "Attack Speed Bonus", "levels": ["25%","30%","35%","40%","45%"], "color": "control"}, {"label": "Duration", "levels": [12,12,12,12,12], "color": "control"}]},
+            {"name": "Soul Hunt", "type": "Damage", "description": "Grants the Ancient Marksman a temporary buff that grants attack damage. Killing units while this buff is active grants the Ancient Marksman permanent Agility", "cooldown": [80,70,60], "manaCost": [125,175,225], "values": [{"label": "Bonus Damage", "levels": [30,60,90], "color": "damage"}, {"label": "Duration", "levels": [10,12,14], "color": "control"}]}
         ],
         "primary_attribute": "Agility",
         "attack_type": "Ranged (600)",
@@ -155,11 +56,11 @@
     {
         "name": "Legionsong Countess",
         "abilities": [
-            {"name": "Song of Immortality", "type": "Healing", "description": "PLACEHOLDER TEXT HERE", "cooldown": [12, 11, 10, 9, 8], "manaCost": [150, 200, 250, 300, 350], "values": [{"label": "Healing", "levels": [100, 150, 200, 250, 300], "color": "healing"}]},
-            {"name": "Enhance Song", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [100, 130, 160, 190, 220], "values": []},
-            {"name": "Song of Despair", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [7, 6, 5, 4, 3], "manaCost": [90, 120, 150, 180, 210], "values": [{"label": "Base Damage", "levels": [80, 130, 180, 230, 280], "color": "damage"}]},
-            {"name": "Song of war", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [10, 9, 8, 7, 6], "manaCost": [120, 160, 200, 240, 280], "values": []},
-            {"name": "Song of Victory", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [15, 14, 13, 12, 11], "manaCost": [200, 250, 300, 350, 400], "values": []}
+            {"name": "Enhance Song", "type": "Support", "description": "Adds an additional effect to the next song used within 30 seconds.", "cooldown": [35,30,25,20,15], "manaCost": [25,30,35,40,45], "values": [{"label": "Buff Duration", "levels": [30,30,30,30,30], "color": "control"}]},
+            {"name": "Song of Despair", "type": "Damage/Control", "description": "Intimidates nearby enemies dealing damage and cast an aura that reduces the attack and movement speed of nearby enemies. If affected by Enhance Song the damage and slow is doubled.", "cooldown": [16,15,14,13,12], "manaCost": [40,60,80,100,120], "values": [{"label": "Base Damage", "levels": [50,75,100,125,150], "color": "damage"}, {"label": "Base Intelligence Damage Scaling", "levels": [1, 1.5, 2, 2.5, 3], "color": "scaling"}, {"label": "Base Attack and Movement Speed Slow", "levels": ["10%","15%","20%","25%","30%"], "color": "control"}]},
+            {"name": "Song of War", "type": "Support", "description": "Grants nearby allies increased attack damage for a short duration. If affected by Enhance Song, cast an aura that also increases attack and movement speed.", "cooldown": [20,19,18,17,16], "manaCost": [100,115,130,145,160], "values": [{"label": "Damage Increase", "levels": ["40%","50%","60%", "70%","80%"], "color": "damage"}, {"label": "Duration", "levels": [12,12,12,12,12], "color": "control"}, {"label": "Enhance Song Attack and Movement Speed Bonus", "levels": ["20%","25%","30%","35%","40%"], "color": "control"}]},
+            {"name": "Song of Victory", "type": "Healing", "description": "Inspire nearby allies, restoring health and mana over a short duration. If affected by Enhance Song, instantly restore the health and mana upon cast as a bonus effect.", "cooldown": [19,18,17,16,15], "manaCost": [100,175,250,325,400], "values": [{"label": "Health Restore", "levels": [75,125,175,225,275], "color": "healing"}, {"label": "Health Restore Intelligence Scaling", "level": [1,2,3,4,5], "color": "scaling"}, {"label": "Base Mana Restore", "levels": [25,50,75,100,125], "color": "healing"}, {"label": "Mana Restore Intelligence Scaling", "levels": [0.25, 0.5, 0.75, 1, 1.25], "color": "scaling"}, {"label": "Duration", "levels": [5,5,5,5,5], "color": "control"}]},
+            {"name": "Song of Immortality", "type": "Healing/Defense", "description": "Makes the Legionsong Countess and a targeted ally invulnerable for a short duration, and restoring maximum health and mana. If affected by Enhance Song, slightly increase the duration and restore more maximum health and mana plus a flat amount based on the Intelligence of the Legionsong Countess.", "cooldown": [35,30,25], "manaCost": [150,225,300], "values": [{"label": "Base Invulnerability Duration", "levels": [6,8,10], "color": "control"}, {"label": "Max Health/Mana Restored", "levels": ["25%","50%","75%"], "color": "healing"}, {"label": "Enhance Song Invulnerability Duration", "levels": [8,10,12], "color": "control"}, {"label": "Enhance Song Maximum Health/Mana Restore", "levels": ["50%", "75%","100%"], "color": "healing"}, {"label": "Intelligence Scaling", "levels": [2,3,4], "color": "scaling"}]}
         ],
         "primary_attribute": "Intelligence",
         "attack_type": "Ranged (600)",
@@ -173,11 +74,11 @@
     {
         "name": "Royal Guard",
         "abilities": [
-            {"name": "Divine Wrath", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [6, 5, 4, 3, 2], "manaCost": [100, 140, 180, 220, 260], "values": [{"label": "Base Damage", "levels": [110, 160, 210, 260, 310], "color": "damage"}]},
-            {"name": "Divine Storm", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [120, 160, 200, 240, 280], "values": [{"label": "Base Damage", "levels": [100, 150, 200, 250, 300], "color": "damage"}]},
-            {"name": "Mark of the Phoenix", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [7, 6, 5, 4, 3], "manaCost": [80, 110, 140, 170, 200], "values": []},
-            {"name": "Royal Barrier", "type": "Shield", "description": "PLACEHOLDER TEXT HERE", "cooldown": [10, 9, 8, 7, 6], "manaCost": [100, 140, 180, 220, 260], "values": [{"label": "Shield Amount", "levels": [150, 200, 250, 300, 350], "color": "damage"}]},
-            {"name": "Bouncing Glaive", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [5, 4, 3, 2, 1], "manaCost": [60, 90, 120, 150, 180], "values": [{"label": "Base Damage", "levels": [80, 130, 180, 230, 280], "color": "damage"}]}
+            {"name": "Divine Wrath", "type": "Support", "description": "Grants the Royal Guard increased attack speed, during this time the Royal Guard's attacks has a chance to reduce the current cooldown of all his abilities.", "cooldown": [16,15,14,13,12], "manaCost": [50,100,150,200,250], "values": [{"label": "Attack Speed Increase", "levels": ["20%","30%","40%","50%","60%"], "color": "control"}, {"label": "Cooldown Reduction Chance", "levels": ["40%","45%","50%","55%","60%"], "color": "control"}, {"label": "Chance to Reduce Cooldown", "levels": ["12%","12%","12%","12%","12%"], "color": "control"}, {"label": "Cooldown Reduction Amount", "levels": [2,2,2,2,2], "color": "control"}]},
+            {"name": "Mark of the Phoenix", "type": "Damage/Control", "description": "Marks an enemy as a living bomb, after 2.5 seconds the target will be stunned and explode dealing damage to nearby enemies, the target is also slowed during the duration.", "cooldown": [20,18,16,14,12], "manaCost": [100,110,120,130,140], "values": [{"label": "Base Damage", "levels": [125,200,275,350,425], "color": "damage"}, {"label": "Agility Scaling", "levels": [1,1.5,2,2.5,3], "color": "scaling"}, {"label": "Stun Duration", "levels": [2,2,2,2,2], "color": "control"}, {"label": "Movement Speed Slow", "levels": ["50%", "50%", "50%", "50%", "50%"], "color": "control"}]},
+            {"name": "Royal Barrier", "type": "Support", "description": "Bathes nearby allied targets in holy light, increasing their armor and granting them bonus mana regeneration for a short duration", "cooldown": [28,26,24,22,20], "manaCost": [100, 120, 140, 160, 180], "values": [{"label": "Mana Regeneration Increase", "levels": [2,4,6,8,10], "color": "healing"}, {"label": "Armor Bonus", "levels": [3,6,9,12,15], "color": "defense"}, {"label": "Duration", "levels": [12,12,12,12,12], "color": "control"}]},
+            {"name": "Bouncing Glaive", "type": "Passive", "description": "The Royal Guard has mastered the art of the glaive, allowing his attacks to bounce between enemies.", "values": [{"label": "Additional Bounces", "levels": [1,2,3,4,5], "color": "damage"}]},
+            {"name": "Divine Storm", "type": "Damage/control", "description": "Summons a storm of holy light that purifies the area, dealing massive area of effect damage to enemies near it and briefly stunning them throughout its duration.", "cooldown": [80,70,60], "manaCost": [200,400,600], "values": [{"label": "Base Damage", "levels": [50,75,100], "color": "damage"}, {"label": "Agility Damage Scaling", "levels": [4,5,6], "color": "scaling"}, {"label": "Duration", "levels": [6,6,6], "color": "control"}]}
         ],
         "primary_attribute": "Agility",
         "attack_type": "Ranged (600)",
@@ -191,11 +92,11 @@
     {
         "name": "Demon Slayer",
         "abilities": [
-            {"name": "Felfire Comet", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [7, 6, 5, 4, 3], "manaCost": [100, 140, 180, 220, 260], "values": [{"label": "Base Damage", "levels": [120, 170, 220, 270, 320], "color": "damage"}]},
-            {"name": "Fel Imprisonment", "type": "Control", "description": "PLACEHOLDER TEXT HERE", "cooldown": [9, 8, 7, 6, 5], "manaCost": [110, 150, 190, 230, 270], "values": [{"label": "Duration", "levels": [2, 2.5, 3, 3.5, 4], "color": "control"}]},
-            {"name": "Demon Burn", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [5, 4, 3, 2, 1], "manaCost": [80, 110, 140, 170, 200], "values": [{"label": "Base Damage", "levels": [100, 150, 200, 250, 300], "color": "damage"}]},
-            {"name": "Lycoris Radiata", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [6, 5, 4, 3, 2], "manaCost": [90, 130, 170, 210, 250], "values": [{"label": "Base Damage", "levels": [110, 160, 210, 260, 310], "color": "damage"}]},
-            {"name": "Felforged", "type": "Support", "description": "PLACEHOLDER TEXT HERE", "cooldown": [12, 11, 10, 9, 8], "manaCost": [150, 200, 250, 300, 350], "values": []}
+            {"name": "Fel Imprisonment", "type": "Control", "description": "Imprisons an enemy target, rendering them unable to act for a duration. Attacking them while they are imprisoned will remove this effect.", "cooldown": [20,19,18,17,16], "manaCost": [60,50,40,30,10], "values": [{"label": "Duration", "levels": [8,9,10,11,12], "color": "control"}]},
+            {"name": "Demon Burn", "type": "Damage/Heal", "description": "The Demon Slayer burns an enemy with intense energy, dealing damage based on his agility and restores mana. If the target is branded it restores health aswell.", "cooldown": [9,8,7,6,5], "manaCost": [75,100,150,225,325], "values": [{"label": "Base Damage", "levels": [100,175,250,325,400], "color": "damage"}, {"label": "Agility Scaling (Damage)", "levels": [2,3,4,5,6], "color": "scaling"}, {"label": "Health/Mana Restore per Agility", "levels": [2,3,4,5,6], "color": "healing"}]},
+            {"name": "Lycoris Radiata", "type": "Damage", "description": "The Demon Slayer passively brands enemies on attacks. On activation the Demon Slayer slashes nearby enemies dealing damage based on his agility, if enemies are branded, they take double ability damage.", "cooldown": [9,8,7,6,5], "manaCost": [100,125,150,175,200], "values": [{"label": "Base Damage", "levels": [50,100,150,200,250], "color": "damage"}, {"label": "Agility Scaling", "levels": [1,1.5,2,2.5,3], "color": "scaling"}]},
+            {"name": "Felforged", "type": "DPassive", "description": "The Demon Slayer passively gains enhanced combat abilities.", "values": [{"label": "Attack Speed Bonus", "levels": ["10%","20%","30%","40%","50%"], "color": "control"}, {"label": "Damage Bonus", "levels": [10,20,40,80,160], "color": "damage"}, {"label": "Lifesteal Bonus", "levels": ["5%","10%","15%","20%","25%"], "color": "damage"}, {"label": "Cleave Damage", "levels": ["5%","10%","15%","20%","25%"], "color": "defense"}]},
+            {"name": "Felfire Comet", "type": "Damage", "description": "Ability Passive: The Demon Slayer has a chance to gain Felspark stacks when attacking enemies affected by Felbrand. <br>Ability Active: Calls down a comet from the sky, dealing damage to all enemies based on the amount of Felsparks the Demon Slayer has.", "cooldown": [20,15,10], "manaCost": [150,200,300], "values": [{"label": "Base Damage per Felspark", "levels": [50,150,200], "color": "damage"}, {"label": "Agility Damage Scaling per Felspark", "levels": [0.5, 1, 2], "color": "scaling"}, {"label": "Maximum Felspark Stacks", "levels": [10,10,10], "color": "control"}]}
         ],
         "primary_attribute": "Agility",
         "attack_type": "Melee (100)",
