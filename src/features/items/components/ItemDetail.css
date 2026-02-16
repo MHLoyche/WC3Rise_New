@@ -1,3 +1,4 @@
+/* ===== Item Detail Panel ===== */
 .item-detail-panel {
   width: 320px;
   flex-shrink: 0;
@@ -5,9 +6,9 @@
   border: 1px solid #333;
   border-radius: 12px;
   padding: 1rem;
-  position: sticky;
+  position: sticky; /* Stays visible while scrolling */
   top: 100px;
-  max-height: calc(100vh - 120px);
+  max-height: calc(100vh - 120px); /* Dynamic height calculation */
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -48,6 +49,7 @@
   line-height: 1.6;
 }
 
+/* ===== Custom Scrollbar ===== */
 .item-detail-panel::-webkit-scrollbar {
   width: 8px;
 }
@@ -66,6 +68,7 @@
   background: #ee5a6f;
 }
 
+/* ===== Section Styling ===== */
 .detail-section {
   background: rgba(0, 0, 0, 0.3);
   border: 1px solid #444;
@@ -82,7 +85,8 @@
   letter-spacing: 0.5px;
 }
 
-/* Selected Item - Rarity Colors */
+/* ===== Rarity-Specific Styles ===== */
+/* Each rarity tier has its own border color and gradient background */
 .selected-item-section.rarity-uncommon {
   border: 2px solid #28a745;
   background: linear-gradient(135deg, rgba(40, 167, 69, 0.1), rgba(40, 167, 69, 0.05));
@@ -113,6 +117,7 @@
   background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(255, 107, 107, 0.05));
 }
 
+/* ===== Selected Item Display ===== */
 .selected-item {
   display: flex;
   gap: 1rem;
@@ -168,8 +173,8 @@
 .selected-item-image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  image-rendering: crisp-edges;
+  object-fit: contain; /* Preserve aspect ratio */
+  image-rendering: crisp-edges; /* Sharp pixel rendering */
 }
 
 .selected-item-info {
@@ -221,7 +226,7 @@
   font-weight: 600;
 }
 
-/* Upgrades Section */
+/* ===== Upgrades Section ===== */
 .upgrades-section {
   border: 1px solid #666;
 }
@@ -274,14 +279,14 @@
 .upgrade-item.clickable:hover {
   background: rgba(255, 107, 107, 0.1);
   border-color: #ff6b6b;
-  transform: translateX(3px);
+  transform: translateX(3px); /* Small shift on hover */
 }
 
 .upgrade-item img {
   width: 48px;
   height: 48px;
-  object-fit: contain;
-  image-rendering: crisp-edges;
+  object-fit: contain; /* Preserve aspect ratio */
+  image-rendering: crisp-edges; /* Sharp pixel rendering */
   background: rgba(0, 0, 0, 0.4);
   border: 1px solid #666;
   border-radius: 6px;
@@ -324,7 +329,7 @@
   font-weight: 500;
 }
 
-/* Components Section */
+/* ===== Components Section ===== */
 .components-section {
   border: 1px solid #444;
   background: rgba(0, 0, 0, 0.3);
@@ -376,16 +381,16 @@
 }
 
 .component-item.clickable:hover {
-  background: rgba(0, 191, 255, 0.1);
+  background: rgba(0, 191, 255, 0.1); /* Cyan highlight on hover */
   border-color: #00BFFF;
-  transform: translateX(3px);
+  transform: translateX(3px); /* Small shift on hover */
 }
 
 .component-item img {
   width: 48px;
   height: 48px;
-  object-fit: contain;
-  image-rendering: crisp-edges;
+  object-fit: contain; /* Preserve aspect ratio */
+  image-rendering: crisp-edges; /* Sharp pixel rendering */
   background: rgba(0, 0, 0, 0.4);
   border: 1px solid #666;
   border-radius: 6px;
@@ -428,7 +433,7 @@
   font-weight: 500;
 }
 
-/* Rarity badges */
+/* ===== Rarity Badges ===== */
 .item-rarity {
   display: inline-block;
   padding: 0.3rem 0.7rem;
@@ -474,10 +479,11 @@
   color: #fff;
 }
 
-/* Responsive */
+/* ===== Mobile Responsive (max-width: 1024px) ===== */
+/* Panel becomes full-width bottom sheet on mobile */
 @media (max-width: 1024px) {
   .item-detail-panel {
-    position: fixed;
+    position: fixed; /* Full-width overlay on mobile */
     bottom: 0;
     left: 0;
     right: 0;
@@ -485,7 +491,7 @@
     height: auto;
     max-height: 50vh;
     top: auto;
-    transform: translateY(100%);
+    transform: translateY(100%); /* Hidden below screen */
     transition: transform 0.3s ease-in-out;
     z-index: 999;
     border-radius: 12px 12px 0 0;
@@ -493,14 +499,14 @@
   }
 
   .item-detail-panel.visible {
-    transform: translateY(0);
+    transform: translateY(0); /* Slide up into view */
   }
 
   .item-detail-header {
-    display: flex;
+    display: flex; /* Show header on mobile */
   }
 
   .item-detail-panel.empty {
-    display: none;
+    display: none; /* Hide empty placeholder on mobile */
   }
 }

@@ -1,9 +1,10 @@
+/* ===== Header Container ===== */
 .header {
   background: #0a0a0a;
   border-bottom: 3px solid #8b0000;
   padding: 1rem 2rem;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-  position: sticky;
+  position: sticky; /* Stays at top while scrolling */
   top: 0;
   z-index: 1000;
 }
@@ -11,18 +12,19 @@
 .header-container {
   width: 90%;
   margin: 0 auto;
-  display: flex;
+  display: flex; /* Flexbox layout for logo, nav, burger menu */
   justify-content: space-between;
   align-items: center;
   position: relative;
 }
 
+/* ===== Logo ===== */
 .logo a {
   font-size: 1.8rem;
   font-weight: bold;
   background: linear-gradient(135deg, #ff6b6b 0%, #a855f7 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; /* Webkit prefix for gradient text */
+  -webkit-text-fill-color: transparent; /* Make text transparent to show gradient */
   background-clip: text;
   text-decoration: none;
   letter-spacing: 2px;
@@ -34,11 +36,13 @@
   filter: brightness(1.2);
 }
 
+/* ===== Navigation Menu ===== */
 .nav {
   display: flex;
   gap: 2rem;
 }
 
+/* ===== Navigation Links ===== */
 .nav-link {
   color: #b0b0b0;
   text-decoration: none;
@@ -50,7 +54,7 @@
 }
 
 .nav-link::after {
-  content: '';
+  content: ''; /* Creates animated underline pseudo-element */
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -58,7 +62,7 @@
   height: 2px;
   background: linear-gradient(90deg, #ff6b6b 0%, #a855f7 100%);
   transition: all 0.3s ease;
-  transform: translateX(-50%);
+  transform: translateX(-50%); /* Center line under text */
 }
 
 .nav-link:hover {
@@ -69,8 +73,9 @@
   width: 80%;
 }
 
+/* ===== Burger Menu ===== */
 .burger-menu {
-  display: none;
+  display: none; /* Hidden on desktop, shown on mobile */
   flex-direction: column;
   gap: 5px;
   background: none;
@@ -94,7 +99,7 @@
   box-shadow: 0 0 5px rgba(255, 107, 107, 0.3);
 }
 
-/* Mobile styles */
+/* ===== Mobile Responsive (max-width: 768px) ===== */
 @media (max-width: 768px) {
   .header-container {
     justify-content: center;
@@ -121,7 +126,7 @@
     flex-direction: column;
     padding: 2rem;
     gap: 1.5rem;
-    transform: translateX(100%);
+    transform: translateX(100%); /* Slide in from right */
     transition: transform 0.3s ease-in-out;
     border-bottom: 3px solid #8b0000;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -129,7 +134,7 @@
   }
 
   .nav-open {
-    transform: translateX(0);
+    transform: translateX(0); /* Slide menu in */
   }
 
   .nav-link {

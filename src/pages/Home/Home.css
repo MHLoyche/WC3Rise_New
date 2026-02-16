@@ -1,10 +1,11 @@
+/* ===== Home Page Container ===== */
 .home {
   min-height: 100vh;
   background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 100%);
   color: #e0e0e0;
 }
 
-/* Hero Section */
+/* ===== Hero Section ===== */
 .hero-section {
   background: linear-gradient(135deg, #1a0f0f 0%, #0f0a1a 100%);
   padding: 6rem 2rem;
@@ -16,7 +17,7 @@
 }
 
 .hero-section::before {
-  content: '';
+  content: ''; /* Decorative background overlay */
   position: absolute;
   top: 0;
   left: 0;
@@ -25,7 +26,7 @@
   background: 
     radial-gradient(circle at 20% 50%, rgba(139, 0, 0, 0.1) 0%, transparent 50%),
     radial-gradient(circle at 80% 50%, rgba(75, 0, 130, 0.1) 0%, transparent 50%);
-  pointer-events: none;
+  pointer-events: none; /* Prevent overlay from blocking interactions */
 }
 
 .hero-content {
@@ -40,7 +41,7 @@
   font-weight: bold;
   margin-bottom: 1rem;
   background: linear-gradient(135deg, #ff6b6b 0%, #a855f7 100%);
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; /* Gradient text effect */
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-shadow: 0 0 30px rgba(139, 0, 0, 0.3);
@@ -61,7 +62,7 @@
   margin: 0 auto;
 }
 
-/* Intro Section */
+/* ===== Intro Section ===== */
 .intro-section {
   padding: 4rem 2rem;
   background: rgba(20, 20, 20, 0.6);
@@ -91,7 +92,7 @@
   text-align: justify;
 }
 
-/* Features Section */
+/* ===== Features Section ===== */
 .features-section {
   padding: 4rem 2rem;
   background: rgba(10, 10, 10, 0.8);
@@ -100,7 +101,7 @@
 
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Auto-responsive grid */
   gap: 2rem;
   margin-top: 3rem;
 }
@@ -116,7 +117,7 @@
 }
 
 .feature-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); /* Lift effect on hover */
   border-color: #8b0000;
   box-shadow: 0 10px 30px rgba(139, 0, 0, 0.3);
 }
@@ -139,7 +140,7 @@
   line-height: 1.6;
 }
 
-/* About Section */
+/* ===== About Section ===== */
 .about-section {
   padding: 4rem 2rem;
   background: rgba(20, 20, 20, 0.6);
@@ -157,7 +158,7 @@
   margin-top: 3rem;
   padding: 2rem;
   background: linear-gradient(135deg, rgba(139, 0, 0, 0.1) 0%, rgba(75, 0, 130, 0.1) 100%);
-  border-left: 4px solid #8b0000;
+  border-left: 4px solid #8b0000; /* Accent left border */
   border-radius: 5px;
 }
 
@@ -171,7 +172,7 @@
   margin-bottom: 0;
 }
 
-/* Responsive */
+/* ===== Responsive Design (max-width: 768px) ===== */
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.5rem;

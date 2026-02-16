@@ -1,16 +1,18 @@
+/* ===== Filter Sidebar ===== */
 .filter-sidebar {
   background: linear-gradient(135deg, rgba(20, 20, 20, 0.95), rgba(30, 30, 30, 0.9));
   border: 1px solid #333;
   border-radius: 12px;
   padding: 1rem;
-  position: sticky;
+  position: sticky; /* Stays visible while scrolling */
   top: 100px;
-  max-height: calc(100vh - 120px);
+  max-height: calc(100vh - 120px); /* Dynamic height calculation */
   overflow-y: auto;
   width: 200px;
   flex-shrink: 0;
 }
 
+/* ===== Custom Scrollbar Styling ===== */
 .filter-sidebar::-webkit-scrollbar {
   width: 8px;
 }
@@ -29,6 +31,7 @@
   background: #ee5a6f;
 }
 
+/* ===== Filter Header ===== */
 .filter-header {
   display: flex;
   justify-content: space-between;
@@ -52,7 +55,7 @@
 }
 
 .close-btn {
-  display: none; /* Hidden by default */
+  display: none; /* Hidden on desktop, shown on mobile */
   background: none;
   border: none;
   color: #888;
@@ -113,7 +116,7 @@
   width: 16px;
   height: 16px;
   cursor: pointer;
-  accent-color: #ff6b6b;
+  accent-color: #ff6b6b; /* Custom checkbox color */
   flex-shrink: 0;
 }
 
@@ -128,26 +131,26 @@
   font-weight: 600;
 }
 
-/* Mobile responsive */
+/* ===== Mobile Responsive (max-width: 1024px) ===== */
 @media (max-width: 1024px) {
   .filter-sidebar {
-    position: fixed;
+    position: fixed; /* Full-screen overlay on mobile */
     top: 0;
     left: 0;
     width: 280px;
     height: 100%;
     max-height: 100%;
-    transform: translateX(-100%);
+    transform: translateX(-100%); /* Hidden off-screen */
     transition: transform 0.3s ease-in-out;
     z-index: 1000;
     border-radius: 0;
   }
 
   .filter-sidebar.visible {
-    transform: translateX(0);
+    transform: translateX(0); /* Slide in from left */
   }
 
   .close-btn {
-    display: block;
+    display: block; /* Show close button on mobile */
   }
 }
