@@ -6,19 +6,27 @@ import FilterSidebar from '../../features/items/components/FilterSidebar';
 import ItemDetail from '../../features/items/components/ItemDetail';
 import { FaBars } from 'react-icons/fa';
 
+/**
+ * Item component that displays a list of items with search and filter functionality.
+ * Allows users to click on an item to see detailed information, including stats and combinations.
+ * Handles loading state, error state, and provides a responsive layout with a filter sidebar.
+ * Connected with Itemcard, FilterSidebar and ItemDetail
+ */
+
 export default function Items() {
-  const [items, setItems] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const [searchQuery, setSearchQuery] = useState('');
-  const [selectedItem, setSelectedItem] = useState(null);
-  const [isFilterVisible, setFilterVisible] = useState(false);
-  const [filters, setFilters] = useState({
+  const [items, setItems] = useState([]); // State to hold the list of items loaded from JSON
+  const [loading, setLoading] = useState(true); // State to track if items are still loading
+  const [error, setError] = useState(null); // State to hold any error message if loading fails
+  const [searchQuery, setSearchQuery] = useState(''); // State to hold the current search query for filtering items
+  const [selectedItem, setSelectedItem] = useState(null); // State to hold the currently selected item for displaying details
+  const [isFilterVisible, setFilterVisible] = useState(false); // State to control visibility of the filter sidebar
+  const [filters, setFilters] = useState({ // State to hold the current filter selections
     rarities: [],
     tiers: [],
     stats: []
   });
 
+  // Fetch items from items.json 
   useEffect(() => {
     fetch('/data/items.json')
       .then((response) => {
@@ -91,6 +99,7 @@ export default function Items() {
     setFilterVisible(!isFilterVisible);
   };
 
+  // Layout includes: Header + Search bar + Filter sidebar + Item grid + Item detail section
   return (
     <div className="items">
       <section className="hero-section">

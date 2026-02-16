@@ -317,6 +317,10 @@
   color: #FFB84D;
 }
 
+.value-label.defense {
+  color: #FFD700;
+}
+
 .value-levels {
   font-weight: 600;
   letter-spacing: 0.2px;
@@ -337,4 +341,8 @@
 
 .value-levels.scaling {
   color: #FFB84D;
+}
+
+.value-levels.defense {
+  color: #FFD700;
 }
