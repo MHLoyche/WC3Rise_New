@@ -1,21 +1,21 @@
 import { useState, useEffect } from 'react';
 import './HeroCard.css';
 
+/**
+ * Component to display a hero card with image, stats, and abilities. 
+ * Handles image loading errors, toggling ability descriptions, and displays hero attributes with color coding.
+ */
+
 export default function HeroCard({ hero }) {
-  const [imageError, setImageError] = useState(false);
-  const [expandedAbility, setExpandedAbility] = useState(null);
+  const [imageError, setImageError] = useState(false); // State to track if hero image failed to load
+  const [expandedAbility, setExpandedAbility] = useState(null); // State to track which ability description is currently expanded, null means none
 
-  // Reset image error when hero changes
-  useEffect(() => {
-    setImageError(false);
-    setExpandedAbility(null);
-  }, [hero.name]);
-
+  // Toggle the expanded state of an ability description. If the same ability is clicked again, it collapses.
   const toggleAbilityDescription = (abilityName) => {
     setExpandedAbility(expandedAbility === abilityName ? null : abilityName);
   };
 
-  // Get attribute color based on primary attribute
+  // Get attribute color based on primary attribute (selected from css .strength, .agility, .intelligence)
   const getAttributeClass = (attribute) => {
     if (attribute === 'Strength') return 'strength';
     if (attribute === 'Agility') return 'agility';
@@ -29,9 +29,10 @@ export default function HeroCard({ hero }) {
     return `/images/heroes/${imageName}.png`;
   };
 
-  // Filter out empty abilities
+  // Filter out abilities that don't have a valid name to avoid rendering empty ability entries
   const validAbilities = hero.abilities.filter(ability => ability.name && ability.name.trim() !== '');
 
+  // Card Layout: Header + Base grid + Ability section
   return (
     <div className="hero-card">
       {/* Hero Header with Image */}

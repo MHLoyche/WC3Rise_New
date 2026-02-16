@@ -1,3 +1,4 @@
+/* ===== Item Card Container ===== */
 .item-card {
   background: linear-gradient(135deg, rgba(20, 20, 20, 0.9), rgba(30, 30, 30, 0.8));
   border: 1px solid #333;
@@ -17,11 +18,12 @@
 }
 
 .item-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); /* Lift effect on hover */
   box-shadow: 0 8px 20px rgba(255, 107, 107, 0.2);
   border-color: #ff6b6b;
 }
 
+/* ===== Item Header ===== */
 .item-header {
   display: flex;
   flex-direction: row;
@@ -56,8 +58,8 @@
 .item-image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  image-rendering: crisp-edges;
+  object-fit: contain; /* Preserve aspect ratio */
+  image-rendering: crisp-edges; /* Sharp pixel rendering */
 }
 
 .item-name {
@@ -69,6 +71,7 @@
   line-height: 1.3;
 }
 
+/* ===== Rarity Badges ===== */
 .item-rarity {
   display: inline-block;
   padding: 0.25rem 0.6rem;
@@ -111,6 +114,7 @@
   color: #fff;
 }
 
+/* ===== Item Stats ===== */
 .item-stats {
   flex: 1;
 }
@@ -141,6 +145,7 @@
   border-bottom: none;
 }
 
+/* ===== Item Combination ===== */
 .item-combination {
   padding-top: 0.4rem;
   border-top: 1px solid #333;

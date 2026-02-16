@@ -1,3 +1,4 @@
+/* ===== Hero Card Container ===== */
 .hero-card {
   background: linear-gradient(135deg, rgba(20, 20, 20, 0.9), rgba(30, 30, 30, 0.8));
   border: 1px solid #333;
@@ -9,6 +10,7 @@
   height: 100%;
 }
 
+/* ===== Hero Card Header ===== */
 /* Header */
 .hero-header {
   display: flex;
@@ -44,7 +46,7 @@
 .hero-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Maintain aspect ratio, fill space */
   border-radius: 6px;
 }
 
@@ -63,7 +65,7 @@
   flex-wrap: wrap;
 }
 
-/* Attribute Badges */
+/* ===== Attribute Badges ===== */
 .hero-attribute,
 .hero-attack-type {
   display: inline-block;
@@ -108,7 +110,7 @@
 
 .stat-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
   gap: 0.5rem;
 }
 
@@ -155,7 +157,7 @@
   font-weight: 500;
 }
 
-/* Abilities */
+/* ===== Abilities Section ===== */
 .hero-abilities ul {
   list-style: none;
   padding: 0;
@@ -181,7 +183,7 @@
   padding: 0.4rem 0.6rem;
   background: rgba(0, 0, 0, 0.2);
   border: none;
-  border-left: 3px solid #FFD700;
+  border-left: 3px solid #FFD700; /* Gold left border */
   border-radius: 3px;
   text-align: left;
   cursor: pointer;
@@ -200,7 +202,7 @@
 }
 
 .ability-button[aria-expanded="true"] {
-  background: rgba(124, 252, 0, 0.1);
+  background: rgba(124, 252, 0, 0.1); /* Highlight when expanded */
   border-left-color: #7CFC00;
   color: #7CFC00;
 }
@@ -235,6 +237,7 @@
   color: #bbb;
 }
 
+/* ===== Ability Stats ===== */
 .ability-stats {
   display: flex;
   flex-direction: column;
@@ -242,7 +245,7 @@
   padding: 0.4rem;
   background: rgba(0, 0, 0, 0.3);
   border-radius: 2px;
-  border-left: 2px solid #FF6B6B;
+  border-left: 2px solid #FF6B6B; /* Red left accent */
 }
 
 .stat-row {
@@ -273,6 +276,7 @@
   color: #6C9BFF;
 }
 
+/* ===== Ability Values ===== */
 .ability-values {
   display: flex;
   flex-direction: column;
@@ -280,7 +284,7 @@
   padding: 0.4rem;
   background: rgba(0, 0, 0, 0.3);
   border-radius: 2px;
-  border-left: 2px solid #FFD700;
+  border-left: 2px solid #FFD700; /* Gold left accent */
 }
 
 .value-row {

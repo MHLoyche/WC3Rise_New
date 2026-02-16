@@ -1,3 +1,4 @@
+/* ===== Items Section Container ===== */
 .items-section {
   padding: 2rem 1rem;
   background: rgb(0, 0, 0);
@@ -26,7 +27,7 @@
 
 .search-input {
   width: 100%;
-  padding: 1rem 3rem 1rem 1.5rem;
+  padding: 1rem 3rem 1rem 1.5rem; /* Extra right padding for clear button */
   font-size: 1rem;
   background: rgba(20, 20, 20, 0.9);
   border: 2px solid #333;
@@ -49,7 +50,7 @@
   position: absolute;
   right: 1rem;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%); /* Center vertically */
   background: rgba(255, 107, 107, 0.2);
   border: none;
   width: 32px;
@@ -84,6 +85,7 @@
   padding: 4rem 2rem;
 }
 
+/* ===== Layout Structure ===== */
 .items-layout {
   display: flex;
   gap: 1rem;
@@ -98,13 +100,13 @@
 
 .items-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Auto-responsive grid */
   gap: 1rem;
   margin-top: 1rem;
 }
 
 .filter-toggle-btn {
-  display: none; /* Hidden by default */
+  display: none; /* Hidden by default, shown at 1024px breakpoint */
 }
 
 .loading-text,
@@ -119,7 +121,8 @@
   color: #ff6b6b;
 }
 
-/* Responsive adjustments */
+/* ===== Responsive Design ===== */
+/* Tablet and below - show filter toggle */
 @media (max-width: 1024px) {
   .items-layout {
     flex-direction: column;
@@ -141,6 +144,9 @@
   }
 }
 
+}
+
+/* Mobile - single column layout */
 @media (max-width: 768px) {
   .items-grid {
     grid-template-columns: 1fr;
@@ -156,6 +162,7 @@
   }
 }
 
+/* Large screens - wider item cards */
 @media (min-width: 1400px) {
   .items-grid {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
