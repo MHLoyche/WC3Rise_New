@@ -98,7 +98,7 @@ export default function HeroCard({ hero }) {
                   <div className="ability-description">
                     <p className="ability-desc-text">{ability.description}</p>
                     
-                    {(ability.cooldown || ability.manaCost || ability.manaCostPerSecond) && (
+                    {(ability.cooldown || ability.manaCost || ability.manaCostPerSecond || ability.healthCost || ability.healthCostPerSecond) && (
                       <div className="ability-stats">
                         {ability.cooldown && (
                           <div className="stat-row">
@@ -116,6 +116,18 @@ export default function HeroCard({ hero }) {
                           <div className="stat-row">
                             <span className="stat-label">Mana/Sec:</span>
                             <span className="stat-value mana">{Array.isArray(ability.manaCostPerSecond) ? ability.manaCostPerSecond.join('/') : ability.manaCostPerSecond}</span>
+                          </div>
+                        )}
+                        {ability.healthCost && (
+                          <div className="stat-row">
+                            <span className="stat-label">Health Cost:</span>
+                            <span className="stat-value healing">{Array.isArray(ability.healthCost) ? ability.healthCost.join('/') : ability.healthCost}</span>
+                          </div>
+                        )}
+                        {ability.healthCostPerSecond && (
+                          <div className="stat-row">
+                            <span className="stat-label">Health/Sec:</span>
+                            <span className="stat-value healing">{Array.isArray(ability.healthCostPerSecond) ? ability.healthCostPerSecond.join('/') : ability.healthCostPerSecond}</span>
                           </div>
                         )}
                       </div>
