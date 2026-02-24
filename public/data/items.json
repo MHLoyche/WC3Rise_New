@@ -2172,7 +2172,7 @@
         "upgrades": ["Gloves of the First Flame", "Sickle of Corrosion", "The Flame Serpent"]
     },
     {
-        "name": "the Flame Serpent",
+        "name": "The Flame Serpent",
         "rarity": "Tier 2 Unique Divine",
         "stats":[
             "Intelligence: +40",
@@ -2352,7 +2352,7 @@
         "name": "Edge of Sin",
         "rarity": "Tier 4 Unique Mythical",
         "stats":[
-            "Attack Dmage: +70",
+            "Attack Damage: +70",
             "Strength: +28",
             "Agility: +28",
             "Item Passive - Unleash Sin: Every 20 attacks with this weapon unleashes a nova that deals 2000 damage + (5 damage per point of base attack damage)"
@@ -2412,7 +2412,7 @@
     },
     {
         "name": "Magma Edge (Magnum Opus)",
-        "rarity": "Tier 2 Unique Mythical",
+        "rarity": "Tier 4 Unique Mythical",
         "stats":[
             "Attack Damage: +350",
             "Passive Orb Effect - Fire Splash: The Attack Damage from this weapon is also dealt on attacks to nearby enemies."
