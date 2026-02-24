@@ -23,10 +23,14 @@
   position: relative;
   max-width: 600px;
   margin: 0 auto 2rem;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
 }
 
 .search-input {
   width: 100%;
+  flex: 1;
   padding: 1rem 3rem 1rem 1.5rem; /* Extra right padding for clear button */
   font-size: 1rem;
   background: rgba(20, 20, 20, 0.9);
@@ -70,7 +74,65 @@
   transform: translateY(-50%) scale(1.1);
 }
 
-.items-count {
+.filter-toggle-btn {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, rgba(139, 0, 0, 0.6) 0%, rgba(75, 0, 130, 0.4) 100%);
+  border: 2px solid #ff6b6b;
+  border-radius: 50px;
+  color: #ff6b6b;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  white-space: nowrap;
+  font-weight: 600;
+  box-shadow: 0 0 15px rgba(255, 107, 107, 0.2);
+}
+
+.filter-toggle-btn:hover {
+  background: linear-gradient(135deg, rgba(139, 0, 0, 0.8) 0%, rgba(75, 0, 130, 0.6) 100%);
+  box-shadow: 0 0 25px rgba(255, 107, 107, 0.4);
+  transform: translateY(-2px);
+}
+
+.filter-toggle-btn.active {
+  background: linear-gradient(135deg, #ff6b6b 0%, #a855f7 100%);
+  color: #fff;
+  box-shadow: 0 0 30px rgba(255, 107, 107, 0.5);
+}
+
+.filter-toggle-btn.has-filters {
+  border-color: #a855f7;
+  background: linear-gradient(135deg, rgba(139, 0, 0, 0.7) 0%, rgba(75, 0, 130, 0.6) 100%);
+}
+
+.filter-label {
+  letter-spacing: 0.5px;
+}
+
+.filter-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 12px;
+  height: 12px;
+  background: #a855f7;
+  border-radius: 50%;
+  border: 2px solid #1a1a1a;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(168, 85, 247, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(168, 85, 247, 0);
+  }
+}
   text-align: center;
   color: #888;
   font-size: 0.95rem;
@@ -105,10 +167,6 @@
   margin-top: 1rem;
 }
 
-.filter-toggle-btn {
-  display: none; /* Hidden by default, shown at 1024px breakpoint */
-}
-
 .loading-text,
 .error-text {
   text-align: center;
@@ -122,25 +180,19 @@
 }
 
 /* ===== Responsive Design ===== */
-/* Tablet and below - show filter toggle */
+/* Tablet and below - show filter toggle in search area */
 @media (max-width: 1024px) {
+  .filter-toggle-btn {
+    display: flex;
+  }
+
+  .search-container {
+    max-width: 100%;
+  }
+
   .items-layout {
     flex-direction: column;
     position: relative;
-  }
-
-  .filter-toggle-btn {
-    display: block;
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
-    z-index: 1001;
-    background: #333;
-    color: white;
-    border: none;
-    padding: 0.5rem;
-    border-radius: 5px;
-    cursor: pointer;
   }
 }
 
@@ -148,6 +200,22 @@
 
 /* Mobile - single column layout */
 @media (max-width: 768px) {
+  .search-container {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .search-input {
+    order: 1;
+    flex-basis: 100%;
+  }
+
+  .filter-toggle-btn {
+    order: 2;
+    flex: 1;
+    justify-content: center;
+  }
+
   .items-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;

@@ -101,8 +101,18 @@
 
 /* ===== Mobile Responsive (max-width: 768px) ===== */
 @media (max-width: 768px) {
+  .header {
+    padding: 1rem 1rem;
+  }
+
   .header-container {
     justify-content: center;
+    width: 100%;
+  }
+
+  .logo a {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
   }
 
   .logo {

@@ -131,12 +131,20 @@ export default function Items() {
                     ✕
                   </button>
                 )}
+                <button 
+                  className={`filter-toggle-btn ${isFilterVisible ? 'active' : ''} ${Object.values(filters).some(f => Array.isArray(f) ? f.length > 0 : f) ? 'has-filters' : ''}`}
+                  onClick={toggleFilterSidebar}
+                  aria-label="Toggle filters"
+                >
+                  <FaBars />
+                  <span className="filter-label">Filters</span>
+                  {Object.values(filters).some(f => Array.isArray(f) ? f.length > 0 : f) && (
+                    <span className="filter-badge"></span>
+                  )}
+                </button>
               </div>
 
               <div className="items-layout">
-                <button className="filter-toggle-btn" onClick={toggleFilterSidebar}>
-                  <FaBars />
-                </button>
 
                 <FilterSidebar 
                   onFilterChange={handleFilterChange} 

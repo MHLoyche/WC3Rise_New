@@ -496,6 +496,12 @@
     z-index: 999;
     border-radius: 12px 12px 0 0;
     padding-top: 0.5rem;
+    background: linear-gradient(135deg, rgba(25, 15, 20, 0.98), rgba(35, 20, 30, 0.95));
+    border: 3px solid #ff6b6b;
+    border-bottom: none;
+    border-left: 6px solid #a855f7;
+    border-right: 6px solid #a855f7;
+    box-shadow: 0 -5px 40px rgba(255, 107, 107, 0.3), inset 0 2px 20px rgba(255, 107, 107, 0.1);
   }
 
   .item-detail-panel.visible {
@@ -504,6 +510,15 @@
 
   .item-detail-header {
     display: flex; /* Show header on mobile */
+    border-bottom: 2px solid #ff6b6b;
+    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .item-detail-header h4 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
 
   .item-detail-panel.empty {
