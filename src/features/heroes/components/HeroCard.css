@@ -67,7 +67,8 @@
 
 /* ===== Attribute Badges ===== */
 .hero-attribute,
-.hero-attack-type {
+.hero-attack-type,
+.hero-tag {
   display: inline-block;
   padding: 0.25rem 0.6rem;
   border-radius: 15px;
@@ -95,6 +96,22 @@
 .hero-attack-type {
   background: linear-gradient(135deg, #6c757d, #495057);
   color: #fff;
+}
+
+.hero-tag.secret-character {
+  background: linear-gradient(135deg, #9333ea, #6b21a8);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(147, 51, 234, 0.3);
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(147, 51, 234, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(147, 51, 234, 0.5), 0 0 20px rgba(147, 51, 234, 0.3);
+  }
 }
 
 /* Stats Section */

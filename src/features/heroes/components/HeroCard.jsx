@@ -44,6 +44,9 @@ export default function HeroCard({ hero }) {
               {hero.primary_attribute}
             </span>
             <span className="hero-attack-type">{hero.attack_type}</span>
+            {hero.tags && hero.tags.includes('secret character') && (
+              <span className="hero-tag secret-character">Secret</span>
+            )}
           </div>
         </div>
         {!imageError && (

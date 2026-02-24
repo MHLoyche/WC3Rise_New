@@ -44,8 +44,11 @@ export default function Heroes() {
     const abilitiesMatch = hero.abilities.some(ability => 
       ability.name.toLowerCase().includes(query)
     );
+    const tagsMatch = hero.tags && hero.tags.some(tag => 
+      tag.toLowerCase().includes(query)
+    );
     
-    return nameMatch || attributeMatch || attackTypeMatch || abilitiesMatch;
+    return nameMatch || attributeMatch || attackTypeMatch || abilitiesMatch || tagsMatch;
   });
 
   if (loading) {
@@ -82,7 +85,7 @@ export default function Heroes() {
             <input
               type="text"
               className="search-input"
-              placeholder="Search heroes by name, attribute, attack type, or abilities..."
+              placeholder="Search heroes by name, attribute, attack type, abilities, or tags..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />

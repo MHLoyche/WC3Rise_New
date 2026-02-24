@@ -145,6 +145,7 @@
     },
     {
         "name": "Sir Daniel",
+        "tags": ["secret character"],
         "abilities": [
             {"name": "Solar Flare", "type": "Damage", "description": "Calls down a Solar Flare from the heavens at the targeted location dealing damage to enemies over 3 seconds.", "cooldown": [12,11,10,9,8], "manaCost": [125,150,200,275,375], "values": [{"label": "Base Damage", "levels": [120,240,360,480,600], "color": "damage"}, {"label": "Strength Scaling", "levels": [1.5,2,2.5,3,3.5], "color": "scaling"}, {"label": "Area of Effect", "levels": [250,250,250,250,250], "color": "control"}]},
             {"name": "Swift Justice", "type": "Damage/Healing", "description": "Strikes an enemy dealing damage based on Sir Daniel's strength and restores health based on Holy Infusion rank, the healing has increased effect.", "cooldown": [8,7,6,5,4], "manaCost": [75,100,125,150,175], "values": [{"label": "Base Damage", "levels": [100,150,200,250,300], "color": "damage"}, {"label": "Strength Scaling", "levels": [2,2.5,3,3.5,4], "color": "scaling"}, {"label": "Holy Infusion Healing", "levels": ["200%","200%","200%","200%","200%"], "color": "healing"}]},
@@ -325,6 +326,7 @@
     },
     {
         "name": "Weaver of Veil",
+        "tags": ["secret character"],
         "abilities": [
             {"name": "Soul Rip", "type": "Damage/Control", "description": "Tear at the soul of an enemy, dealing damage based on Intelligence. If the target is affected by Piercing Wail, the ability deals 50% bonus damage and stuns.", "cooldown": [10,9,8,7,6], "manaCost": [50,75,125,200,300], "values": [{"label": "Base Damage", "levels": [50,100,150,200,250], "color": "damage"}, {"label": "Intelligence Damage Scaling", "levels": [2,3,4,5,6], "color": "scaling"}, {"label": "Stun Duration", "levels": [2,2,2,2,2], "color": "control"}]},
             {"name": "Veiled Blessing", "type": "Healing", "description": "Blesses all allied targets in an area, restoring their health based on the Weaver of Veil's Intelligence.", "cooldown": [8, 7, 6, 5, 4], "manaCost": [50,100,150,200,250], "values": [{"label": "Healing", "levels": [50,75,100,125,150], "color": "healing"}, {"label": "Intelligence Scaling", "levels": [1,1.5,2,2.5,3], "color": "scaling"}]},
@@ -415,6 +417,7 @@
     },
     {
         "name": "Venomthorn Seer",
+        "tags": ["secret character"],
         "abilities": [
             {"name": "Death in a Bottle", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [6, 5, 4, 3, 2], "manaCost": [100, 130, 160, 190, 220], "values": [{"label": "Poison Damage", "levels": [110, 160, 210, 260, 310], "color": "damage"}]},
             {"name": "Venomtouched Glaive", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [5, 4, 3, 2, 1], "manaCost": [80, 110, 140, 170, 200], "values": [{"label": "Base Damage", "levels": [120, 170, 220, 270, 320], "color": "damage"}]},
@@ -451,6 +454,7 @@
     },
     {
         "name": "Crypt King",
+        "tags": ["secret character"],
         "abilities": [
             {"name": "Bone Spike", "type": "Control", "description": "PLACEHOLDER TEXT HERE", "cooldown": [5, 4, 3, 2, 1], "manaCost": [80, 110, 140, 170, 200], "values": [{"label": "Stun", "levels": [1, 1.5, 2, 2.5, 3], "color": "control"}]},
             {"name": "Death Brand", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [7, 6, 5, 4, 3], "manaCost": [100, 140, 180, 220, 260], "values": [{"label": "Damage Amplify", "levels": [20, 30, 40, 50, 60], "color": "damage"}]},
@@ -487,6 +491,7 @@
     },
     {
         "name": "Princess of Anguish",
+        "tags": ["secret character"],
         "abilities": [
             {"name": "Anguish Wave", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [6, 5, 4, 3, 2], "manaCost": [110, 140, 170, 200, 230], "values": [{"label": "Base Damage", "levels": [130, 180, 230, 280, 330], "color": "damage"}]},
             {"name": "Nightmare", "type": "Control", "description": "PLACEHOLDER TEXT HERE", "cooldown": [8, 7, 6, 5, 4], "manaCost": [130, 170, 210, 250, 290], "values": [{"label": "Stun", "levels": [2, 2.5, 3, 3.5, 4], "color": "control"}]},
@@ -523,6 +528,7 @@
     },
     {
         "name": "Elementress",
+        "tags": ["secret character"],
         "abilities": [
             {"name": "Rain of Arrows", "type": "Damage", "description": "PLACEHOLDER TEXT HERE", "cooldown": [6, 5, 4, 3, 2], "manaCost": [100, 130, 160, 190, 220], "values": [{"label": "Rain Damage", "levels": [130, 180, 230, 280, 330], "color": "damage"}]},
             {"name": "Call Elemental Guardian", "type": "Damage", "description": "Calls forth an Elemental Guardian. The damage, health and armor of the Elemental Guardian is based on the Agility of the Elementress.", "cooldown": [38,36,34,32,30], "manaCost": [100,150,200,250,300], "values": [{"label": "Guardian Damage", "levels": [15,30,60,120,240], "color": "damage"},{"label": "Agility Damage Scaling", "levels": [0.8,1.1,1.4,1.7,2], "color": "scaling"},{"label": "Guardian HP", "levels": [300,600,900,1200,1500], "color": "healing"},{"label": "Agility Health Scaling", "levels": [5,10,15,20,25], "color": "healing"},{"label": "Guardian Armor", "levels": [1,2,3,4,5], "color": "armor"},{"label": "Guardian duration", "levels": [22,24,26,28,30], "color": "control"}]},
