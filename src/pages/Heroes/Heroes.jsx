@@ -42,7 +42,7 @@ export default function Heroes() {
     const attributeMatch = hero.primary_attribute.toLowerCase().includes(query);
     const attackTypeMatch = hero.attack_type.toLowerCase().includes(query);
     const abilitiesMatch = hero.abilities.some(ability => 
-      ability.toLowerCase().includes(query)
+      ability.name.toLowerCase().includes(query)
     );
     
     return nameMatch || attributeMatch || attackTypeMatch || abilitiesMatch;
